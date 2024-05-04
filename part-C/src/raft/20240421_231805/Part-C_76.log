@@ -1,0 +1,1 @@
+go: error obtaining buildID for go tool vet: exit status 0xc000013a

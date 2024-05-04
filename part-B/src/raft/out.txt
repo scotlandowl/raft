@@ -1,0 +1,3233 @@
+000000 T0000 VOTE S0 Follower -> Candidator at term: T1
+000000 T0000 VOTE S1 Follower -> Candidator at term: T1
+Test (PartA): initial election ...
+000000 T0000 VOTE S2 Follower -> Candidator at term: T1
+000005 T0001 VOTE S1 -> S0, Reject voted, Already voted to S1
+000005 T0001 VOTE S1 -> S2, Reject voted, Already voted to S1
+000005 T0001 VOTE S0 -> S2, Reject voted, Already voted to S0
+000005 T0001 VOTE S2 -> S0, Reject voted, Already voted to S2
+000005 T0001 VOTE S0 -> S1, Reject voted, Already voted to S0
+000005 T0001 VOTE S2 -> S1, Reject voted, Already voted to S2
+000956 T0001 VOTE S2 Candidator -> Candidator at term: T2
+000960 T0001 LOG1 S1 Candidator -> Follower at term: T1->T2
+000960 T0002 VOTE S1 Compare last log, Me: [0]T0, Candidate: [0]T0
+000960 T0002 VOTE S1 -> S2, Vote granted
+000960 T0001 LOG1 S0 Candidator -> Follower at term: T1->T2
+000960 T0002 LEAD S2 Become Leader at term: T2
+000960 T0002 VOTE S0 Compare last log, Me: [0]T0, Candidate: [0]T0
+000960 T0002 VOTE S0 -> S2, Vote granted
+000960 T0002 VOTE S2 Lost context, abort RequestVoteReply from S0
+000966 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+000966 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+000966 T0002 LOG2 S0 Follower append logs: (0, 0]
+000966 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+000966 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+000966 T0002 LOG2 S1 Follower append logs: (0, 0]
+000971 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+000971 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+003016 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+003016 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+003016 T0002 LOG2 S1 Follower append logs: (0, 0]
+003016 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+003021 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+003021 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+003021 T0002 LOG2 S0 Follower append logs: (0, 0]
+003021 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+005030 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+005030 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+005030 T0002 LOG2 S0 Follower append logs: (0, 0]
+005030 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+005030 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+005030 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+005030 T0002 LOG2 S1 Follower append logs: (0, 0]
+005030 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+007049 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+007049 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+007049 T0002 LOG2 S1 Follower append logs: (0, 0]
+007049 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+007049 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+007049 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+007049 T0002 LOG2 S0 Follower append logs: (0, 0]
+007054 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+009072 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+009072 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+009072 T0002 LOG2 S1 Follower append logs: (0, 0]
+009072 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+009072 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+009072 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+009072 T0002 LOG2 S0 Follower append logs: (0, 0]
+009072 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+011101 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+011101 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+011101 T0002 LOG2 S0 Follower append logs: (0, 0]
+011101 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+011101 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+011101 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+011101 T0002 LOG2 S1 Follower append logs: (0, 0]
+011101 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+013115 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+013115 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+013115 T0002 LOG2 S0 Follower append logs: (0, 0]
+013115 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+013115 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+013115 T0002 LOG2 S1 Follower append logs: (0, 0]
+013115 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+013115 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+015143 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+015143 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+015143 T0002 LOG2 S1 Follower append logs: (0, 0]
+015143 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+015143 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+015143 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+015143 T0002 LOG2 S0 Follower append logs: (0, 0]
+015143 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+017164 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+017164 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+017164 T0002 LOG2 S1 Follower append logs: (0, 0]
+017164 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+017164 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+017164 T0002 LOG2 S0 Follower append logs: (0, 0]
+017164 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+017164 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+019201 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+019201 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+019201 T0002 LOG2 S1 Follower append logs: (0, 0]
+019201 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+019201 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+019201 T0002 LOG2 S0 Follower append logs: (0, 0]
+019201 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+019201 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+021219 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+021219 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+021219 T0002 LOG2 S0 Follower append logs: (0, 0]
+021219 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+021219 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+021219 T0002 LOG2 S1 Follower append logs: (0, 0]
+021222 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+021222 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+023264 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+023264 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+023264 T0002 LOG2 S1 Follower append logs: (0, 0]
+023264 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+023264 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+023264 T0002 LOG2 S0 Follower append logs: (0, 0]
+023264 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+023264 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+025294 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+025294 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+025294 T0002 LOG2 S1 Follower append logs: (0, 0]
+025296 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+025296 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+025296 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+025296 T0002 LOG2 S0 Follower append logs: (0, 0]
+025296 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+027323 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+027323 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+027323 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+027323 T0002 LOG2 S1 Follower append logs: (0, 0]
+027323 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+027323 T0002 LOG2 S0 Follower append logs: (0, 0]
+027323 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+027323 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+029360 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+029360 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+029360 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+029360 T0002 LOG2 S1 Follower append logs: (0, 0]
+029360 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+029360 T0002 LOG2 S0 Follower append logs: (0, 0]
+029360 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+029360 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+  ... Passed --   3.1  3   38    9634    0
+Test (PartA): election after network failure ...
+030917 T0000 VOTE S0 Follower -> Candidator at term: T1
+030917 T0000 VOTE S1 Follower -> Candidator at term: T1
+030917 T0000 VOTE S2 Follower -> Candidator at term: T1
+030917 T0001 VOTE S2 -> S0, Reject voted, Already voted to S2
+030917 T0001 VOTE S1 -> S0, Reject voted, Already voted to S1
+030917 T0001 VOTE S1 -> S2, Reject voted, Already voted to S1
+030917 T0001 VOTE S0 -> S1, Reject voted, Already voted to S0
+030917 T0001 VOTE S0 -> S2, Reject voted, Already voted to S0
+030917 T0001 VOTE S2 -> S1, Reject voted, Already voted to S2
+031703 T0001 VOTE S0 Candidator -> Candidator at term: T2
+031703 T0001 LOG1 S2 Candidator -> Follower at term: T1->T2
+031703 T0002 VOTE S2 Compare last log, Me: [0]T0, Candidate: [0]T0
+031703 T0001 LOG1 S1 Candidator -> Follower at term: T1->T2
+031703 T0002 VOTE S2 -> S0, Vote granted
+031703 T0002 VOTE S1 Compare last log, Me: [0]T0, Candidate: [0]T0
+031703 T0002 VOTE S1 -> S0, Vote granted
+031703 T0002 LEAD S0 Become Leader at term: T2
+031703 T0002 VOTE S0 Lost context, abort RequestVoteReply from S1
+031703 T0002 DBUG S2 <- S0, Receive Log, Prev=[0]T0, Len()=0
+031703 T0002 LOG1 S2 Follower -> Follower at term: T2->T2
+031703 T0002 LOG2 S2 Follower append logs: (0, 0]
+031703 T0002 DBUG S0 Match index after sort: [0 0 0], majority[1]=0
+031703 T0002 DBUG S1 <- S0, Receive Log, Prev=[0]T0, Len()=0
+031703 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+031703 T0002 LOG2 S1 Follower append logs: (0, 0]
+031703 T0002 DBUG S0 Match index after sort: [0 0 0], majority[1]=0
+033723 T0002 DBUG S1 <- S0, Receive Log, Prev=[0]T0, Len()=0
+033723 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+033723 T0002 LOG2 S1 Follower append logs: (0, 0]
+033723 T0002 DBUG S2 <- S0, Receive Log, Prev=[0]T0, Len()=0
+033723 T0002 LOG1 S2 Follower -> Follower at term: T2->T2
+033723 T0002 LOG2 S2 Follower append logs: (0, 0]
+033723 T0002 DBUG S0 Match index after sort: [0 0 0], majority[1]=0
+033723 T0002 DBUG S0 Match index after sort: [0 0 0], majority[1]=0
+035759 T0002 DBUG S2 <- S0, Receive Log, Prev=[0]T0, Len()=0
+035759 T0002 LOG1 S2 Follower -> Follower at term: T2->T2
+035759 T0002 LOG2 S2 Follower append logs: (0, 0]
+035759 T0002 DBUG S0 Match index after sort: [0 0 0], majority[1]=0
+035759 T0002 DBUG S1 <- S0, Receive Log, Prev=[0]T0, Len()=0
+035759 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+035759 T0002 LOG2 S1 Follower append logs: (0, 0]
+035759 T0002 DBUG S0 Match index after sort: [0 0 0], majority[1]=0
+042796 T0002 VOTE S2 Follower -> Candidator at term: T3
+042796 T0002 LOG1 S1 Follower -> Follower at term: T2->T3
+042796 T0003 VOTE S1 Compare last log, Me: [0]T0, Candidate: [0]T0
+042796 T0003 VOTE S1 -> S2, Vote granted
+042796 T0003 LEAD S2 Become Leader at term: T3
+042796 T0003 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+042796 T0003 LOG1 S1 Follower -> Follower at term: T3->T3
+042796 T0003 LOG2 S1 Follower append logs: (0, 0]
+042796 T0003 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+044816 T0003 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+044816 T0003 LOG1 S1 Follower -> Follower at term: T3->T3
+044816 T0003 LOG2 S1 Follower append logs: (0, 0]
+044816 T0003 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+046880 T0003 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+046880 T0003 LOG1 S1 Follower -> Follower at term: T3->T3
+046880 T0003 LOG2 S1 Follower append logs: (0, 0]
+046880 T0003 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+047943 T0003 DBUG S2 <- S0, Receive Log, Prev=[0]T0, Len()=0
+047943 T0003 LOG2 S2 <- S0, Reject, Higher term, T2 <- T3
+047943 T0002 LOG1 S0 Leader -> Follower at term: T2->T3
+047943 T0003 DBUG S1 <- S0, Receive Log, Prev=[0]T0, Len()=0
+047943 T0003 LOG2 S1 <- S0, Reject, Higher term, T2 <- T3
+047943 T0003 LOG1 S0 Context Lost, T2:Leader->T3:Follower
+048558 T0003 VOTE S0 Follower -> Candidator at term: T4
+048561 T0003 LOG1 S2 Leader -> Follower at term: T3->T4
+048561 T0004 VOTE S2 Compare last log, Me: [0]T0, Candidate: [0]T0
+048561 T0004 VOTE S2 -> S0, Vote granted
+048561 T0004 LEAD S0 Become Leader at term: T4
+048561 T0003 LOG1 S1 Follower -> Follower at term: T3->T4
+048561 T0004 VOTE S1 Compare last log, Me: [0]T0, Candidate: [0]T0
+048561 T0004 VOTE S1 -> S0, Vote granted
+048561 T0004 DBUG S2 <- S0, Receive Log, Prev=[0]T0, Len()=0
+048561 T0004 LOG1 S2 Follower -> Follower at term: T4->T4
+048561 T0004 LOG2 S2 Follower append logs: (0, 0]
+048561 T0004 DBUG S1 <- S0, Receive Log, Prev=[0]T0, Len()=0
+048561 T0004 LOG1 S1 Follower -> Follower at term: T4->T4
+048561 T0004 LOG2 S1 Follower append logs: (0, 0]
+048561 T0004 DBUG S0 Match index after sort: [0 0 0], majority[1]=0
+048561 T0004 DBUG S0 Match index after sort: [0 0 0], majority[1]=0
+048561 T0004 VOTE S0 Lost context, abort RequestVoteReply from S1
+049023 T0004 LOG1 S2 Lost Leader [3] to Follower[T4]
+049947 T0004 LOG1 S0 Lost Leader [2] to Leader[T4]
+050570 T0004 DBUG S2 <- S0, Receive Log, Prev=[0]T0, Len()=0
+050570 T0004 LOG1 S2 Follower -> Follower at term: T4->T4
+050570 T0004 LOG2 S2 Follower append logs: (0, 0]
+050570 T0004 DBUG S0 Match index after sort: [0 0 0], majority[1]=0
+050570 T0004 DBUG S1 <- S0, Receive Log, Prev=[0]T0, Len()=0
+050570 T0004 LOG1 S1 Follower -> Follower at term: T4->T4
+050570 T0004 LOG2 S1 Follower append logs: (0, 0]
+050570 T0004 DBUG S0 Match index after sort: [0 0 0], majority[1]=0
+052264 T0004 LOG1 S0 -> S2, Lost or crashed
+055071 T0004 LOG1 S0 -> S2, Lost or crashed
+056490 T0004 LOG1 S0 -> S1, Lost or crashed
+057120 T0004 VOTE S1 Follower -> Candidator at term: T5
+058822 T0005 VOTE S1 Candidator -> Candidator at term: T6
+060249 T0006 VOTE S1 Candidator -> Candidator at term: T7
+060568 T0004 VOTE S2 Follower -> Candidator at term: T5
+062302 T0005 VOTE S2 Candidator -> Candidator at term: T6
+063239 T0006 VOTE S2 Candidator -> Candidator at term: T7
+063703 T0007 VOTE S1 Candidator -> Candidator at term: T8
+064171 T0004 LOG1 S0 -> S2, Lost or crashed
+064644 T0007 VOTE S2 Candidator -> Candidator at term: T8
+065264 T0008 VOTE S1 Candidator -> Candidator at term: T9
+066196 T0008 VOTE S2 Candidator -> Candidator at term: T9
+066821 T0009 VOTE S1 Candidator -> Candidator at term: T10
+069180 T0010 VOTE S1 Candidator -> Candidator at term: T11
+069333 T0009 VOTE S2 Candidator -> Candidator at term: T10
+070879 T0011 VOTE S1 Candidator -> Candidator at term: T12
+072297 T0012 VOTE S1 Candidator -> Candidator at term: T13
+072454 T0010 VOTE S2 Candidator -> Candidator at term: T11
+073700 T0013 DBUG S1 Ask vote from S2, Lost or error
+073855 T0004 LOG1 S0 -> S2, Lost or crashed
+074481 T0004 LOG1 S0 -> S1, Lost or crashed
+075099 T0011 VOTE S2 Candidator -> Candidator at term: T12
+075099 T0013 VOTE S1 Candidator -> Candidator at term: T14
+075101 T0012 LOG1 S2 Candidator -> Follower at term: T12->T14
+075101 T0014 VOTE S1 -> S2, Reject voted, higher term, T14>T12
+075101 T0014 VOTE S2 Compare last log, Me: [0]T0, Candidate: [0]T0
+075101 T0014 VOTE S2 -> S1, Vote granted
+075101 T0014 LEAD S1 Become Leader at term: T14
+075101 T0014 VOTE S2 Lost context, abort RequestVoteReply from S1
+075101 T0014 DBUG S2 <- S1, Receive Log, Prev=[0]T0, Len()=0
+075101 T0014 LOG1 S2 Follower -> Follower at term: T14->T14
+075101 T0014 LOG2 S2 Follower append logs: (0, 0]
+075101 T0014 DBUG S1 Match index after sort: [0 0 0], majority[1]=0
+075869 T0014 DBUG S1 Ask vote from S0, Lost or error
+076500 T0014 DBUG S1 Ask vote from S2, Lost or error
+077123 T0014 DBUG S2 <- S1, Receive Log, Prev=[0]T0, Len()=0
+077123 T0014 LOG1 S2 Follower -> Follower at term: T14->T14
+077123 T0014 LOG2 S2 Follower append logs: (0, 0]
+077123 T0014 DBUG S1 Match index after sort: [0 0 0], majority[1]=0
+077594 T0014 DBUG S1 Ask vote from S0, Lost or error
+078845 T0004 LOG1 S0 -> S1, Lost or crashed
+079004 T0004 LOG1 S0 -> S1, Lost or crashed
+079004 T0014 DBUG S2 Ask vote from S0, Lost or error
+079004 T0014 DBUG S1 <- S0, Receive Log, Prev=[0]T0, Len()=0
+079004 T0014 LOG2 S1 <- S0, Reject, Higher term, T4 <- T14
+079004 T0014 DBUG S2 <- S0, Receive Log, Prev=[0]T0, Len()=0
+079004 T0014 LOG2 S2 <- S0, Reject, Higher term, T4 <- T14
+079004 T0004 LOG1 S0 Leader -> Follower at term: T4->T14
+079004 T0014 LOG1 S0 Context Lost, T4:Leader->T14:Follower
+079164 T0014 DBUG S1 Ask vote from S2, Lost or error
+079164 T0014 DBUG S2 <- S1, Receive Log, Prev=[0]T0, Len()=0
+079164 T0014 DBUG S0 <- S1, Receive Log, Prev=[0]T0, Len()=0
+079164 T0014 LOG1 S2 Follower -> Follower at term: T14->T14
+079164 T0014 LOG2 S2 Follower append logs: (0, 0]
+079164 T0014 LOG1 S0 Follower -> Follower at term: T14->T14
+079164 T0014 LOG2 S0 Follower append logs: (0, 0]
+079164 T0014 DBUG S1 Match index after sort: [0 0 0], majority[1]=0
+079164 T0014 DBUG S1 Match index after sort: [0 0 0], majority[1]=0
+079321 T0014 DBUG S2 Ask vote from S0, Lost or error
+079945 T0014 DBUG S1 Ask vote from S0, Lost or error
+080723 T0014 LOG1 S0 -> S2, Lost or crashed
+081037 T0014 LOG1 S0 Lost Leader [4] to Follower[T14]
+081037 T0014 LOG1 S0 -> S1, Lost or crashed
+081185 T0014 DBUG S0 <- S1, Receive Log, Prev=[0]T0, Len()=0
+081185 T0014 LOG1 S0 Follower -> Follower at term: T14->T14
+081185 T0014 LOG2 S0 Follower append logs: (0, 0]
+081185 T0014 DBUG S2 <- S1, Receive Log, Prev=[0]T0, Len()=0
+081185 T0014 LOG1 S2 Follower -> Follower at term: T14->T14
+081185 T0014 LOG2 S2 Follower append logs: (0, 0]
+081185 T0014 DBUG S1 Match index after sort: [0 0 0], majority[1]=0
+081185 T0014 DBUG S1 Match index after sort: [0 0 0], majority[1]=0
+082592 T0014 DBUG S1 Ask vote from S0, Lost or error
+  ... Passed --   5.2  3  112   20620    0
+082745 T0000 VOTE S0 Follower -> Candidator at term: T1
+082745 T0000 VOTE S1 Follower -> Candidator at term: T1
+082745 T0000 VOTE S2 Follower -> Candidator at term: T1
+082745 T0000 VOTE S3 Follower -> Candidator at term: T1
+Test (PartA): multiple elections ...
+082745 T0000 VOTE S4 Follower -> Candidator at term: T1
+082745 T0000 VOTE S5 Follower -> Candidator at term: T1
+082745 T0000 LOG1 S6 Follower -> Follower at term: T0->T1
+082745 T0001 VOTE S6 Compare last log, Me: [0]T0, Candidate: [0]T0
+082745 T0001 VOTE S6 -> S4, Vote granted
+082750 T0001 VOTE S0 -> S4, Reject voted, Already voted to S0
+082751 T0001 VOTE S3 -> S1, Reject voted, Already voted to S3
+082751 T0001 VOTE S6 -> S5, Reject voted, Already voted to S4
+082751 T0001 VOTE S1 -> S4, Reject voted, Already voted to S1
+082751 T0001 VOTE S4 -> S1, Reject voted, Already voted to S4
+082751 T0001 VOTE S6 -> S2, Reject voted, Already voted to S4
+082751 T0001 VOTE S2 -> S4, Reject voted, Already voted to S2
+082751 T0001 VOTE S5 -> S1, Reject voted, Already voted to S5
+082751 T0001 VOTE S0 -> S3, Reject voted, Already voted to S0
+082751 T0001 VOTE S0 -> S1, Reject voted, Already voted to S0
+082751 T0001 VOTE S1 -> S3, Reject voted, Already voted to S1
+082751 T0001 VOTE S5 -> S4, Reject voted, Already voted to S5
+082751 T0001 VOTE S0 -> S2, Reject voted, Already voted to S0
+082751 T0001 VOTE S2 -> S3, Reject voted, Already voted to S2
+082751 T0001 VOTE S4 -> S2, Reject voted, Already voted to S4
+082751 T0001 VOTE S5 -> S2, Reject voted, Already voted to S5
+082751 T0001 VOTE S4 -> S3, Reject voted, Already voted to S4
+082751 T0001 VOTE S1 -> S2, Reject voted, Already voted to S1
+082751 T0001 VOTE S5 -> S3, Reject voted, Already voted to S5
+082751 T0001 VOTE S3 -> S4, Reject voted, Already voted to S3
+082751 T0001 VOTE S1 -> S5, Reject voted, Already voted to S1
+082756 T0001 VOTE S6 -> S3, Reject voted, Already voted to S4
+082756 T0001 VOTE S3 -> S2, Reject voted, Already voted to S3
+082756 T0001 VOTE S2 -> S5, Reject voted, Already voted to S2
+082756 T0001 VOTE S0 -> S5, Reject voted, Already voted to S0
+082756 T0001 VOTE S3 -> S5, Reject voted, Already voted to S3
+082756 T0001 VOTE S4 -> S5, Reject voted, Already voted to S4
+083686 T0014 LOG1 S0 -> S2, Lost or crashed
+083845 T0014 DBUG S2 Ask vote from S1, Lost or error
+084307 T0001 VOTE S4 Candidator -> Candidator at term: T2
+084307 T0001 LOG1 S6 Follower -> Follower at term: T1->T2
+084307 T0002 VOTE S6 Compare last log, Me: [0]T0, Candidate: [0]T0
+084307 T0002 VOTE S6 -> S4, Vote granted
+084307 T0001 LOG1 S5 Candidator -> Follower at term: T1->T2
+084307 T0002 VOTE S5 Compare last log, Me: [0]T0, Candidate: [0]T0
+084307 T0002 VOTE S5 -> S4, Vote granted
+084307 T0001 LOG1 S1 Candidator -> Follower at term: T1->T2
+084307 T0002 VOTE S1 Compare last log, Me: [0]T0, Candidate: [0]T0
+084307 T0002 VOTE S1 -> S4, Vote granted
+084307 T0001 LOG1 S0 Candidator -> Follower at term: T1->T2
+084307 T0002 VOTE S0 Compare last log, Me: [0]T0, Candidate: [0]T0
+084307 T0002 VOTE S0 -> S4, Vote granted
+084307 T0001 LOG1 S3 Candidator -> Follower at term: T1->T2
+084307 T0002 VOTE S3 Compare last log, Me: [0]T0, Candidate: [0]T0
+084307 T0002 LEAD S4 Become Leader at term: T2
+084307 T0002 VOTE S4 Lost context, abort RequestVoteReply from S1
+084307 T0002 VOTE S3 -> S4, Vote granted
+084307 T0001 LOG1 S2 Candidator -> Follower at term: T1->T2
+084307 T0002 VOTE S2 Compare last log, Me: [0]T0, Candidate: [0]T0
+084307 T0002 VOTE S2 -> S4, Vote granted
+084307 T0002 DBUG S0 <- S4, Receive Log, Prev=[0]T0, Len()=0
+084307 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+084307 T0002 LOG2 S0 Follower append logs: (0, 0]
+084307 T0002 VOTE S4 Lost context, abort RequestVoteReply from S3
+084307 T0002 DBUG S6 <- S4, Receive Log, Prev=[0]T0, Len()=0
+084307 T0002 LOG1 S6 Follower -> Follower at term: T2->T2
+084307 T0002 LOG2 S6 Follower append logs: (0, 0]
+084307 T0002 DBUG S3 <- S4, Receive Log, Prev=[0]T0, Len()=0
+084307 T0002 LOG1 S3 Follower -> Follower at term: T2->T2
+084307 T0002 LOG2 S3 Follower append logs: (0, 0]
+084307 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+084307 T0002 VOTE S4 Lost context, abort RequestVoteReply from S2
+084307 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+084307 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+084307 T0002 DBUG S1 <- S4, Receive Log, Prev=[0]T0, Len()=0
+084307 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+084307 T0002 LOG2 S1 Follower append logs: (0, 0]
+084307 T0002 DBUG S5 <- S4, Receive Log, Prev=[0]T0, Len()=0
+084307 T0002 LOG1 S5 Follower -> Follower at term: T2->T2
+084307 T0002 LOG2 S5 Follower append logs: (0, 0]
+084312 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+084312 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+084312 T0002 DBUG S2 <- S4, Receive Log, Prev=[0]T0, Len()=0
+084312 T0002 LOG1 S2 Follower -> Follower at term: T2->T2
+084312 T0002 LOG2 S2 Follower append logs: (0, 0]
+084312 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+086023 T0014 LOG1 S0 -> S2, Lost or crashed
+086332 T0002 DBUG S0 <- S4, Receive Log, Prev=[0]T0, Len()=0
+086332 T0002 DBUG S5 <- S4, Receive Log, Prev=[0]T0, Len()=0
+086332 T0002 DBUG S3 <- S4, Receive Log, Prev=[0]T0, Len()=0
+086332 T0002 LOG1 S3 Follower -> Follower at term: T2->T2
+086332 T0002 LOG2 S3 Follower append logs: (0, 0]
+086332 T0002 LOG1 S5 Follower -> Follower at term: T2->T2
+086332 T0002 LOG2 S5 Follower append logs: (0, 0]
+086332 T0002 DBUG S1 <- S4, Receive Log, Prev=[0]T0, Len()=0
+086332 T0002 DBUG S6 <- S4, Receive Log, Prev=[0]T0, Len()=0
+086332 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+086332 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+086332 T0002 LOG2 S1 Follower append logs: (0, 0]
+086332 T0002 LOG2 S0 Follower append logs: (0, 0]
+086332 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+086332 T0002 LOG1 S6 Follower -> Follower at term: T2->T2
+086332 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+086332 T0002 LOG2 S6 Follower append logs: (0, 0]
+086332 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+086332 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+086332 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+086332 T0002 DBUG S2 <- S4, Receive Log, Prev=[0]T0, Len()=0
+086332 T0002 LOG1 S2 Follower -> Follower at term: T2->T2
+086332 T0002 LOG2 S2 Follower append logs: (0, 0]
+086332 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+086487 T0014 LOG1 S0 -> S1, Lost or crashed
+086800 T0014 LOG1 S0 -> S2, Lost or crashed
+087432 T0014 LOG1 S0 -> S1, Lost or crashed
+088363 T0014 LOG1 S2 -> S0, Lost or crashed
+088365 T0014 LOG1 S0 -> S2, Lost or crashed
+088365 T0002 DBUG S1 <- S4, Receive Log, Prev=[0]T0, Len()=0
+088365 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+088365 T0002 LOG2 S1 Follower append logs: (0, 0]
+088365 T0002 DBUG S3 <- S4, Receive Log, Prev=[0]T0, Len()=0
+088365 T0002 LOG1 S3 Follower -> Follower at term: T2->T2
+088365 T0002 LOG2 S3 Follower append logs: (0, 0]
+088365 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+088371 T0002 DBUG S0 <- S4, Receive Log, Prev=[0]T0, Len()=0
+088371 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+088371 T0002 LOG2 S0 Follower append logs: (0, 0]
+088371 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+088371 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+088371 T0002 DBUG S5 <- S4, Receive Log, Prev=[0]T0, Len()=0
+088371 T0002 LOG1 S5 Follower -> Follower at term: T2->T2
+088371 T0002 LOG2 S5 Follower append logs: (0, 0]
+088371 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+088518 T0014 LOG1 S0 -> S2, Lost or crashed
+089305 T0014 DBUG S1 Ask vote from S0, Lost or error
+089775 T0014 DBUG S2 Ask vote from S1, Lost or error
+089928 T0002 DBUG S1 Ask vote from S2, Lost or error
+090233 T0014 DBUG S2 Ask vote from S0, Lost or error
+090389 T0002 DBUG S0 <- S4, Receive Log, Prev=[0]T0, Len()=0
+090389 T0002 DBUG S5 <- S4, Receive Log, Prev=[0]T0, Len()=0
+090389 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+090389 T0002 LOG1 S5 Follower -> Follower at term: T2->T2
+090389 T0002 DBUG S3 <- S4, Receive Log, Prev=[0]T0, Len()=0
+090389 T0002 LOG2 S0 Follower append logs: (0, 0]
+090389 T0002 LOG2 S5 Follower append logs: (0, 0]
+090389 T0002 LOG1 S3 Follower -> Follower at term: T2->T2
+090389 T0002 LOG2 S3 Follower append logs: (0, 0]
+090389 T0002 DBUG S1 <- S4, Receive Log, Prev=[0]T0, Len()=0
+090389 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+090389 T0002 LOG2 S1 Follower append logs: (0, 0]
+090389 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+090389 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+090389 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+090389 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+090542 T0014 LOG1 S0 -> S1, Lost or crashed
+091792 T0014 LOG1 S0 -> S2, Lost or crashed
+092423 T0002 DBUG S0 <- S4, Receive Log, Prev=[0]T0, Len()=0
+092423 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+092423 T0002 LOG2 S0 Follower append logs: (0, 0]
+092426 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+092426 T0002 DBUG S5 <- S4, Receive Log, Prev=[0]T0, Len()=0
+092426 T0002 LOG1 S5 Follower -> Follower at term: T2->T2
+092426 T0002 LOG2 S5 Follower append logs: (0, 0]
+092426 T0002 DBUG S1 <- S4, Receive Log, Prev=[0]T0, Len()=0
+092426 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+092426 T0002 LOG2 S1 Follower append logs: (0, 0]
+092426 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+092426 T0002 DBUG S3 <- S4, Receive Log, Prev=[0]T0, Len()=0
+092426 T0002 LOG1 S3 Follower -> Follower at term: T2->T2
+092426 T0002 LOG2 S3 Follower append logs: (0, 0]
+092426 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+092426 T0002 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+093205 T0014 LOG1 S2 -> S0, Lost or crashed
+093362 T0014 LOG1 S0 -> S2, Lost or crashed
+093832 T0014 LOG1 S0 -> S1, Lost or crashed
+094291 T0014 DBUG S2 Ask vote from S1, Lost or error
+094292 T0002 VOTE S2 Follower -> Candidator at term: T3
+094292 T0002 LOG1 S0 Follower -> Follower at term: T2->T3
+094292 T0003 VOTE S0 Compare last log, Me: [0]T0, Candidate: [0]T0
+094292 T0003 VOTE S0 -> S2, Vote granted
+094292 T0002 LOG1 S5 Follower -> Follower at term: T2->T3
+094292 T0003 VOTE S5 Compare last log, Me: [0]T0, Candidate: [0]T0
+094292 T0003 VOTE S5 -> S2, Vote granted
+094292 T0002 LOG1 S6 Follower -> Follower at term: T2->T3
+094292 T0003 VOTE S6 Compare last log, Me: [0]T0, Candidate: [0]T0
+094292 T0003 VOTE S6 -> S2, Vote granted
+094292 T0003 LEAD S2 Become Leader at term: T3
+094292 T0003 DBUG S5 <- S2, Receive Log, Prev=[0]T0, Len()=0
+094292 T0003 DBUG S6 <- S2, Receive Log, Prev=[0]T0, Len()=0
+094292 T0003 LOG1 S5 Follower -> Follower at term: T3->T3
+094292 T0003 LOG1 S6 Follower -> Follower at term: T3->T3
+094292 T0003 LOG2 S5 Follower append logs: (0, 0]
+094292 T0003 LOG2 S6 Follower append logs: (0, 0]
+094292 T0003 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+094292 T0003 LOG1 S0 Follower -> Follower at term: T3->T3
+094292 T0003 LOG2 S0 Follower append logs: (0, 0]
+094292 T0003 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+094292 T0003 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+094292 T0003 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+094752 T0014 LOG1 S0 -> S2, Lost or crashed
+096312 T0003 DBUG S6 <- S2, Receive Log, Prev=[0]T0, Len()=0
+096312 T0003 LOG1 S6 Follower -> Follower at term: T3->T3
+096312 T0003 LOG2 S6 Follower append logs: (0, 0]
+096312 T0003 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+096318 T0003 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+096318 T0003 LOG1 S0 Follower -> Follower at term: T3->T3
+096318 T0003 LOG2 S0 Follower append logs: (0, 0]
+096318 T0003 DBUG S5 <- S2, Receive Log, Prev=[0]T0, Len()=0
+096318 T0003 LOG1 S5 Follower -> Follower at term: T3->T3
+096318 T0003 LOG2 S5 Follower append logs: (0, 0]
+096318 T0003 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+096318 T0003 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+096620 T0014 DBUG S1 Ask vote from S2, Lost or error
+097401 T0003 LOG1 S2 -> S4, Lost or crashed
+097562 T0002 LOG1 S4 -> S3, Lost or crashed
+098039 T0014 LOG1 S0 -> S1, Lost or crashed
+098361 T0003 DBUG S6 <- S2, Receive Log, Prev=[0]T0, Len()=0
+098361 T0003 DBUG S5 <- S2, Receive Log, Prev=[0]T0, Len()=0
+098361 T0003 LOG1 S6 Follower -> Follower at term: T3->T3
+098361 T0003 LOG1 S5 Follower -> Follower at term: T3->T3
+098361 T0003 LOG2 S5 Follower append logs: (0, 0]
+098361 T0003 LOG2 S6 Follower append logs: (0, 0]
+098361 T0003 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+098361 T0002 DBUG S3 <- S2, Receive Log, Prev=[0]T0, Len()=0
+098361 T0002 LOG1 S3 Follower -> Follower at term: T2->T3
+098361 T0002 DBUG S4 <- S2, Receive Log, Prev=[0]T0, Len()=0
+098361 T0003 LOG2 S3 Follower append logs: (0, 0]
+098361 T0002 LOG1 S4 Leader -> Follower at term: T2->T3
+098361 T0003 LOG2 S4 Follower append logs: (0, 0]
+098366 T0003 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+098367 T0003 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+098367 T0003 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+098516 T0003 LOG1 S4 Lost Leader [2] to Follower[T3]
+098672 T0003 LOG1 S2 -> S1, Lost or crashed
+098972 T0014 DBUG S1 Ask vote from S2, Lost or error
+100071 T0014 DBUG S1 Ask vote from S2, Lost or error
+100229 T0014 LOG1 S0 -> S1, Lost or crashed
+100383 T0003 DBUG S6 <- S2, Receive Log, Prev=[0]T0, Len()=0
+100383 T0003 DBUG S4 <- S2, Receive Log, Prev=[0]T0, Len()=0
+100383 T0003 LOG1 S6 Follower -> Follower at term: T3->T3
+100383 T0003 LOG1 S4 Follower -> Follower at term: T3->T3
+100383 T0003 LOG2 S6 Follower append logs: (0, 0]
+100383 T0003 LOG2 S4 Follower append logs: (0, 0]
+100383 T0003 DBUG S5 <- S2, Receive Log, Prev=[0]T0, Len()=0
+100383 T0003 DBUG S3 <- S2, Receive Log, Prev=[0]T0, Len()=0
+100383 T0003 LOG1 S3 Follower -> Follower at term: T3->T3
+100383 T0003 LOG2 S3 Follower append logs: (0, 0]
+100383 T0003 LOG1 S5 Follower -> Follower at term: T3->T3
+100383 T0003 LOG2 S5 Follower append logs: (0, 0]
+100383 T0003 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+100383 T0003 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+100383 T0003 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+100383 T0003 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+101151 T0014 LOG1 S0 -> S1, Lost or crashed
+101622 T0002 VOTE S1 Follower -> Candidator at term: T3
+102092 T0003 LOG1 S4 -> S6, Lost or crashed
+102403 T0003 DBUG S3 <- S2, Receive Log, Prev=[0]T0, Len()=0
+102403 T0003 LOG1 S3 Follower -> Follower at term: T3->T3
+102403 T0003 LOG2 S3 Follower append logs: (0, 0]
+102403 T0003 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+102403 T0003 DBUG S4 <- S2, Receive Log, Prev=[0]T0, Len()=0
+102403 T0003 LOG1 S4 Follower -> Follower at term: T3->T3
+102403 T0003 LOG2 S4 Follower append logs: (0, 0]
+102403 T0003 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+102403 T0003 DBUG S5 <- S2, Receive Log, Prev=[0]T0, Len()=0
+102403 T0003 LOG1 S5 Follower -> Follower at term: T3->T3
+102403 T0003 LOG2 S5 Follower append logs: (0, 0]
+102403 T0003 DBUG S6 <- S2, Receive Log, Prev=[0]T0, Len()=0
+102403 T0003 LOG1 S6 Follower -> Follower at term: T3->T3
+102403 T0003 LOG2 S6 Follower append logs: (0, 0]
+102403 T0003 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+102403 T0003 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+102719 T0003 DBUG S0 Ask vote from S1, Lost or error
+102719 T0003 LOG1 S2 -> S1, Lost or crashed
+103033 T0003 LOG1 S2 -> S3, Lost or crashed
+103179 T0003 VOTE S1 Candidator -> Candidator at term: T4
+103179 T0003 LOG1 S6 Follower -> Follower at term: T3->T4
+103179 T0003 LOG1 S0 Follower -> Follower at term: T3->T4
+103179 T0004 VOTE S6 Compare last log, Me: [0]T0, Candidate: [0]T0
+103179 T0004 VOTE S6 -> S1, Vote granted
+103179 T0003 LOG1 S2 Leader -> Follower at term: T3->T4
+103179 T0004 VOTE S2 Compare last log, Me: [0]T0, Candidate: [0]T0
+103179 T0004 VOTE S2 -> S1, Vote granted
+103179 T0003 LOG1 S5 Follower -> Follower at term: T3->T4
+103179 T0004 VOTE S5 Compare last log, Me: [0]T0, Candidate: [0]T0
+103179 T0004 VOTE S0 Compare last log, Me: [0]T0, Candidate: [0]T0
+103179 T0004 VOTE S0 -> S1, Vote granted
+103179 T0004 VOTE S5 -> S1, Vote granted
+103179 T0004 LEAD S1 Become Leader at term: T4
+103179 T0004 VOTE S1 Lost context, abort RequestVoteReply from S0
+103179 T0004 DBUG S0 <- S1, Receive Log, Prev=[0]T0, Len()=0
+103179 T0004 LOG1 S0 Follower -> Follower at term: T4->T4
+103179 T0004 LOG2 S0 Follower append logs: (0, 0]
+103179 T0004 DBUG S6 <- S1, Receive Log, Prev=[0]T0, Len()=0
+103179 T0004 LOG1 S6 Follower -> Follower at term: T4->T4
+103179 T0004 LOG2 S6 Follower append logs: (0, 0]
+103179 T0004 DBUG S1 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+103179 T0004 DBUG S5 <- S1, Receive Log, Prev=[0]T0, Len()=0
+103179 T0004 LOG1 S5 Follower -> Follower at term: T4->T4
+103179 T0004 LOG2 S5 Follower append logs: (0, 0]
+103179 T0004 DBUG S2 <- S1, Receive Log, Prev=[0]T0, Len()=0
+103179 T0004 LOG1 S2 Follower -> Follower at term: T4->T4
+103179 T0004 LOG2 S2 Follower append logs: (0, 0]
+103179 T0004 DBUG S1 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+103179 T0004 DBUG S1 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+103179 T0004 DBUG S1 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+103648 T0014 LOG1 S1 -> S0, Lost or crashed
+104428 T0004 LOG1 S2 Lost Leader [3] to Follower[T4]
+105042 T0014 DBUG S1 Ask vote from S2, Lost or error
+105199 T0014 LOG1 S0 -> S1, Lost or crashed
+105199 T0004 DBUG S6 <- S1, Receive Log, Prev=[0]T0, Len()=0
+105199 T0004 LOG1 S6 Follower -> Follower at term: T4->T4
+105199 T0004 LOG2 S6 Follower append logs: (0, 0]
+105199 T0004 DBUG S5 <- S1, Receive Log, Prev=[0]T0, Len()=0
+105199 T0004 LOG1 S5 Follower -> Follower at term: T4->T4
+105199 T0004 LOG2 S5 Follower append logs: (0, 0]
+105199 T0004 DBUG S1 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+105199 T0004 DBUG S0 <- S1, Receive Log, Prev=[0]T0, Len()=0
+105199 T0004 DBUG S1 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+105199 T0004 LOG1 S0 Follower -> Follower at term: T4->T4
+105199 T0004 LOG2 S0 Follower append logs: (0, 0]
+105199 T0004 DBUG S2 <- S1, Receive Log, Prev=[0]T0, Len()=0
+105199 T0004 LOG1 S2 Follower -> Follower at term: T4->T4
+105204 T0004 LOG2 S2 Follower append logs: (0, 0]
+105205 T0004 DBUG S1 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+105205 T0004 DBUG S1 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+105506 T0014 LOG1 S0 -> S2, Lost or crashed
+105821 T0004 DBUG S0 Ask vote from S5, Lost or error
+106140 T0014 DBUG S2 Ask vote from S0, Lost or error
+107081 T0014 DBUG S1 Ask vote from S0, Lost or error
+107240 T0004 DBUG S6 <- S1, Receive Log, Prev=[0]T0, Len()=0
+107240 T0004 LOG1 S6 Follower -> Follower at term: T4->T4
+107240 T0004 LOG2 S6 Follower append logs: (0, 0]
+107240 T0004 DBUG S1 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+107240 T0004 DBUG S5 <- S1, Receive Log, Prev=[0]T0, Len()=0
+107240 T0004 LOG1 S5 Follower -> Follower at term: T4->T4
+107240 T0004 LOG2 S5 Follower append logs: (0, 0]
+107240 T0004 DBUG S1 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+107240 T0004 DBUG S0 <- S1, Receive Log, Prev=[0]T0, Len()=0
+107240 T0004 LOG1 S0 Follower -> Follower at term: T4->T4
+107240 T0004 LOG2 S0 Follower append logs: (0, 0]
+107240 T0004 DBUG S2 <- S1, Receive Log, Prev=[0]T0, Len()=0
+107240 T0004 LOG1 S2 Follower -> Follower at term: T4->T4
+107240 T0004 DBUG S1 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+107240 T0004 LOG2 S2 Follower append logs: (0, 0]
+107240 T0004 DBUG S1 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+107394 T0003 LOG1 S4 -> S0, Lost or crashed
+107394 T0014 DBUG S2 Ask vote from S1, Lost or error
+107550 T0014 LOG1 S0 -> S1, Lost or crashed
+107550 T0014 LOG1 S1 -> S0, Lost or crashed
+107866 T0004 DBUG S1 Ask vote from S3, Lost or error
+108024 T0004 DBUG S1 Ask vote from S4, Lost or error
+108493 T0003 LOG1 S4 -> S6, Lost or crashed
+109278 T0003 DBUG S4 <- S1, Receive Log, Prev=[0]T0, Len()=0
+109278 T0003 DBUG S3 <- S1, Receive Log, Prev=[0]T0, Len()=0
+109278 T0003 LOG1 S3 Follower -> Follower at term: T3->T4
+109278 T0003 LOG1 S4 Follower -> Follower at term: T3->T4
+109278 T0004 LOG2 S4 Follower append logs: (0, 0]
+109278 T0004 DBUG S0 <- S1, Receive Log, Prev=[0]T0, Len()=0
+109278 T0004 LOG1 S0 Follower -> Follower at term: T4->T4
+109278 T0004 LOG2 S0 Follower append logs: (0, 0]
+109278 T0004 LOG2 S3 Follower append logs: (0, 0]
+109278 T0004 DBUG S6 <- S1, Receive Log, Prev=[0]T0, Len()=0
+109278 T0004 LOG1 S6 Follower -> Follower at term: T4->T4
+109278 T0004 LOG2 S6 Follower append logs: (0, 0]
+109278 T0004 DBUG S1 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+109278 T0004 DBUG S1 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+109278 T0004 DBUG S1 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+109278 T0004 DBUG S1 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+109741 T0004 LOG1 S4 -> S3, Lost or crashed
+109741 T0014 LOG1 S0 -> S2, Lost or crashed
+110847 T0014 LOG1 S0 -> S1, Lost or crashed
+111304 T0004 LOG1 S2 -> S1, Lost or crashed
+111304 T0004 DBUG S6 <- S1, Receive Log, Prev=[0]T0, Len()=0
+111304 T0004 DBUG S0 <- S1, Receive Log, Prev=[0]T0, Len()=0
+111304 T0004 DBUG S4 <- S1, Receive Log, Prev=[0]T0, Len()=0
+111304 T0004 LOG1 S0 Follower -> Follower at term: T4->T4
+111304 T0004 LOG1 S4 Follower -> Follower at term: T4->T4
+111304 T0004 LOG2 S0 Follower append logs: (0, 0]
+111304 T0004 LOG2 S4 Follower append logs: (0, 0]
+111304 T0004 LOG1 S6 Follower -> Follower at term: T4->T4
+111304 T0004 LOG2 S6 Follower append logs: (0, 0]
+111304 T0004 DBUG S1 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+111304 T0004 DBUG S3 <- S1, Receive Log, Prev=[0]T0, Len()=0
+111304 T0004 LOG1 S3 Follower -> Follower at term: T4->T4
+111304 T0004 DBUG S1 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+111304 T0004 LOG2 S3 Follower append logs: (0, 0]
+111304 T0004 DBUG S1 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+111304 T0004 DBUG S1 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+111619 T0014 DBUG S1 Ask vote from S0, Lost or error
+111619 T0004 LOG1 S4 -> S5, Lost or crashed
+111774 T0004 DBUG S0 Ask vote from S2, Lost or error
+111930 T0014 DBUG S2 Ask vote from S1, Lost or error
+112558 T0014 LOG1 S2 -> S0, Lost or crashed
+113178 T0014 DBUG S2 Ask vote from S1, Lost or error
+113335 T0014 DBUG S2 Ask vote from S0, Lost or error
+114588 T0004 LOG1 S1 -> S0, Lost or crashed
+114744 T0014 LOG1 S0 -> S1, Lost or crashed
+114744 T0004 LOG1 S1 -> S3, Lost or crashed
+115044 T0014 DBUG S1 Ask vote from S2, Lost or error
+115656 T0014 LOG1 S0 -> S2, Lost or crashed
+115656 T0014 DBUG S1 Ask vote from S0, Lost or error
+115967 T0004 VOTE S2 Follower -> Candidator at term: T5
+115967 T0004 LOG1 S6 Follower -> Follower at term: T4->T5
+115967 T0004 LOG1 S4 Follower -> Follower at term: T4->T5
+115967 T0005 VOTE S6 Compare last log, Me: [0]T0, Candidate: [0]T0
+115967 T0005 VOTE S4 Compare last log, Me: [0]T0, Candidate: [0]T0
+115967 T0005 VOTE S4 -> S2, Vote granted
+115967 T0005 VOTE S6 -> S2, Vote granted
+115967 T0004 LOG1 S5 Follower -> Follower at term: T4->T5
+115967 T0005 VOTE S5 Compare last log, Me: [0]T0, Candidate: [0]T0
+115967 T0005 VOTE S5 -> S2, Vote granted
+115967 T0005 LEAD S2 Become Leader at term: T5
+115967 T0005 DBUG S4 <- S2, Receive Log, Prev=[0]T0, Len()=0
+115967 T0005 DBUG S5 <- S2, Receive Log, Prev=[0]T0, Len()=0
+115967 T0005 LOG1 S5 Follower -> Follower at term: T5->T5
+115967 T0005 LOG2 S5 Follower append logs: (0, 0]
+115967 T0005 LOG1 S4 Follower -> Follower at term: T5->T5
+115967 T0005 DBUG S6 <- S2, Receive Log, Prev=[0]T0, Len()=0
+115967 T0005 LOG2 S4 Follower append logs: (0, 0]
+115967 T0005 LOG1 S6 Follower -> Follower at term: T5->T5
+115967 T0005 LOG2 S6 Follower append logs: (0, 0]
+115967 T0005 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+115967 T0005 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+115967 T0005 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+116595 T0014 DBUG S2 Ask vote from S0, Lost or error
+116911 T0004 VOTE S0 Follower -> Candidator at term: T5
+117692 T0004 DBUG S1 Ask vote from S5, Lost or error
+117850 T0014 DBUG S2 Ask vote from S0, Lost or error
+118314 T0014 LOG1 S0 -> S2, Lost or crashed
+118468 T0005 LOG1 S4 -> S2, Lost or crashed
+118629 T0014 LOG1 S0 -> S1, Lost or crashed
+118785 T0005 VOTE S0 Candidator -> Candidator at term: T6
+118785 T0005 LOG1 S6 Follower -> Follower at term: T5->T6
+118785 T0006 VOTE S6 Compare last log, Me: [0]T0, Candidate: [0]T0
+118785 T0004 LOG1 S1 Leader -> Follower at term: T4->T6
+118785 T0005 LOG1 S5 Follower -> Follower at term: T5->T6
+118785 T0006 VOTE S5 Compare last log, Me: [0]T0, Candidate: [0]T0
+118785 T0006 VOTE S5 -> S0, Vote granted
+118785 T0006 VOTE S6 -> S0, Vote granted
+118785 T0004 LOG1 S3 Follower -> Follower at term: T4->T6
+118785 T0006 VOTE S3 Compare last log, Me: [0]T0, Candidate: [0]T0
+118785 T0006 VOTE S3 -> S0, Vote granted
+118785 T0006 VOTE S1 Compare last log, Me: [0]T0, Candidate: [0]T0
+118785 T0006 VOTE S1 -> S0, Vote granted
+118785 T0006 LEAD S0 Become Leader at term: T6
+118785 T0006 VOTE S0 Lost context, abort RequestVoteReply from S1
+118785 T0006 DBUG S6 <- S0, Receive Log, Prev=[0]T0, Len()=0
+118785 T0006 LOG1 S6 Follower -> Follower at term: T6->T6
+118785 T0006 LOG2 S6 Follower append logs: (0, 0]
+118785 T0006 DBUG S3 <- S0, Receive Log, Prev=[0]T0, Len()=0
+118785 T0006 LOG1 S3 Follower -> Follower at term: T6->T6
+118785 T0006 LOG2 S3 Follower append logs: (0, 0]
+118785 T0006 DBUG S0 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+118785 T0006 DBUG S1 <- S0, Receive Log, Prev=[0]T0, Len()=0
+118785 T0006 LOG1 S1 Follower -> Follower at term: T6->T6
+118785 T0006 LOG2 S1 Follower append logs: (0, 0]
+118785 T0006 DBUG S0 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+118785 T0006 DBUG S0 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+118785 T0006 DBUG S5 <- S0, Receive Log, Prev=[0]T0, Len()=0
+118785 T0006 LOG1 S5 Follower -> Follower at term: T6->T6
+118785 T0006 LOG2 S5 Follower append logs: (0, 0]
+118795 T0006 DBUG S0 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+119417 T0006 LOG1 S1 Lost Leader [4] to Follower[T6]
+120501 T0006 DBUG S0 Ask vote from S2, Lost or error
+120812 T0006 DBUG S1 <- S0, Receive Log, Prev=[0]T0, Len()=0
+120812 T0006 LOG1 S1 Follower -> Follower at term: T6->T6
+120812 T0006 LOG2 S1 Follower append logs: (0, 0]
+120812 T0006 DBUG S6 <- S0, Receive Log, Prev=[0]T0, Len()=0
+120812 T0006 LOG1 S6 Follower -> Follower at term: T6->T6
+120812 T0006 LOG2 S6 Follower append logs: (0, 0]
+120812 T0006 DBUG S3 <- S0, Receive Log, Prev=[0]T0, Len()=0
+120812 T0006 DBUG S0 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+120812 T0006 LOG1 S3 Follower -> Follower at term: T6->T6
+120812 T0006 LOG2 S3 Follower append logs: (0, 0]
+120812 T0006 DBUG S5 <- S0, Receive Log, Prev=[0]T0, Len()=0
+120812 T0006 LOG1 S5 Follower -> Follower at term: T6->T6
+120812 T0006 LOG2 S5 Follower append logs: (0, 0]
+120812 T0006 DBUG S0 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+120812 T0006 DBUG S0 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+120812 T0006 DBUG S0 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+120969 T0014 DBUG S2 Ask vote from S1, Lost or error
+120969 T0014 LOG1 S0 -> S1, Lost or crashed
+121125 T0005 LOG1 S4 -> S2, Lost or crashed
+121281 T0005 LOG1 S2 -> S3, Lost or crashed
+121438 T0005 LOG1 S4 -> S0, Lost or crashed
+121754 T0014 DBUG S1 Ask vote from S2, Lost or error
+121902 T0014 DBUG S1 Ask vote from S0, Lost or error
+122831 T0006 DBUG S6 <- S0, Receive Log, Prev=[0]T0, Len()=0
+122831 T0006 LOG1 S6 Follower -> Follower at term: T6->T6
+122831 T0006 LOG2 S6 Follower append logs: (0, 0]
+122831 T0005 LOG1 S4 -> S5, Lost or crashed
+122831 T0006 DBUG S0 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+122983 T0006 LOG1 S1 -> S2, Lost or crashed
+123143 T0005 LOG1 S4 -> S6, Lost or crashed
+123143 T0005 LOG1 S2 -> S0, Lost or crashed
+123923 T0006 LOG1 S1 -> S5, Lost or crashed
+123923 T0005 LOG1 S4 -> S6, Lost or crashed
+123923 T0006 LOG1 S0 -> S1, Lost or crashed
+123923 T0006 DBUG S0 Ask vote from S4, Lost or error
+124083 T0006 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+124083 T0006 LOG2 S1 <- S2, Reject, Higher term, T5 <- T6
+124083 T0005 LOG1 S2 Leader -> Follower at term: T5->T6
+124083 T0006 DBUG S3 <- S2, Receive Log, Prev=[0]T0, Len()=0
+124083 T0006 LOG2 S3 <- S2, Reject, Higher term, T5 <- T6
+124083 T0006 DBUG S5 <- S2, Receive Log, Prev=[0]T0, Len()=0
+124083 T0006 LOG2 S5 <- S2, Reject, Higher term, T5 <- T6
+124083 T0006 LOG1 S2 Context Lost, T5:Leader->T6:Follower
+124083 T0006 LOG1 S2 Context Lost, T5:Leader->T6:Follower
+125485 T0006 DBUG S0 Ask vote from S3, Lost or error
+125952 T0014 DBUG S2 Ask vote from S0, Lost or error
+125952 T0006 DBUG S2 Ask vote from S0, Lost or error
+126101 T0006 LOG1 S2 Lost Leader [5] to Follower[T6]
+126725 T0006 VOTE S2 Follower -> Candidator at term: T7
+126728 T0006 LOG1 S3 Follower -> Follower at term: T6->T7
+126728 T0007 VOTE S3 Compare last log, Me: [0]T0, Candidate: [0]T0
+126728 T0007 VOTE S3 -> S2, Vote granted
+126728 T0006 LOG1 S1 Follower -> Follower at term: T6->T7
+126728 T0007 VOTE S1 Compare last log, Me: [0]T0, Candidate: [0]T0
+126728 T0007 VOTE S1 -> S2, Vote granted
+126728 T0006 LOG1 S5 Follower -> Follower at term: T6->T7
+126728 T0007 VOTE S5 Compare last log, Me: [0]T0, Candidate: [0]T0
+126728 T0007 VOTE S5 -> S2, Vote granted
+126728 T0007 LEAD S2 Become Leader at term: T7
+126728 T0007 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+126728 T0007 LOG1 S1 Follower -> Follower at term: T7->T7
+126728 T0007 LOG2 S1 Follower append logs: (0, 0]
+126728 T0007 DBUG S5 <- S2, Receive Log, Prev=[0]T0, Len()=0
+126728 T0007 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+126728 T0007 LOG1 S5 Follower -> Follower at term: T7->T7
+126728 T0007 DBUG S3 <- S2, Receive Log, Prev=[0]T0, Len()=0
+126728 T0007 LOG2 S5 Follower append logs: (0, 0]
+126728 T0007 LOG1 S3 Follower -> Follower at term: T7->T7
+126728 T0007 LOG2 S3 Follower append logs: (0, 0]
+126728 T0007 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+126728 T0007 DBUG S2 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+126883 T0014 DBUG S2 Ask vote from S0, Lost or error
+126883 T0005 LOG1 S4 -> S2, Lost or crashed
+127030 T0007 LOG1 S2 -> S6, Lost or crashed
+127339 T0007 LOG1 S2 -> S4, Lost or crashed
+127652 T0005 VOTE S4 Follower -> Candidator at term: T6
+127652 T0014 LOG1 S0 -> S2, Lost or crashed
+128120 T0007 LOG1 S2 -> S3, Lost or crashed
+128433 T0007 LOG1 S1 -> S2, Lost or crashed
+128433 T0007 DBUG S2 Ask vote from S3, Lost or error
+128588 T0006 VOTE S4 Candidator -> Candidator at term: T7
+129057 T0007 DBUG S2 Ask vote from S0, Lost or error
+129370 T0007 DBUG S2 Ask vote from S6, Lost or error
+129674 T0007 VOTE S4 Candidator -> Candidator at term: T8
+129834 T0007 LOG1 S1 -> S4, Lost or crashed
+129834 T0007 LOG1 S1 -> S3, Lost or crashed
+129991 T0006 LOG1 S0 -> S2, Lost or crashed
+130936 T0006 LOG1 S0 -> S3, Lost or crashed
+131092 T0008 VOTE S4 Candidator -> Candidator at term: T9
+131409 T0007 LOG1 S2 -> S0, Lost or crashed
+131565 T0007 LOG1 S2 -> S5, Lost or crashed
+131730 T0009 VOTE S4 Candidator -> Candidator at term: T10
+132814 T0007 LOG1 S1 -> S4, Lost or crashed
+133598 T0010 VOTE S4 Candidator -> Candidator at term: T11
+133598 T0007 LOG1 S2 -> S6, Lost or crashed
+133908 T0007 DBUG S1 Ask vote from S6, Lost or error
+134225 T0007 LOG1 S2 -> S3, Lost or crashed
+134380 T0011 DBUG S4 Ask vote from S5, Lost or error
+134535 T0007 DBUG S2 Ask vote from S4, Lost or error
+134535 T0006 DBUG S0 Ask vote from S6, Lost or error
+134695 T0011 DBUG S4 Ask vote from S2, Lost or error
+135168 T0006 VOTE S6 Follower -> Candidator at term: T7
+135168 T0007 VOTE S1 -> S6, Reject voted, Already voted to S2
+135168 T0007 VOTE S5 -> S6, Reject voted, Already voted to S2
+135168 T0007 VOTE S3 -> S6, Reject voted, Already voted to S2
+135796 T0011 DBUG S4 Ask vote from S6, Lost or error
+135796 T0007 LOG1 S2 -> S6, Lost or crashed
+135956 T0007 VOTE S5 Follower -> Candidator at term: T8
+135956 T0007 LOG1 S1 Follower -> Follower at term: T7->T8
+135956 T0008 VOTE S1 Compare last log, Me: [0]T0, Candidate: [0]T0
+135956 T0008 VOTE S1 -> S5, Vote granted
+135956 T0007 LOG1 S3 Follower -> Follower at term: T7->T8
+135956 T0008 VOTE S3 Compare last log, Me: [0]T0, Candidate: [0]T0
+135956 T0008 VOTE S3 -> S5, Vote granted
+135961 T0007 LOG1 S6 Candidator -> Follower at term: T7->T8
+135961 T0008 VOTE S6 Compare last log, Me: [0]T0, Candidate: [0]T0
+135961 T0008 VOTE S6 -> S5, Vote granted
+135961 T0008 LEAD S5 Become Leader at term: T8
+135961 T0008 DBUG S6 <- S5, Receive Log, Prev=[0]T0, Len()=0
+135961 T0008 LOG1 S6 Follower -> Follower at term: T8->T8
+135961 T0008 LOG2 S6 Follower append logs: (0, 0]
+135966 T0008 DBUG S5 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+135966 T0008 DBUG S3 <- S5, Receive Log, Prev=[0]T0, Len()=0
+135966 T0008 LOG1 S3 Follower -> Follower at term: T8->T8
+135966 T0008 LOG2 S3 Follower append logs: (0, 0]
+135968 T0008 DBUG S5 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+135968 T0008 DBUG S1 <- S5, Receive Log, Prev=[0]T0, Len()=0
+135968 T0008 LOG1 S1 Follower -> Follower at term: T8->T8
+135968 T0008 LOG2 S1 Follower append logs: (0, 0]
+135968 T0008 DBUG S5 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+136889 T0011 VOTE S4 Candidator -> Candidator at term: T12
+137516 T0007 LOG1 S2 -> S4, Lost or crashed
+137674 T0006 LOG1 S0 -> S5, Lost or crashed
+137988 T0008 DBUG S3 <- S5, Receive Log, Prev=[0]T0, Len()=0
+137988 T0008 LOG1 S3 Follower -> Follower at term: T8->T8
+137988 T0008 LOG2 S3 Follower append logs: (0, 0]
+137988 T0008 DBUG S5 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+137988 T0008 DBUG S6 <- S5, Receive Log, Prev=[0]T0, Len()=0
+137988 T0008 LOG1 S6 Follower -> Follower at term: T8->T8
+137988 T0008 LOG2 S6 Follower append logs: (0, 0]
+137988 T0008 DBUG S1 <- S5, Receive Log, Prev=[0]T0, Len()=0
+137988 T0008 LOG1 S1 Follower -> Follower at term: T8->T8
+137988 T0008 DBUG S5 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+137988 T0008 LOG2 S1 Follower append logs: (0, 0]
+137993 T0008 DBUG S5 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+138147 T0008 DBUG S1 Ask vote from S6, Lost or error
+138147 T0012 LOG1 S4 -> S2, Lost or crashed
+138461 T0014 DBUG S1 Ask vote from S0, Lost or error
+138617 T0006 DBUG S0 Ask vote from S1, Lost or error
+138933 T0006 LOG1 S0 -> S4, Lost or crashed
+138933 T0008 DBUG S6 <- S2, Receive Log, Prev=[0]T0, Len()=0
+138933 T0008 LOG2 S6 <- S2, Reject, Higher term, T7 <- T8
+138933 T0008 DBUG S5 <- S2, Receive Log, Prev=[0]T0, Len()=0
+138933 T0008 LOG2 S5 <- S2, Reject, Higher term, T7 <- T8
+138933 T0007 LOG1 S2 Leader -> Follower at term: T7->T8
+138933 T0008 LOG1 S2 Context Lost, T7:Leader->T8:Follower
+138933 T0008 DBUG S3 <- S2, Receive Log, Prev=[0]T0, Len()=0
+138933 T0012 DBUG S4 <- S2, Receive Log, Prev=[0]T0, Len()=0
+138933 T0012 LOG2 S4 <- S2, Reject, Higher term, T7 <- T12
+138933 T0006 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+138933 T0008 LOG2 S3 <- S2, Reject, Higher term, T7 <- T8
+138933 T0006 LOG1 S0 Leader -> Follower at term: T6->T7
+138933 T0007 LOG2 S0 Follower append logs: (0, 0]
+138933 T0008 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+138933 T0008 LOG2 S1 <- S2, Reject, Higher term, T7 <- T8
+138933 T0008 LOG1 S2 Context Lost, T7:Leader->T8:Follower
+138938 T0008 LOG1 S2 Follower -> Follower at term: T8->T12
+138938 T0012 LOG1 S2 Context Lost, T7:Leader->T12:Follower
+138938 T0012 LOG1 S2 Context Lost, T7:Leader->T12:Follower
+139093 T0007 LOG1 S0 Lost Leader [6] to Follower[T7]
+139093 T0008 DBUG S1 Ask vote from S4, Lost or error
+139408 T0007 LOG1 S0 -> S2, Lost or crashed
+139864 T0007 DBUG S0 Ask vote from S4, Lost or error
+139864 T0012 DBUG S4 Ask vote from S3, Lost or error
+140020 T0012 DBUG S4 Ask vote from S1, Lost or error
+140020 T0012 VOTE S4 Candidator -> Candidator at term: T13
+140020 T0008 DBUG S6 <- S5, Receive Log, Prev=[0]T0, Len()=0
+140020 T0008 LOG1 S6 Follower -> Follower at term: T8->T8
+140020 T0008 LOG2 S6 Follower append logs: (0, 0]
+140020 T0008 LOG1 S6 Follower -> Follower at term: T8->T13
+140020 T0013 VOTE S6 Compare last log, Me: [0]T0, Candidate: [0]T0
+140020 T0013 VOTE S6 -> S4, Vote granted
+140020 T0008 DBUG S5 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+140020 T0007 DBUG S0 <- S5, Receive Log, Prev=[0]T0, Len()=0
+140020 T0007 LOG1 S0 Follower -> Follower at term: T7->T8
+140020 T0008 LOG2 S0 Follower append logs: (0, 0]
+140020 T0008 DBUG S5 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+140025 T0008 LOG1 S0 Follower -> Follower at term: T8->T13
+140025 T0013 VOTE S0 Compare last log, Me: [0]T0, Candidate: [0]T0
+140025 T0013 VOTE S0 -> S4, Vote granted
+140025 T0008 DBUG S3 <- S5, Receive Log, Prev=[0]T0, Len()=0
+140025 T0008 LOG1 S3 Follower -> Follower at term: T8->T8
+140025 T0008 LOG2 S3 Follower append logs: (0, 0]
+140025 T0008 DBUG S5 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+140020 T0012 DBUG S2 <- S5, Receive Log, Prev=[0]T0, Len()=0
+140025 T0012 LOG2 S2 <- S5, Reject, Higher term, T8 <- T12
+140025 T0013 DBUG S4 <- S5, Receive Log, Prev=[0]T0, Len()=0
+140025 T0013 LOG2 S4 <- S5, Reject, Higher term, T8 <- T13
+140025 T0008 LOG1 S5 Leader -> Follower at term: T8->T12
+140025 T0012 VOTE S2 Follower -> Candidator at term: T13
+140025 T0013 VOTE S2 -> S4, Reject voted, Already voted to S2
+140025 T0012 LOG1 S5 Follower -> Follower at term: T12->T13
+140025 T0008 LOG1 S3 Follower -> Follower at term: T8->T13
+140025 T0013 VOTE S3 Compare last log, Me: [0]T0, Candidate: [0]T0
+140025 T0013 VOTE S3 -> S4, Vote granted
+140020 T0008 LOG1 S1 Follower -> Follower at term: T8->T13
+140025 T0013 VOTE S1 Compare last log, Me: [0]T0, Candidate: [0]T0
+140025 T0013 VOTE S5 Compare last log, Me: [0]T0, Candidate: [0]T0
+140025 T0013 VOTE S1 -> S4, Vote granted
+140025 T0013 VOTE S5 -> S4, Vote granted
+140025 T0013 LEAD S4 Become Leader at term: T13
+140025 T0013 VOTE S6 -> S2, Reject voted, Already voted to S4
+140025 T0013 VOTE S4 Lost context, abort RequestVoteReply from S5
+140025 T0013 DBUG S1 <- S5, Receive Log, Prev=[0]T0, Len()=0
+140025 T0013 VOTE S4 Lost context, abort RequestVoteReply from S1
+140025 T0013 LOG2 S1 <- S5, Reject, Higher term, T8 <- T13
+140025 T0013 LOG1 S5 Context Lost, T8:Leader->T13:Follower
+140025 T0013 DBUG S6 <- S4, Receive Log, Prev=[0]T0, Len()=0
+140025 T0013 LOG1 S6 Follower -> Follower at term: T13->T13
+140025 T0013 LOG2 S6 Follower append logs: (0, 0]
+140025 T0013 DBUG S2 <- S4, Receive Log, Prev=[0]T0, Len()=0
+140025 T0013 LOG1 S2 Candidator -> Follower at term: T13->T13
+140025 T0013 LOG2 S2 Follower append logs: (0, 0]
+140025 T0013 VOTE S3 -> S2, Reject voted, Already voted to S4
+140025 T0013 VOTE S2 Lost context, abort RequestVoteReply from S3
+140025 T0013 DBUG S3 <- S4, Receive Log, Prev=[0]T0, Len()=0
+140025 T0013 LOG1 S3 Follower -> Follower at term: T13->T13
+140025 T0013 LOG2 S3 Follower append logs: (0, 0]
+140025 T0013 DBUG S5 <- S4, Receive Log, Prev=[0]T0, Len()=0
+140025 T0013 LOG1 S5 Follower -> Follower at term: T13->T13
+140025 T0013 LOG2 S5 Follower append logs: (0, 0]
+140025 T0013 VOTE S5 -> S2, Reject voted, Already voted to S4
+140025 T0013 VOTE S0 -> S2, Reject voted, Already voted to S4
+140031 T0013 VOTE S2 Lost context, abort RequestVoteReply from S5
+140031 T0013 DBUG S0 <- S4, Receive Log, Prev=[0]T0, Len()=0
+140031 T0013 VOTE S2 Lost context, abort RequestVoteReply from S0
+140031 T0013 LOG1 S0 Follower -> Follower at term: T13->T13
+140031 T0013 LOG2 S0 Follower append logs: (0, 0]
+140025 T0013 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+140031 T0013 VOTE S4 -> S2, Reject voted, Already voted to S4
+140031 T0013 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+140025 T0013 VOTE S1 -> S2, Reject voted, Already voted to S4
+140031 T0013 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+140031 T0013 DBUG S1 <- S4, Receive Log, Prev=[0]T0, Len()=0
+140031 T0013 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+140031 T0013 LOG1 S1 Follower -> Follower at term: T13->T13
+140031 T0013 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+140031 T0013 VOTE S2 Lost context, abort RequestVoteReply from S4
+140031 T0013 LOG2 S1 Follower append logs: (0, 0]
+140031 T0013 VOTE S2 Lost context, abort RequestVoteReply from S1
+140031 T0013 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+140178 T0013 DBUG S4 Ask vote from S3, Lost or error
+140178 T0013 LOG1 S2 -> S0, Lost or crashed
+140178 T0013 LOG1 S2 -> S0, Lost or crashed
+140498 T0013 DBUG S1 Ask vote from S0, Lost or error
+140498 T0013 DBUG S4 Ask vote from S0, Lost or error
+140651 T0013 LOG1 S2 -> S5, Lost or crashed
+140967 T0013 LOG1 S2 Lost Leader [7] to Follower[T13]
+140967 T0013 LOG1 S0 -> S5, Lost or crashed
+141278 T0013 LOG1 S0 -> S5, Lost or crashed
+142065 T0013 LOG1 S5 Lost Leader [8] to Follower[T13]
+142065 T0013 LOG1 S0 -> S4, Lost or crashed
+142065 T0013 DBUG S2 <- S4, Receive Log, Prev=[0]T0, Len()=0
+142065 T0013 LOG1 S2 Follower -> Follower at term: T13->T13
+142065 T0013 LOG2 S2 Follower append logs: (0, 0]
+142065 T0013 DBUG S6 <- S4, Receive Log, Prev=[0]T0, Len()=0
+142065 T0013 LOG1 S6 Follower -> Follower at term: T13->T13
+142065 T0013 LOG2 S6 Follower append logs: (0, 0]
+142065 T0013 DBUG S3 <- S4, Receive Log, Prev=[0]T0, Len()=0
+142065 T0013 LOG1 S3 Follower -> Follower at term: T13->T13
+142065 T0013 LOG2 S3 Follower append logs: (0, 0]
+142065 T0013 DBUG S5 <- S4, Receive Log, Prev=[0]T0, Len()=0
+142065 T0013 DBUG S0 <- S4, Receive Log, Prev=[0]T0, Len()=0
+142065 T0013 LOG1 S0 Follower -> Follower at term: T13->T13
+142065 T0013 LOG2 S0 Follower append logs: (0, 0]
+142065 T0013 LOG1 S5 Follower -> Follower at term: T13->T13
+142065 T0013 LOG2 S5 Follower append logs: (0, 0]
+142065 T0013 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+142070 T0013 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+142070 T0013 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+142070 T0013 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+142076 T0013 DBUG S1 <- S4, Receive Log, Prev=[0]T0, Len()=0
+142076 T0013 LOG1 S1 Follower -> Follower at term: T13->T13
+142076 T0013 LOG2 S1 Follower append logs: (0, 0]
+142070 T0013 DBUG S4 Ask vote from S2, Lost or error
+142076 T0013 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+142076 T0013 DBUG S4 Match index after sort: [0 0 0 0 0 0 0], majority[3]=0
+142538 T0013 DBUG S4 Ask vote from S6, Lost or error
+142852 T0013 LOG1 S0 -> S4, Lost or crashed
+143007 T0013 LOG1 S2 -> S4, Lost or crashed
+  ... Passed --   6.0  7  424   85820    0
+143168 T0013 LOG1 S1 -> S4, Lost or crashed
+Test (PartB): basic agreement ...
+143168 T0000 VOTE S1 Follower -> Candidator at term: T1
+143168 T0000 VOTE S2 Follower -> Candidator at term: T1
+143168 T0000 VOTE S0 Follower -> Candidator at term: T1
+143168 T0001 VOTE S0 -> S2, Reject voted, Already voted to S0
+143168 T0001 VOTE S2 -> S0, Reject voted, Already voted to S2
+143168 T0001 VOTE S1 -> S0, Reject voted, Already voted to S1
+143168 T0001 VOTE S1 -> S2, Reject voted, Already voted to S1
+143168 T0001 VOTE S2 -> S1, Reject voted, Already voted to S2
+143168 T0001 VOTE S0 -> S1, Reject voted, Already voted to S0
+143326 T0013 LOG1 S0 -> S1, Lost or crashed
+143326 T0013 LOG1 S2 -> S5, Lost or crashed
+143939 T0013 LOG1 S2 -> S6, Lost or crashed
+144092 T0013 LOG1 S2 -> S0, Lost or crashed
+144244 T0013 DBUG S2 Ask vote from S3, Lost or error
+144244 T0013 LOG1 S2 -> S6, Lost or crashed
+144876 T0001 VOTE S0 Candidator -> Candidator at term: T2
+144878 T0001 LOG1 S1 Candidator -> Follower at term: T1->T2
+144878 T0002 VOTE S1 Compare last log, Me: [0]T0, Candidate: [0]T0
+144878 T0002 VOTE S1 -> S0, Vote granted
+144878 T0001 LOG1 S2 Candidator -> Follower at term: T1->T2
+144878 T0002 VOTE S2 Compare last log, Me: [0]T0, Candidate: [0]T0
+144878 T0002 VOTE S2 -> S0, Vote granted
+144878 T0002 LEAD S0 Become Leader at term: T2
+144878 T0002 VOTE S0 Lost context, abort RequestVoteReply from S2
+144878 T0002 DBUG S2 <- S0, Receive Log, Prev=[0]T0, Len()=0
+144878 T0002 LOG1 S2 Follower -> Follower at term: T2->T2
+144878 T0002 LOG2 S2 Follower append logs: (0, 0]
+144878 T0002 DBUG S0 Match index after sort: [0 0 0], majority[1]=0
+144878 T0002 DBUG S1 <- S0, Receive Log, Prev=[0]T0, Len()=0
+144878 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+144878 T0002 LOG2 S1 Follower append logs: (0, 0]
+144878 T0002 DBUG S0 Match index after sort: [0 0 0], majority[1]=0
+145038 T0002 LEAD S0 Leader Accept log [1]T2
+145350 T0013 LOG1 S0 -> S4, Lost or crashed
+145505 T0013 LOG1 S1 -> S2, Lost or crashed
+145819 T0013 DBUG S1 Ask vote from S3, Lost or error
+145822 T0013 LOG1 S2 -> S0, Lost or crashed
+146288 T0013 LOG1 S2 -> S4, Lost or crashed
+146444 T0013 DBUG S4 Ask vote from S6, Lost or error
+146444 T0013 LOG1 S2 -> S5, Lost or crashed
+146923 T0002 DBUG S2 <- S0, Receive Log, Prev=[0]T0, Len()=1
+146923 T0002 LOG1 S2 Follower -> Follower at term: T2->T2
+146923 T0002 LOG2 S2 Follower append logs: (0, 1]
+146923 T0002 DBUG S1 <- S0, Receive Log, Prev=[0]T0, Len()=1
+146923 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+146923 T0002 LOG2 S1 Follower append logs: (0, 1]
+146923 T0002 DBUG S0 Match index after sort: [0 1 1], majority[1]=1
+146923 T0002 APLY S0 Leader update the commit index 0->0
+146923 T0002 APLY S0 Apply log for [1, 1]
+148014 T0013 DBUG S4 Ask vote from S2, Lost or error
+148015 T0013 LOG1 S4 -> S2, Lost or crashed
+148474 T0013 LOG1 S0 -> S4, Lost or crashed
+148780 T0013 LOG1 S0 -> S3, Lost or crashed
+148939 T0013 LOG1 S2 -> S4, Lost or crashed
+148939 T0013 LOG1 S1 -> S3, Lost or crashed
+149258 T0013 LOG1 S5 -> S2, Lost or crashed
+149414 T0013 LOG1 S0 -> S6, Lost or crashed
+149574 T0013 LOG1 S0 -> S2, Lost or crashed
+149888 T0013 DBUG S2 Ask vote from S1, Lost or error
+150041 T0013 LOG1 S1 -> S6, Lost or crashed
+150354 T0013 LOG1 S0 -> S1, Lost or crashed
+150507 T0013 LOG1 S1 -> S6, Lost or crashed
+150507 T0013 LOG1 S0 -> S3, Lost or crashed
+150663 T0013 LOG1 S0 -> S2, Lost or crashed
+150815 T0013 LOG1 S2 -> S5, Lost or crashed
+150815 T0013 LOG1 S2 -> S6, Lost or crashed
+150974 T0013 DBUG S4 Ask vote from S3, Lost or error
+151129 T0013 DBUG S6 Ask vote from S0, Lost or error
+151129 T0013 LOG1 S2 -> S5, Lost or crashed
+151284 T0013 DBUG S4 Ask vote from S1, Lost or error
+152207 T0013 LOG1 S0 -> S4, Lost or crashed
+152369 T0013 LOG1 S0 -> S3, Lost or crashed
+152369 T0013 LOG1 S4 -> S1, Lost or crashed
+152369 T0013 LOG1 S4 -> S6, Lost or crashed
+152833 T0013 DBUG S4 Ask vote from S0, Lost or error
+152991 T0002 VOTE S1 Follower -> Candidator at term: T3
+152995 T0002 LOG1 S2 Follower -> Follower at term: T2->T3
+152995 T0003 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+152995 T0003 VOTE S2 -> S1, Reject voted, Candidate's log is less up to date
+153299 T0013 LOG1 S0 -> S1, Lost or crashed
+153456 T0013 LOG1 S2 -> S3, Lost or crashed
+154085 T0003 VOTE S1 Candidator -> Candidator at term: T4
+154085 T0003 LOG1 S2 Follower -> Follower at term: T3->T4
+154085 T0004 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+154085 T0004 VOTE S2 -> S1, Reject voted, Candidate's log is less up to date
+154238 T0013 DBUG S6 Ask vote from S2, Lost or error
+154397 T0013 DBUG S4 Ask vote from S2, Lost or error
+154715 T0013 LOG1 S2 -> S0, Lost or crashed
+154873 T0013 LOG1 S1 -> S5, Lost or crashed
+155030 T0013 LOG1 S0 -> S5, Lost or crashed
+155484 T0013 DBUG S0 Ask vote from S4, Lost or error
+155799 T0013 LOG1 S2 -> S4, Lost or crashed
+155955 T0013 LOG1 S2 -> S6, Lost or crashed
+155955 T0013 DBUG S4 Ask vote from S5, Lost or error
+156113 T0013 LOG1 S2 -> S4, Lost or crashed
+156113 T0013 LOG1 S1 -> S0, Lost or crashed
+156592 T0013 DBUG S1 Ask vote from S2, Lost or error
+157049 T0004 VOTE S1 Candidator -> Candidator at term: T5
+157049 T0004 LOG1 S2 Follower -> Follower at term: T4->T5
+157049 T0005 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+157049 T0005 VOTE S2 -> S1, Reject voted, Candidate's log is less up to date
+157207 T0013 DBUG S4 Ask vote from S2, Lost or error
+157207 T0013 LOG1 S0 -> S6, Lost or crashed
+157658 T0013 LOG1 S0 -> S6, Lost or crashed
+157658 T0013 LOG1 S5 -> S0, Lost or crashed
+157812 T0013 LOG1 S1 -> S3, Lost or crashed
+157966 T0013 LOG1 S2 -> S1, Lost or crashed
+158118 T0005 VOTE S2 Follower -> Candidator at term: T6
+158118 T0005 LOG1 S1 Candidator -> Follower at term: T5->T6
+158118 T0006 VOTE S1 Compare last log, Me: [1]T2, Candidate: [1]T1
+158118 T0006 VOTE S1 -> S2, Reject voted, Candidate's log is less up to date
+158592 T0013 LOG1 S0 -> S2, Lost or crashed
+158749 T0013 DBUG S4 Ask vote from S1, Lost or error
+159217 T0013 LOG1 S2 -> S1, Lost or crashed
+159217 T0013 LOG1 S2 -> S0, Lost or crashed
+159217 T0013 LOG1 S1 -> S2, Lost or crashed
+159684 T0006 VOTE S1 Follower -> Candidator at term: T7
+159684 T0013 DBUG S4 Ask vote from S0, Lost or error
+159684 T0006 LOG1 S2 Candidator -> Follower at term: T6->T7
+159684 T0007 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+159684 T0007 VOTE S2 -> S1, Reject voted, Candidate's log is less up to date
+160160 T0013 LOG1 S2 -> S0, Lost or crashed
+160321 T0007 VOTE S2 Follower -> Candidator at term: T8
+160324 T0007 LOG1 S1 Candidator -> Follower at term: T7->T8
+160324 T0008 VOTE S1 Compare last log, Me: [1]T2, Candidate: [1]T1
+160324 T0008 VOTE S1 -> S2, Reject voted, Candidate's log is less up to date
+160632 T0013 DBUG S0 Ask vote from S2, Lost or error
+161101 T0013 LOG1 S2 -> S4, Lost or crashed
+161103 T0013 DBUG S4 Ask vote from S2, Lost or error
+161263 T0013 LOG1 S0 -> S1, Lost or crashed
+161411 T0008 VOTE S2 Candidator -> Candidator at term: T9
+161411 T0013 LOG1 S2 -> S4, Lost or crashed
+161414 T0008 LOG1 S1 Follower -> Follower at term: T8->T9
+161414 T0009 VOTE S1 Compare last log, Me: [1]T2, Candidate: [1]T1
+161414 T0009 VOTE S1 -> S2, Reject voted, Candidate's log is less up to date
+161561 T0013 LOG1 S2 -> S1, Lost or crashed
+161714 T0013 DBUG S4 Ask vote from S5, Lost or error
+161865 T0013 LOG1 S4 -> S1, Lost or crashed
+162018 T0013 LOG1 S0 -> S1, Lost or crashed
+162486 T0009 VOTE S1 Follower -> Candidator at term: T10
+162486 T0013 LOG1 S0 -> S6, Lost or crashed
+162486 T0009 LOG1 S2 Candidator -> Follower at term: T9->T10
+162486 T0010 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+162486 T0010 VOTE S2 -> S1, Reject voted, Candidate's log is less up to date
+162791 T0010 VOTE S2 Follower -> Candidator at term: T11
+162793 T0010 LOG1 S1 Candidator -> Follower at term: T10->T11
+162793 T0011 VOTE S1 Compare last log, Me: [1]T2, Candidate: [1]T1
+162793 T0011 VOTE S1 -> S2, Reject voted, Candidate's log is less up to date
+163095 T0011 VOTE S1 Follower -> Candidator at term: T12
+163095 T0011 LOG1 S2 Candidator -> Follower at term: T11->T12
+163095 T0012 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+163095 T0012 VOTE S2 -> S1, Reject voted, Candidate's log is less up to date
+163401 T0013 LOG1 S2 -> S1, Lost or crashed
+163402 T0012 VOTE S2 Follower -> Candidator at term: T13
+163402 T0012 LOG1 S1 Candidator -> Follower at term: T12->T13
+163402 T0013 VOTE S1 Compare last log, Me: [1]T2, Candidate: [1]T1
+163402 T0013 VOTE S1 -> S2, Reject voted, Candidate's log is less up to date
+163714 T0013 DBUG S5 Ask vote from S4, Lost or error
+164341 T0013 LOG1 S0 -> S3, Lost or crashed
+164804 T0013 VOTE S2 Candidator -> Candidator at term: T14
+164804 T0013 LOG1 S1 Follower -> Follower at term: T13->T14
+164804 T0014 VOTE S1 Compare last log, Me: [1]T2, Candidate: [1]T1
+164804 T0014 VOTE S1 -> S2, Reject voted, Candidate's log is less up to date
+164958 T0013 DBUG S2 Ask vote from S4, Lost or error
+164958 T0013 LOG1 S0 -> S4, Lost or crashed
+165261 T0013 LOG1 S2 -> S1, Lost or crashed
+--- FAIL: TestBasicAgreePartB (2.21s)
+    config.go:597: one(100) failed to reach agreement
+165264 T0000 VOTE S0 Follower -> Candidator at term: T1
+165264 T0000 VOTE S1 Follower -> Candidator at term: T1
+Test (PartB): RPC byte count ...
+165264 T0000 VOTE S2 Follower -> Candidator at term: T1
+165264 T0001 VOTE S1 -> S2, Reject voted, Already voted to S1
+165264 T0001 VOTE S1 -> S0, Reject voted, Already voted to S1
+165264 T0001 VOTE S0 -> S2, Reject voted, Already voted to S0
+165264 T0001 VOTE S0 -> S1, Reject voted, Already voted to S0
+165264 T0001 VOTE S2 -> S0, Reject voted, Already voted to S2
+165264 T0001 VOTE S2 -> S1, Reject voted, Already voted to S2
+165412 T0013 LOG1 S1 -> S4, Lost or crashed
+165570 T0013 LOG1 S1 -> S5, Lost or crashed
+165722 T0013 DBUG S4 Ask vote from S1, Lost or error
+166040 T0013 DBUG S4 Ask vote from S3, Lost or error
+166669 T0013 DBUG S2 Ask vote from S1, Lost or error
+167135 T0001 VOTE S1 Candidator -> Candidator at term: T2
+167136 T0001 LOG1 S2 Candidator -> Follower at term: T1->T2
+167136 T0002 VOTE S2 Compare last log, Me: [0]T0, Candidate: [0]T0
+167136 T0002 VOTE S2 -> S1, Vote granted
+167136 T0001 LOG1 S0 Candidator -> Follower at term: T1->T2
+167136 T0002 VOTE S0 Compare last log, Me: [0]T0, Candidate: [0]T0
+167136 T0002 VOTE S0 -> S1, Vote granted
+167136 T0002 LEAD S1 Become Leader at term: T2
+167136 T0002 VOTE S1 Lost context, abort RequestVoteReply from S0
+167136 T0002 DBUG S2 <- S1, Receive Log, Prev=[0]T0, Len()=0
+167136 T0002 DBUG S0 <- S1, Receive Log, Prev=[0]T0, Len()=0
+167136 T0002 LOG1 S2 Follower -> Follower at term: T2->T2
+167136 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+167136 T0002 LOG2 S2 Follower append logs: (0, 0]
+167136 T0002 LOG2 S0 Follower append logs: (0, 0]
+167136 T0002 DBUG S1 Match index after sort: [0 0 0], majority[1]=0
+167136 T0002 DBUG S1 Match index after sort: [0 0 0], majority[1]=0
+167292 T0013 LOG1 S2 -> S0, Lost or crashed
+167292 T0013 LOG1 S0 -> S6, Lost or crashed
+167768 T0002 LEAD S1 Leader Accept log [1]T2
+168236 T0013 DBUG S4 Ask vote from S6, Lost or error
+168392 T0013 LOG1 S2 -> S6, Lost or crashed
+168548 T0013 LOG1 S0 -> S6, Lost or crashed
+168550 T0013 LOG1 S1 -> S3, Lost or crashed
+169174 T0002 DBUG S2 <- S1, Receive Log, Prev=[0]T0, Len()=1
+169174 T0002 LOG1 S2 Follower -> Follower at term: T2->T2
+169174 T0002 LOG2 S2 Follower append logs: (0, 1]
+169174 T0002 DBUG S1 Match index after sort: [0 1 1], majority[1]=1
+169174 T0002 APLY S1 Leader update the commit index 0->0
+169174 T0002 APLY S1 Apply log for [1, 1]
+169174 T0002 DBUG S0 <- S1, Receive Log, Prev=[0]T0, Len()=1
+169174 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+169174 T0002 LOG2 S0 Follower append logs: (0, 1]
+170121 T0013 LOG1 S2 -> S6, Lost or crashed
+170432 T0013 LOG1 S0 -> S3, Lost or crashed
+170741 T0013 LOG1 S2 -> S5, Lost or crashed
+170903 T0013 DBUG S4 Ask vote from S0, Lost or error
+170903 T0013 LOG1 S1 -> S4, Lost or crashed
+171212 T0013 DBUG S0 Ask vote from S5, Lost or error
+171214 T0013 LOG1 S2 -> S3, Lost or crashed
+171680 T0013 LOG1 S0 -> S5, Lost or crashed
+171837 T0013 LOG1 S0 -> S5, Lost or crashed
+172151 T0013 LOG1 S2 -> S6, Lost or crashed
+172303 T0013 LOG1 S2 -> S3, Lost or crashed
+172626 T0013 LOG1 S1 -> S3, Lost or crashed
+172626 T0013 LOG1 S2 -> S0, Lost or crashed
+173238 T0013 DBUG S4 Ask vote from S3, Lost or error
+173389 T0013 LOG1 S0 -> S5, Lost or crashed
+173693 T0013 DBUG S4 Ask vote from S6, Lost or error
+174161 T0013 LOG1 S0 -> S1, Lost or crashed
+174312 T0013 LOG1 S2 -> S5, Lost or crashed
+175408 T0013 LOG1 S1 -> S2, Lost or crashed
+175718 T0013 LOG1 S2 -> S0, Lost or crashed
+175876 T0013 DBUG S4 Ask vote from S0, Lost or error
+176186 T0013 DBUG S5 Ask vote from S0, Lost or error
+176490 T0013 LOG1 S2 -> S4, Lost or crashed
+176648 T0013 LOG1 S1 -> S4, Lost or crashed
+177116 T0013 LOG1 S2 -> S4, Lost or crashed
+177273 T0002 VOTE S2 Follower -> Candidator at term: T3
+177273 T0013 LOG1 S2 -> S0, Lost or crashed
+177273 T0002 LOG1 S0 Follower -> Follower at term: T2->T3
+177273 T0003 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+177273 T0003 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+178668 T0013 DBUG S4 Ask vote from S6, Lost or error
+178825 T0013 DBUG S0 Ask vote from S6, Lost or error
+178825 T0013 LOG1 S2 -> S3, Lost or crashed
+179444 T0003 VOTE S2 Candidator -> Candidator at term: T4
+179446 T0003 LOG1 S0 Follower -> Follower at term: T3->T4
+179446 T0004 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+179446 T0004 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+179910 T0004 VOTE S0 Follower -> Candidator at term: T5
+179910 T0004 LOG1 S2 Candidator -> Follower at term: T4->T5
+179910 T0005 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+179910 T0005 VOTE S2 -> S0, Reject voted, Candidate's log is less up to date
+180066 T0013 LOG1 S0 -> S4, Lost or crashed
+180223 T0013 DBUG S4 Ask vote from S0, Lost or error
+180697 T0005 VOTE S0 Candidator -> Candidator at term: T6
+180699 T0005 LOG1 S2 Follower -> Follower at term: T5->T6
+180699 T0006 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+180699 T0006 VOTE S2 -> S0, Reject voted, Candidate's log is less up to date
+180856 T0013 DBUG S4 Ask vote from S2, Lost or error
+180856 T0013 LOG1 S0 -> S2, Lost or crashed
+181014 T0013 LOG1 S2 -> S1, Lost or crashed
+181804 T0006 VOTE S0 Candidator -> Candidator at term: T7
+181804 T0006 LOG1 S2 Follower -> Follower at term: T6->T7
+181804 T0007 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+181804 T0007 VOTE S2 -> S0, Reject voted, Candidate's log is less up to date
+182272 T0013 LOG1 S0 -> S3, Lost or crashed
+182430 T0007 VOTE S2 Follower -> Candidator at term: T8
+182430 T0007 LOG1 S0 Candidator -> Follower at term: T7->T8
+182430 T0008 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+182430 T0008 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+182587 T0013 DBUG S4 Ask vote from S3, Lost or error
+182739 T0008 VOTE S0 Follower -> Candidator at term: T9
+182739 T0008 LOG1 S2 Candidator -> Follower at term: T8->T9
+182739 T0009 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+182739 T0009 VOTE S2 -> S0, Reject voted, Candidate's log is less up to date
+183056 T0013 LOG1 S1 -> S0, Lost or crashed
+183219 T0013 LOG1 S0 -> S6, Lost or crashed
+183378 T0009 VOTE S2 Follower -> Candidator at term: T10
+183378 T0009 LOG1 S0 Candidator -> Follower at term: T9->T10
+183378 T0010 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+183378 T0010 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+183535 T0013 LOG1 S1 -> S6, Lost or crashed
+184002 T0013 LOG1 S0 -> S1, Lost or crashed
+184624 T0013 LOG1 S1 -> S5, Lost or crashed
+184783 T0010 VOTE S0 Follower -> Candidator at term: T11
+184783 T0010 LOG1 S2 Candidator -> Follower at term: T10->T11
+184783 T0011 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+184783 T0011 VOTE S2 -> S0, Reject voted, Candidate's log is less up to date
+185088 T0013 LOG1 S5 -> S4, Lost or crashed
+185235 T0013 LOG1 S2 -> S3, Lost or crashed
+185396 T0013 LOG1 S2 -> S1, Lost or crashed
+185396 T0011 VOTE S2 Follower -> Candidator at term: T12
+185396 T0011 LOG1 S0 Candidator -> Follower at term: T11->T12
+185396 T0012 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+185396 T0012 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+185555 T0013 DBUG S0 Ask vote from S3, Lost or error
+185873 T0013 LOG1 S0 -> S2, Lost or crashed
+186186 T0012 VOTE S2 Candidator -> Candidator at term: T13
+186186 T0013 LOG1 S1 -> S5, Lost or crashed
+186189 T0012 LOG1 S0 Follower -> Follower at term: T12->T13
+186189 T0013 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+186189 T0013 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+186344 T0013 DBUG S4 Ask vote from S1, Lost or error
+186500 T0013 DBUG S4 Ask vote from S1, Lost or error
+186656 T0013 LOG1 S2 -> S1, Lost or crashed
+186656 T0013 DBUG S4 Ask vote from S5, Lost or error
+187134 T0013 DBUG S4 Ask vote from S5, Lost or error
+187911 T0013 VOTE S0 Follower -> Candidator at term: T14
+187913 T0013 LOG1 S2 Candidator -> Follower at term: T13->T14
+187913 T0014 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+187913 T0014 VOTE S2 -> S0, Reject voted, Candidate's log is less up to date
+--- FAIL: TestRPCBytesPartB (2.28s)
+    config.go:597: one(99) failed to reach agreement
+188070 T0000 VOTE S0 Follower -> Candidator at term: T1
+188070 T0000 VOTE S1 Follower -> Candidator at term: T1
+188070 T0000 VOTE S2 Follower -> Candidator at term: T1
+Test (PartB): test progressive failure of followers ...
+188070 T0001 VOTE S1 -> S2, Reject voted, Already voted to S1
+188070 T0001 VOTE S0 -> S2, Reject voted, Already voted to S0
+188374 T0013 DBUG S4 Ask vote from S5, Lost or error
+188530 T0013 LOG1 S2 -> S0, Lost or crashed
+188690 T0001 VOTE S1 Candidator -> Candidator at term: T2
+188690 T0001 LOG1 S2 Candidator -> Follower at term: T1->T2
+188690 T0001 LOG1 S0 Candidator -> Follower at term: T1->T2
+188690 T0002 VOTE S0 Compare last log, Me: [0]T0, Candidate: [0]T0
+188690 T0002 VOTE S0 -> S1, Vote granted
+188690 T0002 VOTE S2 Compare last log, Me: [0]T0, Candidate: [0]T0
+188690 T0002 VOTE S2 -> S1, Vote granted
+188690 T0002 LEAD S1 Become Leader at term: T2
+188690 T0002 VOTE S1 Lost context, abort RequestVoteReply from S2
+188690 T0002 DBUG S0 <- S1, Receive Log, Prev=[0]T0, Len()=0
+188690 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+188690 T0002 LOG2 S0 Follower append logs: (0, 0]
+188690 T0002 DBUG S1 Match index after sort: [0 0 0], majority[1]=0
+188690 T0002 DBUG S2 <- S1, Receive Log, Prev=[0]T0, Len()=0
+188690 T0002 LOG1 S2 Follower -> Follower at term: T2->T2
+188690 T0002 LOG2 S2 Follower append logs: (0, 0]
+188690 T0002 DBUG S1 Match index after sort: [0 0 0], majority[1]=0
+189316 T0013 LOG1 S2 -> S1, Lost or crashed
+189316 T0002 LEAD S1 Leader Accept log [1]T2
+189777 T0013 DBUG S6 Ask vote from S4, Lost or error
+189929 T0013 LOG1 S0 -> S2, Lost or crashed
+190709 T0002 DBUG S2 <- S1, Receive Log, Prev=[0]T0, Len()=1
+190709 T0002 LOG1 S2 Follower -> Follower at term: T2->T2
+190709 T0002 LOG2 S2 Follower append logs: (0, 1]
+190709 T0002 DBUG S1 Match index after sort: [0 1 1], majority[1]=1
+190714 T0002 APLY S1 Leader update the commit index 0->0
+190714 T0002 APLY S1 Apply log for [1, 1]
+190709 T0002 DBUG S0 <- S1, Receive Log, Prev=[0]T0, Len()=1
+190714 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+190714 T0002 LOG2 S0 Follower append logs: (0, 1]
+190865 T0013 LOG1 S0 -> S3, Lost or crashed
+191492 T0013 LOG1 S0 -> S4, Lost or crashed
+191969 T0013 LOG1 S5 -> S0, Lost or crashed
+192282 T0013 DBUG S4 Ask vote from S0, Lost or error
+193070 T0013 LOG1 S0 -> S2, Lost or crashed
+193223 T0013 LOG1 S2 -> S3, Lost or crashed
+194182 T0013 DBUG S4 Ask vote from S1, Lost or error
+194336 T0013 LOG1 S2 -> S3, Lost or crashed
+195263 T0013 DBUG S4 Ask vote from S5, Lost or error
+195733 T0013 LOG1 S0 -> S2, Lost or crashed
+197134 T0013 DBUG S4 Ask vote from S6, Lost or error
+197289 T0002 VOTE S0 Follower -> Candidator at term: T3
+197290 T0002 LOG1 S2 Follower -> Follower at term: T2->T3
+197290 T0003 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+197290 T0003 VOTE S2 -> S0, Reject voted, Candidate's log is less up to date
+197602 T0013 DBUG S4 Ask vote from S3, Lost or error
+198694 T0013 LOG1 S5 -> S4, Lost or crashed
+198851 T0003 VOTE S0 Candidator -> Candidator at term: T4
+198852 T0003 LOG1 S2 Follower -> Follower at term: T3->T4
+198852 T0004 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+198852 T0004 VOTE S2 -> S0, Reject voted, Candidate's log is less up to date
+199312 T0013 LOG1 S5 -> S2, Lost or crashed
+200689 T0013 DBUG S5 Ask vote from S2, Lost or error
+200841 T0013 LOG1 S0 -> S4, Lost or crashed
+201153 T0004 VOTE S2 Follower -> Candidator at term: T5
+201153 T0004 LOG1 S0 Candidator -> Follower at term: T4->T5
+201153 T0005 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+201153 T0005 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+201940 T0013 LOG1 S0 -> S5, Lost or crashed
+201940 T0013 LOG1 S2 -> S1, Lost or crashed
+201940 T0005 VOTE S2 Candidator -> Candidator at term: T6
+201943 T0005 LOG1 S0 Follower -> Follower at term: T5->T6
+201943 T0006 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+201943 T0006 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+202250 T0006 VOTE S0 Follower -> Candidator at term: T7
+202252 T0006 LOG1 S2 Candidator -> Follower at term: T6->T7
+202252 T0007 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+202252 T0007 VOTE S2 -> S0, Reject voted, Candidate's log is less up to date
+203343 T0007 VOTE S2 Follower -> Candidator at term: T8
+203343 T0007 LOG1 S0 Candidator -> Follower at term: T7->T8
+203343 T0008 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+203343 T0008 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+204124 T0008 VOTE S2 Candidator -> Candidator at term: T9
+204124 T0008 LOG1 S0 Follower -> Follower at term: T8->T9
+204129 T0009 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+204129 T0009 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+205067 T0009 VOTE S0 Follower -> Candidator at term: T10
+205067 T0009 LOG1 S2 Candidator -> Follower at term: T9->T10
+205067 T0010 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+205067 T0010 VOTE S2 -> S0, Reject voted, Candidate's log is less up to date
+205373 T0013 LOG1 S2 -> S1, Lost or crashed
+206932 T0010 VOTE S2 Follower -> Candidator at term: T11
+206932 T0010 LOG1 S0 Candidator -> Follower at term: T10->T11
+206932 T0011 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+206932 T0011 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+208353 T0011 VOTE S0 Follower -> Candidator at term: T12
+208356 T0011 LOG1 S2 Candidator -> Follower at term: T11->T12
+208356 T0012 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+208356 T0012 VOTE S2 -> S0, Reject voted, Candidate's log is less up to date
+209449 T0012 VOTE S2 Follower -> Candidator at term: T13
+209454 T0012 LOG1 S0 Candidator -> Follower at term: T12->T13
+209454 T0013 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+209454 T0013 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+--- FAIL: TestFollowerFailurePartB (2.15s)
+    config.go:597: one(101) failed to reach agreement
+209610 T0000 VOTE S0 Follower -> Candidator at term: T1
+Test (PartB): test failure of leaders ...
+209610 T0000 VOTE S1 Follower -> Candidator at term: T1
+209610 T0000 VOTE S2 Follower -> Candidator at term: T1
+209610 T0001 VOTE S2 -> S0, Reject voted, Already voted to S2
+209610 T0001 VOTE S1 -> S0, Reject voted, Already voted to S1
+209610 T0001 VOTE S2 -> S1, Reject voted, Already voted to S2
+209610 T0001 VOTE S0 -> S1, Reject voted, Already voted to S0
+209615 T0001 VOTE S1 -> S2, Reject voted, Already voted to S1
+209615 T0001 VOTE S0 -> S2, Reject voted, Already voted to S0
+210552 T0001 VOTE S1 Candidator -> Candidator at term: T2
+210552 T0001 LOG1 S2 Candidator -> Follower at term: T1->T2
+210552 T0002 VOTE S2 Compare last log, Me: [0]T0, Candidate: [0]T0
+210552 T0001 LOG1 S0 Candidator -> Follower at term: T1->T2
+210552 T0002 VOTE S2 -> S1, Vote granted
+210552 T0002 VOTE S0 Compare last log, Me: [0]T0, Candidate: [0]T0
+210552 T0002 VOTE S0 -> S1, Vote granted
+210552 T0002 LEAD S1 Become Leader at term: T2
+210552 T0002 VOTE S1 Lost context, abort RequestVoteReply from S0
+210552 T0002 DBUG S2 <- S1, Receive Log, Prev=[0]T0, Len()=0
+210552 T0002 LOG1 S2 Follower -> Follower at term: T2->T2
+210552 T0002 LOG2 S2 Follower append logs: (0, 0]
+210552 T0002 DBUG S0 <- S1, Receive Log, Prev=[0]T0, Len()=0
+210552 T0002 DBUG S1 Match index after sort: [0 0 0], majority[1]=0
+210552 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+210552 T0002 LOG2 S0 Follower append logs: (0, 0]
+210552 T0002 DBUG S1 Match index after sort: [0 0 0], majority[1]=0
+210866 T0002 LEAD S1 Leader Accept log [1]T2
+212568 T0002 DBUG S0 <- S1, Receive Log, Prev=[0]T0, Len()=1
+212568 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+212568 T0002 LOG2 S0 Follower append logs: (0, 1]
+212568 T0002 DBUG S2 <- S1, Receive Log, Prev=[0]T0, Len()=1
+212568 T0002 LOG1 S2 Follower -> Follower at term: T2->T2
+212568 T0002 LOG2 S2 Follower append logs: (0, 1]
+212568 T0002 DBUG S1 Match index after sort: [0 1 1], majority[1]=1
+212568 T0002 APLY S1 Leader update the commit index 0->0
+212568 T0002 APLY S1 Apply log for [1, 1]
+216293 T0013 DBUG S0 Ask vote from S1, Lost or error
+218942 T0002 VOTE S0 Follower -> Candidator at term: T3
+218942 T0002 LOG1 S2 Follower -> Follower at term: T2->T3
+218942 T0003 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+218942 T0003 VOTE S2 -> S0, Reject voted, Candidate's log is less up to date
+220210 T0003 VOTE S0 Candidator -> Candidator at term: T4
+220210 T0003 LOG1 S2 Follower -> Follower at term: T3->T4
+220210 T0004 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+220210 T0004 VOTE S2 -> S0, Reject voted, Candidate's log is less up to date
+223009 T0004 VOTE S0 Candidator -> Candidator at term: T5
+223009 T0004 LOG1 S2 Follower -> Follower at term: T4->T5
+223009 T0005 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+223009 T0005 VOTE S2 -> S0, Reject voted, Candidate's log is less up to date
+223625 T0005 VOTE S2 Follower -> Candidator at term: T6
+223625 T0005 LOG1 S0 Candidator -> Follower at term: T5->T6
+223625 T0006 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+223625 T0006 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+225509 T0006 VOTE S2 Candidator -> Candidator at term: T7
+225509 T0006 LOG1 S0 Follower -> Follower at term: T6->T7
+225509 T0007 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+225509 T0007 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+226131 T0007 VOTE S0 Follower -> Candidator at term: T8
+226131 T0007 LOG1 S2 Candidator -> Follower at term: T7->T8
+226131 T0008 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+226131 T0008 VOTE S2 -> S0, Reject voted, Candidate's log is less up to date
+226443 T0008 VOTE S2 Follower -> Candidator at term: T9
+226443 T0008 LOG1 S0 Candidator -> Follower at term: T8->T9
+226443 T0009 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+226443 T0009 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+229101 T0009 VOTE S2 Candidator -> Candidator at term: T10
+229101 T0009 LOG1 S0 Follower -> Follower at term: T9->T10
+229101 T0010 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+229101 T0010 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+229565 T0010 VOTE S0 Follower -> Candidator at term: T11
+229565 T0010 LOG1 S2 Candidator -> Follower at term: T10->T11
+229565 T0011 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+229565 T0011 VOTE S2 -> S0, Reject voted, Candidate's log is less up to date
+230346 T0011 VOTE S2 Follower -> Candidator at term: T12
+230346 T0011 LOG1 S0 Candidator -> Follower at term: T11->T12
+230346 T0012 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+230346 T0012 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+231125 T0012 VOTE S0 Follower -> Candidator at term: T13
+--- FAIL: TestLeaderFailurePartB (2.15s)
+    config.go:597: one(101) failed to reach agreement
+231125 T0013 DBUG S0 Ask vote from S2, Lost or error
+231125 T0013 DBUG S0 Ask vote from S1, Lost or error
+231125 T0000 VOTE S0 Follower -> Candidator at term: T1
+231125 T0000 VOTE S1 Follower -> Candidator at term: T1
+Test (PartB): agreement after follower reconnects ...
+231125 T0000 VOTE S2 Follower -> Candidator at term: T1
+231125 T0001 VOTE S2 -> S0, Reject voted, Already voted to S2
+231125 T0001 VOTE S1 -> S0, Reject voted, Already voted to S1
+231125 T0001 VOTE S0 -> S1, Reject voted, Already voted to S0
+231125 T0001 VOTE S2 -> S1, Reject voted, Already voted to S2
+231125 T0001 VOTE S1 -> S2, Reject voted, Already voted to S1
+231125 T0001 VOTE S0 -> S2, Reject voted, Already voted to S0
+232687 T0001 VOTE S2 Candidator -> Candidator at term: T2
+232687 T0001 LOG1 S1 Candidator -> Follower at term: T1->T2
+232687 T0002 VOTE S1 Compare last log, Me: [0]T0, Candidate: [0]T0
+232687 T0002 VOTE S1 -> S2, Vote granted
+232687 T0002 LEAD S2 Become Leader at term: T2
+232687 T0001 LOG1 S0 Candidator -> Follower at term: T1->T2
+232687 T0002 VOTE S0 Compare last log, Me: [0]T0, Candidate: [0]T0
+232687 T0002 VOTE S0 -> S2, Vote granted
+232687 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+232687 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+232687 T0002 LOG2 S0 Follower append logs: (0, 0]
+232687 T0002 VOTE S2 Lost context, abort RequestVoteReply from S0
+232687 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+232687 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+232687 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+232687 T0002 LOG2 S1 Follower append logs: (0, 0]
+232697 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+233007 T0002 LEAD S2 Leader Accept log [1]T2
+234703 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=1
+234703 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=1
+234703 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+234703 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+234703 T0002 LOG2 S0 Follower append logs: (0, 1]
+234703 T0002 LOG2 S1 Follower append logs: (0, 1]
+234703 T0002 DBUG S2 Match index after sort: [0 1 1], majority[1]=1
+234703 T0002 APLY S2 Leader update the commit index 0->0
+234703 T0002 DBUG S2 Match index after sort: [1 1 1], majority[1]=1
+234703 T0002 APLY S2 Apply log for [1, 1]
+242189 T0002 VOTE S1 Follower -> Candidator at term: T3
+242189 T0002 LOG1 S0 Follower -> Follower at term: T2->T3
+242189 T0003 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+242189 T0003 VOTE S0 -> S1, Reject voted, Candidate's log is less up to date
+242653 T0003 VOTE S0 Follower -> Candidator at term: T4
+242653 T0003 LOG1 S1 Candidator -> Follower at term: T3->T4
+242653 T0004 VOTE S1 Compare last log, Me: [1]T2, Candidate: [1]T1
+242653 T0004 VOTE S1 -> S0, Reject voted, Candidate's log is less up to date
+243114 T0004 VOTE S1 Follower -> Candidator at term: T5
+243114 T0004 LOG1 S0 Candidator -> Follower at term: T4->T5
+243114 T0005 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+243114 T0005 VOTE S0 -> S1, Reject voted, Candidate's log is less up to date
+243589 T0005 VOTE S0 Follower -> Candidator at term: T6
+243589 T0005 LOG1 S1 Candidator -> Follower at term: T5->T6
+243589 T0006 VOTE S1 Compare last log, Me: [1]T2, Candidate: [1]T1
+243589 T0006 VOTE S1 -> S0, Reject voted, Candidate's log is less up to date
+244052 T0013 DBUG S0 Ask vote from S2, Lost or error
+244362 T0006 VOTE S0 Candidator -> Candidator at term: T7
+244362 T0006 LOG1 S1 Follower -> Follower at term: T6->T7
+244362 T0007 VOTE S1 Compare last log, Me: [1]T2, Candidate: [1]T1
+244362 T0007 VOTE S1 -> S0, Reject voted, Candidate's log is less up to date
+245298 T0007 VOTE S1 Follower -> Candidator at term: T8
+245298 T0007 LOG1 S0 Candidator -> Follower at term: T7->T8
+245298 T0008 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+245298 T0008 VOTE S0 -> S1, Reject voted, Candidate's log is less up to date
+247020 T0008 VOTE S1 Candidator -> Candidator at term: T9
+247020 T0008 LOG1 S0 Follower -> Follower at term: T8->T9
+247020 T0009 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+247020 T0009 VOTE S0 -> S1, Reject voted, Candidate's log is less up to date
+247643 T0009 VOTE S0 Follower -> Candidator at term: T10
+247643 T0009 LOG1 S1 Candidator -> Follower at term: T9->T10
+247643 T0010 VOTE S1 Compare last log, Me: [1]T2, Candidate: [1]T1
+247643 T0010 VOTE S1 -> S0, Reject voted, Candidate's log is less up to date
+248264 T0010 VOTE S1 Follower -> Candidator at term: T11
+248264 T0010 LOG1 S0 Candidator -> Follower at term: T10->T11
+248264 T0011 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+248264 T0011 VOTE S0 -> S1, Reject voted, Candidate's log is less up to date
+250753 T0011 VOTE S1 Candidator -> Candidator at term: T12
+250753 T0011 VOTE S0 Follower -> Candidator at term: T12
+250753 T0012 VOTE S0 -> S1, Reject voted, Already voted to S0
+250753 T0012 VOTE S1 -> S0, Reject voted, Already voted to S1
+251999 T0012 VOTE S0 Candidator -> Candidator at term: T13
+251999 T0012 LOG1 S1 Candidator -> Follower at term: T12->T13
+251999 T0013 VOTE S1 Compare last log, Me: [1]T2, Candidate: [1]T1
+251999 T0013 VOTE S1 -> S0, Reject voted, Candidate's log is less up to date
+252930 T0013 VOTE S1 Follower -> Candidator at term: T14
+252930 T0013 LOG1 S0 Candidator -> Follower at term: T13->T14
+252930 T0014 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+252930 T0014 VOTE S0 -> S1, Reject voted, Candidate's log is less up to date
+--- FAIL: TestFailAgreePartB (2.21s)
+    config.go:597: one(101) failed to reach agreement
+253236 T0000 VOTE S0 Follower -> Candidator at term: T1
+253236 T0000 VOTE S1 Follower -> Candidator at term: T1
+253236 T0000 VOTE S2 Follower -> Candidator at term: T1
+Test (PartB): no agreement if too many followers disconnect ...
+253236 T0000 VOTE S3 Follower -> Candidator at term: T1
+253236 T0000 LOG1 S4 Follower -> Follower at term: T0->T1
+253236 T0001 VOTE S4 Compare last log, Me: [0]T0, Candidate: [0]T0
+253236 T0001 VOTE S4 -> S3, Vote granted
+253236 T0001 VOTE S4 -> S2, Reject voted, Already voted to S3
+253236 T0001 VOTE S0 -> S1, Reject voted, Already voted to S0
+253236 T0001 VOTE S2 -> S0, Reject voted, Already voted to S2
+253236 T0001 VOTE S0 -> S2, Reject voted, Already voted to S0
+253236 T0001 VOTE S3 -> S2, Reject voted, Already voted to S3
+253236 T0001 VOTE S1 -> S0, Reject voted, Already voted to S1
+253236 T0001 VOTE S4 -> S1, Reject voted, Already voted to S3
+253236 T0001 VOTE S2 -> S1, Reject voted, Already voted to S2
+253236 T0001 VOTE S0 -> S3, Reject voted, Already voted to S0
+253236 T0001 VOTE S1 -> S2, Reject voted, Already voted to S1
+253236 T0001 VOTE S3 -> S0, Reject voted, Already voted to S3
+253236 T0001 VOTE S3 -> S1, Reject voted, Already voted to S3
+253246 T0001 VOTE S1 -> S3, Reject voted, Already voted to S1
+253246 T0001 VOTE S2 -> S3, Reject voted, Already voted to S2
+255720 T0001 VOTE S1 Candidator -> Candidator at term: T2
+255720 T0001 VOTE S3 Candidator -> Candidator at term: T2
+255720 T0001 LOG1 S4 Follower -> Follower at term: T1->T2
+255720 T0002 VOTE S4 Compare last log, Me: [0]T0, Candidate: [0]T0
+255720 T0002 VOTE S4 -> S1, Vote granted
+255720 T0002 VOTE S4 -> S3, Reject voted, Already voted to S1
+255720 T0001 LOG1 S2 Candidator -> Follower at term: T1->T2
+255720 T0002 VOTE S2 Compare last log, Me: [0]T0, Candidate: [0]T0
+255720 T0002 VOTE S2 -> S1, Vote granted
+255720 T0002 VOTE S1 -> S3, Reject voted, Already voted to S1
+255720 T0002 VOTE S3 -> S1, Reject voted, Already voted to S3
+255720 T0002 LEAD S1 Become Leader at term: T2
+255720 T0002 VOTE S1 Lost context, abort RequestVoteReply from S3
+255720 T0002 DBUG S4 <- S1, Receive Log, Prev=[0]T0, Len()=0
+255720 T0002 LOG1 S4 Follower -> Follower at term: T2->T2
+255720 T0002 LOG2 S4 Follower append logs: (0, 0]
+255730 T0002 VOTE S2 -> S3, Reject voted, Already voted to S1
+255730 T0002 DBUG S2 <- S1, Receive Log, Prev=[0]T0, Len()=0
+255730 T0002 LOG1 S2 Follower -> Follower at term: T2->T2
+255730 T0002 LOG2 S2 Follower append logs: (0, 0]
+255720 T0001 DBUG S0 <- S1, Receive Log, Prev=[0]T0, Len()=0
+255730 T0002 DBUG S1 Match index after sort: [0 0 0 0 0], majority[2]=0
+255730 T0002 DBUG S1 Match index after sort: [0 0 0 0 0], majority[2]=0
+255730 T0001 LOG1 S0 Candidator -> Follower at term: T1->T2
+255730 T0002 LOG2 S0 Follower append logs: (0, 0]
+255730 T0002 VOTE S0 Compare last log, Me: [0]T0, Candidate: [0]T0
+255730 T0002 VOTE S0 -> S1, Vote granted
+255730 T0002 DBUG S1 Match index after sort: [0 0 0 0 0], majority[2]=0
+255730 T0002 DBUG S3 <- S1, Receive Log, Prev=[0]T0, Len()=0
+255730 T0002 VOTE S0 -> S3, Reject voted, Already voted to S1
+255730 T0002 LOG1 S3 Candidator -> Follower at term: T2->T2
+255730 T0002 LOG2 S3 Follower append logs: (0, 0]
+255730 T0002 VOTE S3 Lost context, abort RequestVoteReply from S0
+255730 T0002 DBUG S1 Match index after sort: [0 0 0 0 0], majority[2]=0
+255730 T0002 VOTE S1 Lost context, abort RequestVoteReply from S0
+256358 T0002 LEAD S1 Leader Accept log [1]T2
+257752 T0002 DBUG S4 <- S1, Receive Log, Prev=[0]T0, Len()=1
+257752 T0002 LOG1 S4 Follower -> Follower at term: T2->T2
+257752 T0002 LOG2 S4 Follower append logs: (0, 1]
+257752 T0002 DBUG S2 <- S1, Receive Log, Prev=[0]T0, Len()=1
+257752 T0002 LOG1 S2 Follower -> Follower at term: T2->T2
+257752 T0002 LOG2 S2 Follower append logs: (0, 1]
+257752 T0002 DBUG S3 <- S1, Receive Log, Prev=[0]T0, Len()=1
+257752 T0002 LOG1 S3 Follower -> Follower at term: T2->T2
+257752 T0002 LOG2 S3 Follower append logs: (0, 1]
+257752 T0002 DBUG S1 Match index after sort: [0 0 0 1 1], majority[2]=0
+257752 T0002 DBUG S0 <- S1, Receive Log, Prev=[0]T0, Len()=1
+257752 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+257752 T0002 DBUG S1 Match index after sort: [0 0 1 1 1], majority[2]=1
+257752 T0002 LOG2 S0 Follower append logs: (0, 1]
+257752 T0002 APLY S1 Leader update the commit index 0->0
+257752 T0002 DBUG S1 Match index after sort: [0 1 1 1 1], majority[2]=1
+257752 T0002 APLY S1 Apply log for [1, 1]
+265221 T0002 VOTE S4 Follower -> Candidator at term: T3
+265222 T0002 LOG1 S3 Follower -> Follower at term: T2->T3
+265222 T0003 VOTE S3 Compare last log, Me: [1]T2, Candidate: [1]T1
+265222 T0003 VOTE S3 -> S4, Reject voted, Candidate's log is less up to date
+265222 T0002 LOG1 S2 Follower -> Follower at term: T2->T3
+265222 T0003 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+265222 T0003 VOTE S2 -> S4, Reject voted, Candidate's log is less up to date
+265222 T0002 LOG1 S0 Follower -> Follower at term: T2->T3
+265222 T0003 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+265222 T0003 VOTE S0 -> S4, Reject voted, Candidate's log is less up to date
+265375 T0003 DBUG S0 Ask vote from S4, Lost or error
+265686 T0003 VOTE S2 Follower -> Candidator at term: T4
+265686 T0003 LOG1 S4 Candidator -> Follower at term: T3->T4
+265686 T0004 VOTE S4 Compare last log, Me: [1]T2, Candidate: [1]T1
+265686 T0003 LOG1 S3 Follower -> Follower at term: T3->T4
+265686 T0003 LOG1 S0 Follower -> Follower at term: T3->T4
+265686 T0004 VOTE S3 Compare last log, Me: [1]T2, Candidate: [1]T1
+265686 T0004 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+265686 T0004 VOTE S3 -> S2, Reject voted, Candidate's log is less up to date
+265686 T0004 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+265686 T0004 VOTE S4 -> S2, Reject voted, Candidate's log is less up to date
+266463 T0004 VOTE S4 Follower -> Candidator at term: T5
+266467 T0004 LOG1 S0 Follower -> Follower at term: T4->T5
+266467 T0004 LOG1 S2 Candidator -> Follower at term: T4->T5
+266467 T0004 LOG1 S3 Follower -> Follower at term: T4->T5
+266467 T0005 VOTE S3 Compare last log, Me: [1]T2, Candidate: [1]T1
+266467 T0005 VOTE S3 -> S4, Reject voted, Candidate's log is less up to date
+266467 T0005 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+266467 T0005 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+266467 T0005 VOTE S2 -> S4, Reject voted, Candidate's log is less up to date
+266467 T0005 VOTE S0 -> S4, Reject voted, Candidate's log is less up to date
+267873 T0005 VOTE S0 Follower -> Candidator at term: T6
+267873 T0005 VOTE S2 Follower -> Candidator at term: T6
+267873 T0005 LOG1 S4 Candidator -> Follower at term: T5->T6
+267873 T0006 VOTE S4 Compare last log, Me: [1]T2, Candidate: [1]T1
+267873 T0006 VOTE S4 -> S0, Reject voted, Candidate's log is less up to date
+267873 T0005 LOG1 S3 Follower -> Follower at term: T5->T6
+267873 T0006 VOTE S3 Compare last log, Me: [1]T2, Candidate: [1]T1
+267873 T0006 VOTE S3 -> S2, Reject voted, Candidate's log is less up to date
+267873 T0006 VOTE S4 Compare last log, Me: [1]T2, Candidate: [1]T1
+267873 T0006 VOTE S4 -> S2, Reject voted, Candidate's log is less up to date
+267873 T0006 VOTE S2 -> S0, Reject voted, Already voted to S2
+267873 T0006 VOTE S3 Compare last log, Me: [1]T2, Candidate: [1]T1
+267873 T0006 VOTE S3 -> S0, Reject voted, Candidate's log is less up to date
+267873 T0006 VOTE S0 -> S2, Reject voted, Already voted to S0
+268967 T0006 VOTE S4 Follower -> Candidator at term: T7
+268967 T0006 LOG1 S3 Follower -> Follower at term: T6->T7
+268967 T0007 VOTE S3 Compare last log, Me: [1]T2, Candidate: [1]T1
+268967 T0007 VOTE S3 -> S4, Reject voted, Candidate's log is less up to date
+268967 T0006 LOG1 S2 Candidator -> Follower at term: T6->T7
+268967 T0007 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+268967 T0007 VOTE S2 -> S4, Reject voted, Candidate's log is less up to date
+268967 T0006 LOG1 S0 Candidator -> Follower at term: T6->T7
+268967 T0007 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+268967 T0007 VOTE S0 -> S4, Reject voted, Candidate's log is less up to date
+269284 T0007 VOTE S3 Follower -> Candidator at term: T8
+269286 T0007 LOG1 S0 Follower -> Follower at term: T7->T8
+269286 T0008 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+269286 T0008 VOTE S0 -> S3, Reject voted, Candidate's log is less up to date
+269286 T0007 LOG1 S4 Candidator -> Follower at term: T7->T8
+269286 T0008 VOTE S4 Compare last log, Me: [1]T2, Candidate: [1]T1
+269286 T0008 VOTE S4 -> S3, Reject voted, Candidate's log is less up to date
+269286 T0007 LOG1 S2 Follower -> Follower at term: T7->T8
+269286 T0008 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+269286 T0008 VOTE S2 -> S3, Reject voted, Candidate's log is less up to date
+270063 T0008 VOTE S4 Follower -> Candidator at term: T9
+270063 T0008 VOTE S3 Candidator -> Candidator at term: T9
+270063 T0009 VOTE S4 -> S3, Reject voted, Already voted to S4
+270063 T0008 LOG1 S2 Follower -> Follower at term: T8->T9
+270063 T0009 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+270063 T0009 VOTE S2 -> S4, Reject voted, Candidate's log is less up to date
+270063 T0008 LOG1 S0 Follower -> Follower at term: T8->T9
+270063 T0009 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+270063 T0009 VOTE S0 -> S4, Reject voted, Candidate's log is less up to date
+270063 T0009 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+270063 T0009 VOTE S0 -> S3, Reject voted, Candidate's log is less up to date
+270063 T0009 VOTE S3 -> S4, Reject voted, Already voted to S3
+270063 T0009 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+270063 T0009 VOTE S2 -> S3, Reject voted, Candidate's log is less up to date
+270528 T0009 VOTE S2 Follower -> Candidator at term: T10
+270528 T0009 LOG1 S3 Candidator -> Follower at term: T9->T10
+270528 T0009 LOG1 S4 Candidator -> Follower at term: T9->T10
+270528 T0009 LOG1 S0 Follower -> Follower at term: T9->T10
+270528 T0010 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+270528 T0010 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+270528 T0010 VOTE S4 Compare last log, Me: [1]T2, Candidate: [1]T1
+270528 T0010 VOTE S4 -> S2, Reject voted, Candidate's log is less up to date
+270528 T0010 VOTE S3 Compare last log, Me: [1]T2, Candidate: [1]T1
+270528 T0010 VOTE S3 -> S2, Reject voted, Candidate's log is less up to date
+270992 T0010 VOTE S0 Follower -> Candidator at term: T11
+270992 T0010 LOG1 S4 Follower -> Follower at term: T10->T11
+270992 T0010 LOG1 S3 Follower -> Follower at term: T10->T11
+270992 T0011 VOTE S4 Compare last log, Me: [1]T2, Candidate: [1]T1
+270992 T0011 VOTE S4 -> S0, Reject voted, Candidate's log is less up to date
+270992 T0011 VOTE S3 Compare last log, Me: [1]T2, Candidate: [1]T1
+270992 T0011 VOTE S3 -> S0, Reject voted, Candidate's log is less up to date
+270992 T0010 LOG1 S2 Candidator -> Follower at term: T10->T11
+270992 T0011 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+270992 T0011 VOTE S2 -> S0, Reject voted, Candidate's log is less up to date
+271148 T0011 VOTE S2 Follower -> Candidator at term: T12
+271148 T0011 LOG1 S4 Follower -> Follower at term: T11->T12
+271148 T0012 VOTE S4 Compare last log, Me: [1]T2, Candidate: [1]T1
+271148 T0012 VOTE S4 -> S2, Reject voted, Candidate's log is less up to date
+271148 T0011 LOG1 S0 Candidator -> Follower at term: T11->T12
+271148 T0012 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+271148 T0012 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+271153 T0011 LOG1 S3 Follower -> Follower at term: T11->T12
+271153 T0012 VOTE S3 Compare last log, Me: [1]T2, Candidate: [1]T1
+271153 T0012 VOTE S3 -> S2, Reject voted, Candidate's log is less up to date
+271603 T0012 VOTE S4 Follower -> Candidator at term: T13
+271603 T0012 LOG1 S0 Follower -> Follower at term: T12->T13
+271603 T0012 LOG1 S2 Candidator -> Follower at term: T12->T13
+271603 T0013 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+271603 T0013 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+271603 T0013 VOTE S0 -> S4, Reject voted, Candidate's log is less up to date
+271603 T0013 VOTE S2 -> S4, Reject voted, Candidate's log is less up to date
+271603 T0012 LOG1 S3 Follower -> Follower at term: T12->T13
+271603 T0013 VOTE S3 Compare last log, Me: [1]T2, Candidate: [1]T1
+271603 T0013 VOTE S3 -> S4, Reject voted, Candidate's log is less up to date
+272843 T0013 VOTE S3 Follower -> Candidator at term: T14
+272843 T0013 LOG1 S2 Follower -> Follower at term: T13->T14
+272843 T0014 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+272843 T0014 VOTE S2 -> S3, Reject voted, Candidate's log is less up to date
+272843 T0013 LOG1 S4 Candidator -> Follower at term: T13->T14
+272843 T0014 VOTE S4 Compare last log, Me: [1]T2, Candidate: [1]T1
+272843 T0014 VOTE S4 -> S3, Reject voted, Candidate's log is less up to date
+272843 T0013 LOG1 S0 Follower -> Follower at term: T13->T14
+272843 T0014 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+272843 T0014 VOTE S0 -> S3, Reject voted, Candidate's log is less up to date
+273477 T0014 VOTE S3 Candidator -> Candidator at term: T15
+273477 T0014 LOG1 S2 Follower -> Follower at term: T14->T15
+273477 T0015 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+273477 T0014 LOG1 S0 Follower -> Follower at term: T14->T15
+273477 T0015 VOTE S2 -> S3, Reject voted, Candidate's log is less up to date
+273477 T0015 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+273477 T0015 VOTE S0 -> S3, Reject voted, Candidate's log is less up to date
+273477 T0014 LOG1 S4 Follower -> Follower at term: T14->T15
+273477 T0015 VOTE S4 Compare last log, Me: [1]T2, Candidate: [1]T1
+273477 T0015 VOTE S4 -> S3, Reject voted, Candidate's log is less up to date
+274100 T0015 VOTE S4 Follower -> Candidator at term: T16
+274103 T0015 LOG1 S3 Candidator -> Follower at term: T15->T16
+274103 T0015 LOG1 S2 Follower -> Follower at term: T15->T16
+274103 T0016 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+274103 T0016 VOTE S2 -> S4, Reject voted, Candidate's log is less up to date
+274103 T0016 VOTE S3 Compare last log, Me: [1]T2, Candidate: [1]T1
+274103 T0016 VOTE S3 -> S4, Reject voted, Candidate's log is less up to date
+274103 T0015 LOG1 S0 Follower -> Follower at term: T15->T16
+274103 T0016 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+274103 T0016 VOTE S0 -> S4, Reject voted, Candidate's log is less up to date
+274413 T0016 VOTE S0 Follower -> Candidator at term: T17
+274413 T0016 VOTE S2 Follower -> Candidator at term: T17
+274413 T0016 LOG1 S4 Candidator -> Follower at term: T16->T17
+274413 T0017 VOTE S2 -> S0, Reject voted, Already voted to S2
+274413 T0016 LOG1 S3 Follower -> Follower at term: T16->T17
+274413 T0017 VOTE S3 Compare last log, Me: [1]T2, Candidate: [1]T1
+274413 T0017 VOTE S3 -> S2, Reject voted, Candidate's log is less up to date
+274413 T0017 VOTE S4 Compare last log, Me: [1]T2, Candidate: [1]T1
+274413 T0017 VOTE S4 -> S2, Reject voted, Candidate's log is less up to date
+274413 T0017 VOTE S3 Compare last log, Me: [1]T2, Candidate: [1]T1
+274413 T0017 VOTE S4 Compare last log, Me: [1]T2, Candidate: [1]T1
+274413 T0017 VOTE S4 -> S0, Reject voted, Candidate's log is less up to date
+274413 T0017 VOTE S3 -> S0, Reject voted, Candidate's log is less up to date
+274413 T0017 VOTE S0 -> S2, Reject voted, Already voted to S0
+275813 T0017 VOTE S4 Follower -> Candidator at term: T18
+275816 T0017 LOG1 S3 Follower -> Follower at term: T17->T18
+275816 T0018 VOTE S3 Compare last log, Me: [1]T2, Candidate: [1]T1
+275822 T0018 VOTE S3 -> S4, Reject voted, Candidate's log is less up to date
+275827 T0017 LOG1 S0 Candidator -> Follower at term: T17->T18
+275827 T0017 LOG1 S2 Candidator -> Follower at term: T17->T18
+275827 T0018 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+275827 T0018 VOTE S2 -> S4, Reject voted, Candidate's log is less up to date
+275827 T0018 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+275827 T0018 VOTE S0 -> S4, Reject voted, Candidate's log is less up to date
+276281 T0018 VOTE S3 Follower -> Candidator at term: T19
+276281 T0018 LOG1 S4 Candidator -> Follower at term: T18->T19
+276281 T0019 VOTE S4 Compare last log, Me: [1]T2, Candidate: [1]T1
+276281 T0019 VOTE S4 -> S3, Reject voted, Candidate's log is less up to date
+276281 T0018 LOG1 S0 Follower -> Follower at term: T18->T19
+276281 T0018 LOG1 S2 Follower -> Follower at term: T18->T19
+276281 T0019 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+276281 T0019 VOTE S2 Compare last log, Me: [1]T2, Candidate: [1]T1
+276281 T0019 VOTE S0 -> S3, Reject voted, Candidate's log is less up to date
+276281 T0019 VOTE S2 -> S3, Reject voted, Candidate's log is less up to date
+276440 T0019 VOTE S2 Follower -> Candidator at term: T20
+276440 T0019 LOG1 S0 Follower -> Follower at term: T19->T20
+276440 T0019 LOG1 S4 Follower -> Follower at term: T19->T20
+276440 T0020 VOTE S4 Compare last log, Me: [1]T2, Candidate: [1]T1
+276440 T0020 VOTE S0 Compare last log, Me: [1]T2, Candidate: [1]T1
+276440 T0020 VOTE S4 -> S2, Reject voted, Candidate's log is less up to date
+276440 T0019 LOG1 S3 Candidator -> Follower at term: T19->T20
+276440 T0020 VOTE S3 Compare last log, Me: [1]T2, Candidate: [1]T1
+276440 T0020 VOTE S3 -> S2, Reject voted, Candidate's log is less up to date
+276440 T0020 VOTE S0 -> S2, Reject voted, Candidate's log is less up to date
+--- FAIL: TestFailNoAgreePartB (2.34s)
+    config.go:597: one(10) failed to reach agreement
+276597 T0000 VOTE S0 Follower -> Candidator at term: T1
+276597 T0000 VOTE S1 Follower -> Candidator at term: T1
+276597 T0000 VOTE S2 Follower -> Candidator at term: T1
+Test (PartB): concurrent Start()s ...
+276597 T0001 VOTE S1 -> S2, Reject voted, Already voted to S1
+276597 T0001 VOTE S0 -> S2, Reject voted, Already voted to S0
+277224 T0001 VOTE S2 Candidator -> Candidator at term: T2
+277229 T0001 LOG1 S1 Candidator -> Follower at term: T1->T2
+277229 T0002 VOTE S1 Compare last log, Me: [0]T0, Candidate: [0]T0
+277229 T0002 VOTE S1 -> S2, Vote granted
+277229 T0001 LOG1 S0 Candidator -> Follower at term: T1->T2
+277229 T0002 VOTE S0 Compare last log, Me: [0]T0, Candidate: [0]T0
+277229 T0002 VOTE S0 -> S2, Vote granted
+277229 T0002 LEAD S2 Become Leader at term: T2
+277229 T0002 VOTE S2 Lost context, abort RequestVoteReply from S0
+277229 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+277229 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+277229 T0002 LOG2 S1 Follower append logs: (0, 0]
+277229 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+277229 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+277229 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+277229 T0002 LOG2 S0 Follower append logs: (0, 0]
+277235 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+279254 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+279254 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+279254 T0002 LOG2 S1 Follower append logs: (0, 0]
+279254 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+279254 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+279254 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+279254 T0002 LOG2 S0 Follower append logs: (0, 0]
+279260 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+281285 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=0
+281285 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+281285 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=0
+281285 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+281285 T0002 LOG2 S1 Follower append logs: (0, 0]
+281285 T0002 LOG2 S0 Follower append logs: (0, 0]
+281290 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+281290 T0002 DBUG S2 Match index after sort: [0 0 0], majority[1]=0
+281908 T0002 LEAD S2 Leader Accept log [1]T2
+281908 T0002 LEAD S2 Leader Accept log [2]T2
+281911 T0002 LEAD S2 Leader Accept log [3]T2
+281911 T0002 LEAD S2 Leader Accept log [4]T2
+281911 T0002 LEAD S2 Leader Accept log [5]T2
+281911 T0002 LEAD S2 Leader Accept log [6]T2
+283315 T0002 DBUG S1 <- S2, Receive Log, Prev=[0]T0, Len()=6
+283315 T0002 LOG1 S1 Follower -> Follower at term: T2->T2
+283315 T0002 LOG2 S1 Follower append logs: (0, 6]
+283315 T0002 DBUG S2 Match index after sort: [0 6 6], majority[1]=6
+283315 T0002 APLY S2 Leader update the commit index 0->0
+283315 T0002 APLY S2 Apply log for [1, 6]
+283315 T0002 DBUG S0 <- S2, Receive Log, Prev=[0]T0, Len()=6
+283315 T0002 LOG1 S0 Follower -> Follower at term: T2->T2
+283315 T0002 LOG2 S0 Follower append logs: (0, 6]
+283785 T0002 DBUG S1 Ask vote from S0, Lost or error
+284549 T0002 DBUG S1 Ask vote from S2, Lost or error
+289232 T0002 VOTE S1 Follower -> Candidator at term: T3
+289234 T0002 LOG1 S0 Follower -> Follower at term: T2->T3
+289234 T0003 VOTE S0 Compare last log, Me: [6]T2, Candidate: [6]T6
+289234 T0003 VOTE S0 -> S1, Vote granted
+289234 T0003 LEAD S1 Become Leader at term: T3
+289234 T0003 DBUG S0 <- S1, Receive Log, Prev=[6]T2, Len()=0
+289234 T0003 LOG1 S0 Follower -> Follower at term: T3->T3
+289234 T0003 LOG2 S0 Follower append logs: (6, 6]
+289234 T0003 DBUG S1 Match index after sort: [0 6 6], majority[1]=6
+289234 T0003 APLY S1 Leader update the commit index 0->0
+289234 T0003 APLY S1 Apply log for [1, 6]
+295315 T0003 VOTE S0 Follower -> Candidator at term: T4
+297656 T0004 VOTE S0 Candidator -> Candidator at term: T5
+298903 T0005 VOTE S0 Candidator -> Candidator at term: T6
+300466 T0006 VOTE S0 Candidator -> Candidator at term: T7
+301402 T0007 VOTE S0 Candidator -> Candidator at term: T8
+302503 T0008 VOTE S0 Candidator -> Candidator at term: T9
+303596 T0009 VOTE S0 Candidator -> Candidator at term: T10
+306070 T0010 VOTE S0 Candidator -> Candidator at term: T11
+307784 T0011 VOTE S0 Candidator -> Candidator at term: T12
+310444 T0012 VOTE S0 Candidator -> Candidator at term: T13
+311374 T0013 VOTE S0 Candidator -> Candidator at term: T14
+313566 T0014 VOTE S0 Candidator -> Candidator at term: T15
+314663 T0015 VOTE S0 Candidator -> Candidator at term: T16
+315280 T0016 DBUG S0 Ask vote from S1, Lost or error
+315746 T0016 VOTE S0 Candidator -> Candidator at term: T17
+317618 T0017 VOTE S0 Candidator -> Candidator at term: T18
+320584 T0018 VOTE S0 Candidator -> Candidator at term: T19
+322606 T0019 VOTE S0 Candidator -> Candidator at term: T20
+324468 T0020 VOTE S0 Candidator -> Candidator at term: T21
+327101 T0021 VOTE S0 Candidator -> Candidator at term: T22
+328819 T0022 VOTE S0 Candidator -> Candidator at term: T23
+329914 T0023 VOTE S0 Candidator -> Candidator at term: T24
+331793 T0024 VOTE S0 Candidator -> Candidator at term: T25
+334612 T0025 VOTE S0 Candidator -> Candidator at term: T26
+338039 T0026 VOTE S0 Candidator -> Candidator at term: T27
+339286 T0027 VOTE S0 Candidator -> Candidator at term: T28
+340377 T0028 DBUG S0 Ask vote from S2, Lost or error
+340528 T0028 VOTE S0 Candidator -> Candidator at term: T29
+341465 T0029 VOTE S0 Candidator -> Candidator at term: T30
+342087 T0030 VOTE S0 Candidator -> Candidator at term: T31
+344580 T0031 VOTE S0 Candidator -> Candidator at term: T32
+346295 T0032 VOTE S0 Candidator -> Candidator at term: T33
+348316 T0033 VOTE S0 Candidator -> Candidator at term: T34
+351713 T0034 VOTE S0 Candidator -> Candidator at term: T35
+353561 T0035 VOTE S0 Candidator -> Candidator at term: T36
+355908 T0036 VOTE S0 Candidator -> Candidator at term: T37
+357923 T0037 VOTE S0 Candidator -> Candidator at term: T38
+359013 T0038 VOTE S0 Candidator -> Candidator at term: T39
+361939 T0039 VOTE S0 Candidator -> Candidator at term: T40
+364913 T0040 VOTE S0 Candidator -> Candidator at term: T41
+366155 T0041 VOTE S0 Candidator -> Candidator at term: T42
+368190 T0042 VOTE S0 Candidator -> Candidator at term: T43
+370520 T0043 VOTE S0 Candidator -> Candidator at term: T44
+371146 T0044 VOTE S0 Candidator -> Candidator at term: T45
+372699 T0045 VOTE S0 Candidator -> Candidator at term: T46
+375961 T0046 VOTE S0 Candidator -> Candidator at term: T47
+376736 T0047 VOTE S0 Candidator -> Candidator at term: T48
+378927 T0048 VOTE S0 Candidator -> Candidator at term: T49
+380952 T0049 VOTE S0 Candidator -> Candidator at term: T50
+384059 T0050 VOTE S0 Candidator -> Candidator at term: T51
+386722 T0051 VOTE S0 Candidator -> Candidator at term: T52
+389364 T0052 VOTE S0 Candidator -> Candidator at term: T53
+391066 T0053 VOTE S0 Candidator -> Candidator at term: T54
+394030 T0054 VOTE S0 Candidator -> Candidator at term: T55
+397161 T0055 VOTE S0 Candidator -> Candidator at term: T56
+398711 T0056 VOTE S0 Candidator -> Candidator at term: T57
+400895 T0057 VOTE S0 Candidator -> Candidator at term: T58
+403088 T0058 VOTE S0 Candidator -> Candidator at term: T59
+404024 T0059 VOTE S0 Candidator -> Candidator at term: T60
+404801 T0060 VOTE S0 Candidator -> Candidator at term: T61
+406503 T0061 VOTE S0 Candidator -> Candidator at term: T62
+408515 T0062 VOTE S0 Candidator -> Candidator at term: T63
+411475 T0063 VOTE S0 Candidator -> Candidator at term: T64
+414274 T0064 VOTE S0 Candidator -> Candidator at term: T65
+417571 T0065 VOTE S0 Candidator -> Candidator at term: T66
+420667 T0066 VOTE S0 Candidator -> Candidator at term: T67
+421449 T0067 VOTE S0 Candidator -> Candidator at term: T68
+423163 T0068 VOTE S0 Candidator -> Candidator at term: T69
+424101 T0069 VOTE S0 Candidator -> Candidator at term: T70
+424734 T0070 VOTE S0 Candidator -> Candidator at term: T71
+426276 T0071 VOTE S0 Candidator -> Candidator at term: T72
+428149 T0072 VOTE S0 Candidator -> Candidator at term: T73
+429392 T0073 VOTE S0 Candidator -> Candidator at term: T74
+430015 T0074 VOTE S0 Candidator -> Candidator at term: T75
+431570 T0075 VOTE S0 Candidator -> Candidator at term: T76
+433293 T0076 VOTE S0 Candidator -> Candidator at term: T77
+434550 T0077 VOTE S0 Candidator -> Candidator at term: T78
+435804 T0078 VOTE S0 Candidator -> Candidator at term: T79
+436894 T0079 VOTE S0 Candidator -> Candidator at term: T80
+437822 T0080 VOTE S0 Candidator -> Candidator at term: T81
+441277 T0081 VOTE S0 Candidator -> Candidator at term: T82
+443896 T0082 VOTE S0 Candidator -> Candidator at term: T83
+444823 T0083 VOTE S0 Candidator -> Candidator at term: T84
+445437 T0084 VOTE S0 Candidator -> Candidator at term: T85
+449033 T0085 VOTE S0 Candidator -> Candidator at term: T86
+452168 T0086 VOTE S0 Candidator -> Candidator at term: T87
+455279 T0087 VOTE S0 Candidator -> Candidator at term: T88
+456994 T0088 VOTE S0 Candidator -> Candidator at term: T89
+459167 T0089 VOTE S0 Candidator -> Candidator at term: T90
+461192 T0090 VOTE S0 Candidator -> Candidator at term: T91
+463984 T0091 VOTE S0 Candidator -> Candidator at term: T92
+466006 T0092 VOTE S0 Candidator -> Candidator at term: T93
+467411 T0093 VOTE S0 Candidator -> Candidator at term: T94
+468658 T0094 VOTE S0 Candidator -> Candidator at term: T95
+471933 T0095 VOTE S0 Candidator -> Candidator at term: T96
+472562 T0096 VOTE S0 Candidator -> Candidator at term: T97
+473966 T0097 VOTE S0 Candidator -> Candidator at term: T98
+475053 T0098 VOTE S0 Candidator -> Candidator at term: T99
+476772 T0099 VOTE S0 Candidator -> Candidator at term: T100
+478965 T0100 VOTE S0 Candidator -> Candidator at term: T101
+480062 T0101 VOTE S0 Candidator -> Candidator at term: T102
+481936 T0102 VOTE S0 Candidator -> Candidator at term: T103
+483492 T0103 VOTE S0 Candidator -> Candidator at term: T104
+484749 T0104 VOTE S0 Candidator -> Candidator at term: T105
+486148 T0105 VOTE S0 Candidator -> Candidator at term: T106
+489260 T0106 VOTE S0 Candidator -> Candidator at term: T107
+490516 T0107 VOTE S0 Candidator -> Candidator at term: T108
+491756 T0108 VOTE S0 Candidator -> Candidator at term: T109
+494237 T0109 VOTE S0 Candidator -> Candidator at term: T110
+496104 T0110 VOTE S0 Candidator -> Candidator at term: T111
+498292 T0111 VOTE S0 Candidator -> Candidator at term: T112
+500159 T0112 VOTE S0 Candidator -> Candidator at term: T113
+501888 T0113 VOTE S0 Candidator -> Candidator at term: T114
+504389 T0114 VOTE S0 Candidator -> Candidator at term: T115
+505482 T0115 VOTE S0 Candidator -> Candidator at term: T116
+506900 T0116 VOTE S0 Candidator -> Candidator at term: T117
+508602 T0117 VOTE S0 Candidator -> Candidator at term: T118
+509695 T0118 VOTE S0 Candidator -> Candidator at term: T119
+512959 T0119 VOTE S0 Candidator -> Candidator at term: T120
+513892 T0120 VOTE S0 Candidator -> Candidator at term: T121
+515133 T0121 VOTE S0 Candidator -> Candidator at term: T122
+516230 T0122 VOTE S0 Candidator -> Candidator at term: T123
+519493 T0123 VOTE S0 Candidator -> Candidator at term: T124
+521369 T0124 VOTE S0 Candidator -> Candidator at term: T125
+522916 T0125 VOTE S0 Candidator -> Candidator at term: T126
+524480 T0126 VOTE S0 Candidator -> Candidator at term: T127
+527779 T0127 VOTE S0 Candidator -> Candidator at term: T128
+528394 T0128 VOTE S0 Candidator -> Candidator at term: T129
+530585 T0129 VOTE S0 Candidator -> Candidator at term: T130
+533851 T0130 VOTE S0 Candidator -> Candidator at term: T131
+536811 T0131 VOTE S0 Candidator -> Candidator at term: T132
+538833 T0132 VOTE S0 Candidator -> Candidator at term: T133
+541622 T0133 VOTE S0 Candidator -> Candidator at term: T134
+542875 T0134 VOTE S0 Candidator -> Candidator at term: T135
+543508 T0135 VOTE S0 Candidator -> Candidator at term: T136
+546313 T0136 VOTE S0 Candidator -> Candidator at term: T137
+549282 T0137 VOTE S0 Candidator -> Candidator at term: T138
+550209 T0138 VOTE S0 Candidator -> Candidator at term: T139
+553490 T0139 VOTE S0 Candidator -> Candidator at term: T140
+554269 T0140 VOTE S0 Candidator -> Candidator at term: T141
+556761 T0141 VOTE S0 Candidator -> Candidator at term: T142
+558477 T0142 VOTE S0 Candidator -> Candidator at term: T143
+561387 T0143 VOTE S0 Candidator -> Candidator at term: T144
+562172 T0144 VOTE S0 Candidator -> Candidator at term: T145
+563735 T0145 VOTE S0 Candidator -> Candidator at term: T146
+564511 T0146 VOTE S0 Candidator -> Candidator at term: T147
+567789 T0147 VOTE S0 Candidator -> Candidator at term: T148
+568577 T0148 VOTE S0 Candidator -> Candidator at term: T149
+570300 T0149 VOTE S0 Candidator -> Candidator at term: T150
+572011 T0150 VOTE S0 Candidator -> Candidator at term: T151
+574811 T0151 VOTE S0 Candidator -> Candidator at term: T152
+575900 T0152 VOTE S0 Candidator -> Candidator at term: T153
+577625 T0153 VOTE S0 Candidator -> Candidator at term: T154
+579665 T0154 VOTE S0 Candidator -> Candidator at term: T155
+581516 T0155 VOTE S0 Candidator -> Candidator at term: T156
+583233 T0156 VOTE S0 Candidator -> Candidator at term: T157
+586327 T0157 VOTE S0 Candidator -> Candidator at term: T158
+589600 T0158 VOTE S0 Candidator -> Candidator at term: T159
+591159 T0159 VOTE S0 Candidator -> Candidator at term: T160
+593186 T0160 VOTE S0 Candidator -> Candidator at term: T161
+594121 T0161 VOTE S0 Candidator -> Candidator at term: T162
+597228 T0162 VOTE S0 Candidator -> Candidator at term: T163
+600349 T0163 VOTE S0 Candidator -> Candidator at term: T164
+602524 T0164 VOTE S0 Candidator -> Candidator at term: T165
+605497 T0165 VOTE S0 Candidator -> Candidator at term: T166
+606432 T0166 VOTE S0 Candidator -> Candidator at term: T167
+607681 T0167 VOTE S0 Candidator -> Candidator at term: T168
+610339 T0168 VOTE S0 Candidator -> Candidator at term: T169
+613578 T0169 VOTE S0 Candidator -> Candidator at term: T170
+617168 T0170 VOTE S0 Candidator -> Candidator at term: T171
+618579 T0171 VOTE S0 Candidator -> Candidator at term: T172
+620284 T0172 VOTE S0 Candidator -> Candidator at term: T173
+621991 T0173 VOTE S0 Candidator -> Candidator at term: T174
+624310 T0174 VOTE S0 Candidator -> Candidator at term: T175
+626173 T0175 VOTE S0 Candidator -> Candidator at term: T176
+628502 T0176 VOTE S0 Candidator -> Candidator at term: T177
+629595 T0177 VOTE S0 Candidator -> Candidator at term: T178
+632409 T0178 VOTE S0 Candidator -> Candidator at term: T179
+635833 T0179 VOTE S0 Candidator -> Candidator at term: T180
+638344 T0180 VOTE S0 Candidator -> Candidator at term: T181
+641495 T0181 VOTE S0 Candidator -> Candidator at term: T182
+642116 T0182 VOTE S0 Candidator -> Candidator at term: T183
+644290 T0183 VOTE S0 Candidator -> Candidator at term: T184
+646934 T0184 VOTE S0 Candidator -> Candidator at term: T185
+649240 T0185 VOTE S0 Candidator -> Candidator at term: T186
+652367 T0186 VOTE S0 Candidator -> Candidator at term: T187
+653925 T0187 VOTE S0 Candidator -> Candidator at term: T188
+657207 T0188 VOTE S0 Candidator -> Candidator at term: T189
+659388 T0189 VOTE S0 Candidator -> Candidator at term: T190
+662201 T0190 VOTE S0 Candidator -> Candidator at term: T191
+665609 T0191 VOTE S0 Candidator -> Candidator at term: T192
+669042 T0192 VOTE S0 Candidator -> Candidator at term: T193
+671227 T0193 VOTE S0 Candidator -> Candidator at term: T194
+674042 T0194 VOTE S0 Candidator -> Candidator at term: T195
+675745 T0195 VOTE S0 Candidator -> Candidator at term: T196
+679003 T0196 VOTE S0 Candidator -> Candidator at term: T197
+680256 T0197 VOTE S0 Candidator -> Candidator at term: T198
+681338 T0198 VOTE S0 Candidator -> Candidator at term: T199
+684437 T0199 VOTE S0 Candidator -> Candidator at term: T200
+685520 T0200 VOTE S0 Candidator -> Candidator at term: T201
+688794 T0201 VOTE S0 Candidator -> Candidator at term: T202
+689724 T0202 VOTE S0 Candidator -> Candidator at term: T203
+692047 T0203 VOTE S0 Candidator -> Candidator at term: T204
+695631 T0204 VOTE S0 Candidator -> Candidator at term: T205
+697981 T0205 VOTE S0 Candidator -> Candidator at term: T206
+699386 T0206 VOTE S0 Candidator -> Candidator at term: T207
+701577 T0207 VOTE S0 Candidator -> Candidator at term: T208
+703432 T0208 VOTE S0 Candidator -> Candidator at term: T209
+704517 T0209 VOTE S0 Candidator -> Candidator at term: T210
+707601 T0210 VOTE S0 Candidator -> Candidator at term: T211
+710855 T0211 VOTE S0 Candidator -> Candidator at term: T212
+711788 T0212 VOTE S0 Candidator -> Candidator at term: T213
+712551 T0213 VOTE S0 Candidator -> Candidator at term: T214
+713334 T0214 VOTE S0 Candidator -> Candidator at term: T215
+715824 T0215 VOTE S0 Candidator -> Candidator at term: T216
+718772 T0216 VOTE S0 Candidator -> Candidator at term: T217
+722054 T0217 VOTE S0 Candidator -> Candidator at term: T218
+723613 T0218 VOTE S0 Candidator -> Candidator at term: T219
+725015 T0219 VOTE S0 Candidator -> Candidator at term: T220
+725634 T0220 VOTE S0 Candidator -> Candidator at term: T221
+727827 T0221 VOTE S0 Candidator -> Candidator at term: T222
+729844 T0222 VOTE S0 Candidator -> Candidator at term: T223
+730770 T0223 VOTE S0 Candidator -> Candidator at term: T224
+733874 T0224 VOTE S0 Candidator -> Candidator at term: T225
+736040 T0225 VOTE S0 Candidator -> Candidator at term: T226
+736979 T0226 VOTE S0 Candidator -> Candidator at term: T227
+738698 T0227 VOTE S0 Candidator -> Candidator at term: T228
+741494 T0228 VOTE S0 Candidator -> Candidator at term: T229
+742758 T0229 VOTE S0 Candidator -> Candidator at term: T230
+745403 T0230 VOTE S0 Candidator -> Candidator at term: T231
+747912 T0231 VOTE S0 Candidator -> Candidator at term: T232
+750381 T0232 VOTE S0 Candidator -> Candidator at term: T233
+751313 T0233 VOTE S0 Candidator -> Candidator at term: T234
+753186 T0234 VOTE S0 Candidator -> Candidator at term: T235
+756612 T0235 VOTE S0 Candidator -> Candidator at term: T236
+759878 T0236 VOTE S0 Candidator -> Candidator at term: T237
+763159 T0237 VOTE S0 Candidator -> Candidator at term: T238
+763953 T0238 VOTE S0 Candidator -> Candidator at term: T239
+766625 T0239 VOTE S0 Candidator -> Candidator at term: T240
+770193 T0240 VOTE S0 Candidator -> Candidator at term: T241
+772674 T0241 VOTE S0 Candidator -> Candidator at term: T242
+774234 T0242 VOTE S0 Candidator -> Candidator at term: T243
+777660 T0243 VOTE S0 Candidator -> Candidator at term: T244
+778443 T0244 VOTE S0 Candidator -> Candidator at term: T245
+780172 T0245 VOTE S0 Candidator -> Candidator at term: T246
+783283 T0246 VOTE S0 Candidator -> Candidator at term: T247
+784364 T0247 VOTE S0 Candidator -> Candidator at term: T248
+785763 T0248 VOTE S0 Candidator -> Candidator at term: T249
+788265 T0249 VOTE S0 Candidator -> Candidator at term: T250
+791699 T0250 VOTE S0 Candidator -> Candidator at term: T251
+794499 T0251 VOTE S0 Candidator -> Candidator at term: T252
+796057 T0252 VOTE S0 Candidator -> Candidator at term: T253
+797770 T0253 VOTE S0 Candidator -> Candidator at term: T254
+800411 T0254 VOTE S0 Candidator -> Candidator at term: T255
+803541 T0255 VOTE S0 Candidator -> Candidator at term: T256
+806048 T0256 VOTE S0 Candidator -> Candidator at term: T257
+809316 T0257 VOTE S0 Candidator -> Candidator at term: T258
+812722 T0258 VOTE S0 Candidator -> Candidator at term: T259
+814013 T0259 VOTE S0 Candidator -> Candidator at term: T260
+816018 T0260 VOTE S0 Candidator -> Candidator at term: T261
+818990 T0261 VOTE S0 Candidator -> Candidator at term: T262
+822419 T0262 VOTE S0 Candidator -> Candidator at term: T263
+825201 T0263 VOTE S0 Candidator -> Candidator at term: T264
+828641 T0264 VOTE S0 Candidator -> Candidator at term: T265
+830194 T0265 VOTE S0 Candidator -> Candidator at term: T266
+831921 T0266 VOTE S0 Candidator -> Candidator at term: T267
+833635 T0267 VOTE S0 Candidator -> Candidator at term: T268
+835335 T0268 VOTE S0 Candidator -> Candidator at term: T269
+837830 T0269 VOTE S0 Candidator -> Candidator at term: T270
+841082 T0270 VOTE S0 Candidator -> Candidator at term: T271
+844205 T0271 VOTE S0 Candidator -> Candidator at term: T272
+846078 T0272 VOTE S0 Candidator -> Candidator at term: T273
+847021 T0273 VOTE S0 Candidator -> Candidator at term: T274
+850305 T0274 VOTE S0 Candidator -> Candidator at term: T275
+851246 T0275 VOTE S0 Candidator -> Candidator at term: T276
+853262 T0276 VOTE S0 Candidator -> Candidator at term: T277
+854360 T0277 VOTE S0 Candidator -> Candidator at term: T278
+856372 T0278 VOTE S0 Candidator -> Candidator at term: T279
+857616 T0279 VOTE S0 Candidator -> Candidator at term: T280
+860106 T0280 VOTE S0 Candidator -> Candidator at term: T281
+861674 T0281 VOTE S0 Candidator -> Candidator at term: T282
+864639 T0282 VOTE S0 Candidator -> Candidator at term: T283
+867587 T0283 VOTE S0 Candidator -> Candidator at term: T284
+871031 T0284 VOTE S0 Candidator -> Candidator at term: T285
+872274 T0285 VOTE S0 Candidator -> Candidator at term: T286
+875687 T0286 VOTE S0 Candidator -> Candidator at term: T287
+878483 T0287 VOTE S0 Candidator -> Candidator at term: T288
+880042 T0288 VOTE S0 Candidator -> Candidator at term: T289
+883457 T0289 VOTE S0 Candidator -> Candidator at term: T290
+884549 T0290 VOTE S0 Candidator -> Candidator at term: T291
+887828 T0291 VOTE S0 Candidator -> Candidator at term: T292
+891084 T0292 VOTE S0 Candidator -> Candidator at term: T293
+892791 T0293 VOTE S0 Candidator -> Candidator at term: T294
+895593 T0294 VOTE S0 Candidator -> Candidator at term: T295
+899022 T0295 VOTE S0 Candidator -> Candidator at term: T296
+900287 T0296 VOTE S0 Candidator -> Candidator at term: T297
+902941 T0297 VOTE S0 Candidator -> Candidator at term: T298
+904487 T0298 VOTE S0 Candidator -> Candidator at term: T299
+906205 T0299 VOTE S0 Candidator -> Candidator at term: T300
+908676 T0300 VOTE S0 Candidator -> Candidator at term: T301
+910841 T0301 VOTE S0 Candidator -> Candidator at term: T302
+912880 T0302 VOTE S0 Candidator -> Candidator at term: T303
+915219 T0303 VOTE S0 Candidator -> Candidator at term: T304
+917419 T0304 VOTE S0 Candidator -> Candidator at term: T305
+918953 T0305 VOTE S0 Candidator -> Candidator at term: T306
+921755 T0306 VOTE S0 Candidator -> Candidator at term: T307
+923147 T0307 VOTE S0 Candidator -> Candidator at term: T308
+923924 T0308 VOTE S0 Candidator -> Candidator at term: T309
+924707 T0309 VOTE S0 Candidator -> Candidator at term: T310
+926258 T0310 VOTE S0 Candidator -> Candidator at term: T311
+927190 T0311 VOTE S0 Candidator -> Candidator at term: T312
+928281 T0312 VOTE S0 Candidator -> Candidator at term: T313
+931565 T0313 VOTE S0 Candidator -> Candidator at term: T314
+933121 T0314 VOTE S0 Candidator -> Candidator at term: T315
+933740 T0315 VOTE S0 Candidator -> Candidator at term: T316
+935303 T0316 VOTE S0 Candidator -> Candidator at term: T317
+937474 T0317 VOTE S0 Candidator -> Candidator at term: T318
+939334 T0318 VOTE S0 Candidator -> Candidator at term: T319
+942606 T0319 VOTE S0 Candidator -> Candidator at term: T320
+944312 T0320 VOTE S0 Candidator -> Candidator at term: T321
+947126 T0321 VOTE S0 Candidator -> Candidator at term: T322
+948839 T0322 VOTE S0 Candidator -> Candidator at term: T323
+951180 T0323 VOTE S0 Candidator -> Candidator at term: T324
+951807 T0324 VOTE S0 Candidator -> Candidator at term: T325
+953827 T0325 VOTE S0 Candidator -> Candidator at term: T326
+955841 T0326 VOTE S0 Candidator -> Candidator at term: T327
+958341 T0327 VOTE S0 Candidator -> Candidator at term: T328
+959114 T0328 VOTE S0 Candidator -> Candidator at term: T329
+960959 T0329 VOTE S0 Candidator -> Candidator at term: T330
+964243 T0330 VOTE S0 Candidator -> Candidator at term: T331
+967189 T0331 VOTE S0 Candidator -> Candidator at term: T332
+968279 T0332 VOTE S0 Candidator -> Candidator at term: T333
+970632 T0333 VOTE S0 Candidator -> Candidator at term: T334
+971411 T0334 VOTE S0 Candidator -> Candidator at term: T335
+973584 T0335 VOTE S0 Candidator -> Candidator at term: T336
+975766 T0336 VOTE S0 Candidator -> Candidator at term: T337
+977170 T0337 VOTE S0 Candidator -> Candidator at term: T338
+980452 T0338 VOTE S0 Candidator -> Candidator at term: T339
+981700 T0339 VOTE S0 Candidator -> Candidator at term: T340
+983101 T0340 VOTE S0 Candidator -> Candidator at term: T341
+984812 T0341 VOTE S0 Candidator -> Candidator at term: T342
+987153 T0342 VOTE S0 Candidator -> Candidator at term: T343
+988238 T0343 VOTE S0 Candidator -> Candidator at term: T344
+988865 T0344 VOTE S0 Candidator -> Candidator at term: T345
+989642 T0345 VOTE S0 Candidator -> Candidator at term: T346
+991057 T0346 VOTE S0 Candidator -> Candidator at term: T347
+993267 T0347 VOTE S0 Candidator -> Candidator at term: T348
+994669 T0348 VOTE S0 Candidator -> Candidator at term: T349
+995602 T0349 VOTE S0 Candidator -> Candidator at term: T350
+996553 T0350 VOTE S0 Candidator -> Candidator at term: T351
+997499 T0351 VOTE S0 Candidator -> Candidator at term: T352
+999834 T0352 VOTE S0 Candidator -> Candidator at term: T353
+1000761 T0353 VOTE S0 Candidator -> Candidator at term: T354
+1002779 T0354 VOTE S0 Candidator -> Candidator at term: T355
+1004940 T0355 VOTE S0 Candidator -> Candidator at term: T356
+1005873 T0356 VOTE S0 Candidator -> Candidator at term: T357
+1008376 T0357 VOTE S0 Candidator -> Candidator at term: T358
+1009001 T0358 VOTE S0 Candidator -> Candidator at term: T359
+1009920 T0359 VOTE S0 Candidator -> Candidator at term: T360
+1011933 T0360 VOTE S0 Candidator -> Candidator at term: T361
+1014117 T0361 VOTE S0 Candidator -> Candidator at term: T362
+1017519 T0362 VOTE S0 Candidator -> Candidator at term: T363
+1018149 T0363 VOTE S0 Candidator -> Candidator at term: T364
+1019856 T0364 VOTE S0 Candidator -> Candidator at term: T365
+1021565 T0365 VOTE S0 Candidator -> Candidator at term: T366
+1022198 T0366 VOTE S0 Candidator -> Candidator at term: T367
+1023456 T0367 VOTE S0 Candidator -> Candidator at term: T368
+1025772 T0368 VOTE S0 Candidator -> Candidator at term: T369
+1027004 T0369 VOTE S0 Candidator -> Candidator at term: T370
+1027935 T0370 VOTE S0 Candidator -> Candidator at term: T371
+1031225 T0371 VOTE S0 Candidator -> Candidator at term: T372
+1031853 T0372 VOTE S0 Candidator -> Candidator at term: T373
+1032474 T0373 VOTE S0 Candidator -> Candidator at term: T374
+1035736 T0374 VOTE S0 Candidator -> Candidator at term: T375
+1038064 T0375 VOTE S0 Candidator -> Candidator at term: T376
+1040241 T0376 VOTE S0 Candidator -> Candidator at term: T377
+1041482 T0377 VOTE S0 Candidator -> Candidator at term: T378
+1042870 T0378 VOTE S0 Candidator -> Candidator at term: T379
+1044737 T0379 VOTE S0 Candidator -> Candidator at term: T380
+1046901 T0380 VOTE S0 Candidator -> Candidator at term: T381
+1047982 T0381 VOTE S0 Candidator -> Candidator at term: T382
+1048902 T0382 VOTE S0 Candidator -> Candidator at term: T383
+1051887 T0383 VOTE S0 Candidator -> Candidator at term: T384
+1053769 T0384 VOTE S0 Candidator -> Candidator at term: T385
+1056894 T0385 VOTE S0 Candidator -> Candidator at term: T386
+1058756 T0386 VOTE S0 Candidator -> Candidator at term: T387
+1060303 T0387 VOTE S0 Candidator -> Candidator at term: T388
+1061242 T0388 VOTE S0 Candidator -> Candidator at term: T389
+1064036 T0389 VOTE S0 Candidator -> Candidator at term: T390
+1066207 T0390 VOTE S0 Candidator -> Candidator at term: T391
+1068225 T0391 VOTE S0 Candidator -> Candidator at term: T392
+1071503 T0392 VOTE S0 Candidator -> Candidator at term: T393
+1074610 T0393 VOTE S0 Candidator -> Candidator at term: T394
+1076010 T0394 VOTE S0 Candidator -> Candidator at term: T395
+1079273 T0395 VOTE S0 Candidator -> Candidator at term: T396
+1082550 T0396 VOTE S0 Candidator -> Candidator at term: T397
+1084732 T0397 VOTE S0 Candidator -> Candidator at term: T398
+1087685 T0398 VOTE S0 Candidator -> Candidator at term: T399
+1089094 T0399 VOTE S0 Candidator -> Candidator at term: T400
+1092682 T0400 VOTE S0 Candidator -> Candidator at term: T401
+1095493 T0401 VOTE S0 Candidator -> Candidator at term: T402
+1096755 T0402 VOTE S0 Candidator -> Candidator at term: T403
+1097839 T0403 VOTE S0 Candidator -> Candidator at term: T404
+1100170 T0404 VOTE S0 Candidator -> Candidator at term: T405
+1100932 T0405 VOTE S0 Candidator -> Candidator at term: T406
+1103132 T0406 VOTE S0 Candidator -> Candidator at term: T407
+1104534 T0407 VOTE S0 Candidator -> Candidator at term: T408
+1105788 T0408 VOTE S0 Candidator -> Candidator at term: T409
+1108761 T0409 VOTE S0 Candidator -> Candidator at term: T410
+1112043 T0410 VOTE S0 Candidator -> Candidator at term: T411
+1114362 T0411 VOTE S0 Candidator -> Candidator at term: T412
+1115927 T0412 VOTE S0 Candidator -> Candidator at term: T413
+1119191 T0413 VOTE S0 Candidator -> Candidator at term: T414
+1121859 T0414 VOTE S0 Candidator -> Candidator at term: T415
+1123251 T0415 VOTE S0 Candidator -> Candidator at term: T416
+1125128 T0416 VOTE S0 Candidator -> Candidator at term: T417
+1127469 T0417 VOTE S0 Candidator -> Candidator at term: T418
+1129172 T0418 VOTE S0 Candidator -> Candidator at term: T419
+1130866 T0419 VOTE S0 Candidator -> Candidator at term: T420
+1132122 T0420 VOTE S0 Candidator -> Candidator at term: T421
+1134469 T0421 VOTE S0 Candidator -> Candidator at term: T422
+1135394 T0422 VOTE S0 Candidator -> Candidator at term: T423
+1137109 T0423 VOTE S0 Candidator -> Candidator at term: T424
+1139594 T0424 VOTE S0 Candidator -> Candidator at term: T425
+1141010 T0425 VOTE S0 Candidator -> Candidator at term: T426
+1142101 T0426 VOTE S0 Candidator -> Candidator at term: T427
+1144305 T0427 VOTE S0 Candidator -> Candidator at term: T428
+1146950 T0428 VOTE S0 Candidator -> Candidator at term: T429
+1150365 T0429 VOTE S0 Candidator -> Candidator at term: T430
+1151306 T0430 VOTE S0 Candidator -> Candidator at term: T431
+1152393 T0431 VOTE S0 Candidator -> Candidator at term: T432
+1155982 T0432 VOTE S0 Candidator -> Candidator at term: T433
+1159243 T0433 VOTE S0 Candidator -> Candidator at term: T434
+1160953 T0434 VOTE S0 Candidator -> Candidator at term: T435
+1162183 T0435 VOTE S0 Candidator -> Candidator at term: T436
+1163758 T0436 VOTE S0 Candidator -> Candidator at term: T437
+1166421 T0437 VOTE S0 Candidator -> Candidator at term: T438
+1167507 T0438 VOTE S0 Candidator -> Candidator at term: T439
+1169224 T0439 VOTE S0 Candidator -> Candidator at term: T440
+1170295 T0440 VOTE S0 Candidator -> Candidator at term: T441
+1171547 T0441 VOTE S0 Candidator -> Candidator at term: T442
+1174827 T0442 VOTE S0 Candidator -> Candidator at term: T443
+1176070 T0443 VOTE S0 Candidator -> Candidator at term: T444
+1176685 T0444 VOTE S0 Candidator -> Candidator at term: T445
+1178548 T0445 VOTE S0 Candidator -> Candidator at term: T446
+1179481 T0446 VOTE S0 Candidator -> Candidator at term: T447
+1181505 T0447 VOTE S0 Candidator -> Candidator at term: T448
+1182280 T0448 VOTE S0 Candidator -> Candidator at term: T449
+1184461 T0449 VOTE S0 Candidator -> Candidator at term: T450
+1185235 T0450 VOTE S0 Candidator -> Candidator at term: T451
+1187717 T0451 VOTE S0 Candidator -> Candidator at term: T452
+1188500 T0452 VOTE S0 Candidator -> Candidator at term: T453
+1190218 T0453 VOTE S0 Candidator -> Candidator at term: T454
+1192541 T0454 VOTE S0 Candidator -> Candidator at term: T455
+1193318 T0455 VOTE S0 Candidator -> Candidator at term: T456
+1196749 T0456 VOTE S0 Candidator -> Candidator at term: T457
+1200016 T0457 VOTE S0 Candidator -> Candidator at term: T458
+1202521 T0458 VOTE S0 Candidator -> Candidator at term: T459
+1204874 T0459 VOTE S0 Candidator -> Candidator at term: T460
+1208294 T0460 VOTE S0 Candidator -> Candidator at term: T461
+1210155 T0461 VOTE S0 Candidator -> Candidator at term: T462
+1210931 T0462 VOTE S0 Candidator -> Candidator at term: T463
+1213292 T0463 VOTE S0 Candidator -> Candidator at term: T464
+1214065 T0464 VOTE S0 Candidator -> Candidator at term: T465
+1214990 T0465 VOTE S0 Candidator -> Candidator at term: T466
+1217950 T0466 VOTE S0 Candidator -> Candidator at term: T467
+1220444 T0467 VOTE S0 Candidator -> Candidator at term: T468
+1222792 T0468 VOTE S0 Candidator -> Candidator at term: T469
+1225118 T0469 VOTE S0 Candidator -> Candidator at term: T470
+1227763 T0470 VOTE S0 Candidator -> Candidator at term: T471
+1228544 T0471 VOTE S0 Candidator -> Candidator at term: T472
+1229791 T0472 VOTE S0 Candidator -> Candidator at term: T473
+1231197 T0473 VOTE S0 Candidator -> Candidator at term: T474
+1234466 T0474 VOTE S0 Candidator -> Candidator at term: T475
+1237426 T0475 VOTE S0 Candidator -> Candidator at term: T476
+1240536 T0476 VOTE S0 Candidator -> Candidator at term: T477
+1241944 T0477 VOTE S0 Candidator -> Candidator at term: T478
+1243953 T0478 VOTE S0 Candidator -> Candidator at term: T479
+1245671 T0479 VOTE S0 Candidator -> Candidator at term: T480
+1246910 T0480 VOTE S0 Candidator -> Candidator at term: T481
+1248779 T0481 VOTE S0 Candidator -> Candidator at term: T482
+1250948 T0482 VOTE S0 Candidator -> Candidator at term: T483
+1254414 T0483 VOTE S0 Candidator -> Candidator at term: T484
+1256905 T0484 VOTE S0 Candidator -> Candidator at term: T485
+1258470 T0485 VOTE S0 Candidator -> Candidator at term: T486
+1260025 T0486 VOTE S0 Candidator -> Candidator at term: T487
+1261121 T0487 VOTE S0 Candidator -> Candidator at term: T488
+1264212 T0488 VOTE S0 Candidator -> Candidator at term: T489
+1267814 T0489 VOTE S0 Candidator -> Candidator at term: T490
+1269375 T0490 VOTE S0 Candidator -> Candidator at term: T491
+1272970 T0491 VOTE S0 Candidator -> Candidator at term: T492
+1274363 T0492 VOTE S0 Candidator -> Candidator at term: T493
+1276384 T0493 VOTE S0 Candidator -> Candidator at term: T494
+1277943 T0494 VOTE S0 Candidator -> Candidator at term: T495
+1279336 T0495 VOTE S0 Candidator -> Candidator at term: T496
+1282303 T0496 VOTE S0 Candidator -> Candidator at term: T497
+1284965 T0497 VOTE S0 Candidator -> Candidator at term: T498
+1287458 T0498 VOTE S0 Candidator -> Candidator at term: T499
+1288699 T0499 VOTE S0 Candidator -> Candidator at term: T500
+1291963 T0500 VOTE S0 Candidator -> Candidator at term: T501
+1294943 T0501 VOTE S0 Candidator -> Candidator at term: T502
+1295865 T0502 VOTE S0 Candidator -> Candidator at term: T503
+1296648 T0503 VOTE S0 Candidator -> Candidator at term: T504
+1299749 T0504 VOTE S0 Candidator -> Candidator at term: T505
+1301615 T0505 VOTE S0 Candidator -> Candidator at term: T506
+1304558 T0506 VOTE S0 Candidator -> Candidator at term: T507
+1307977 T0507 VOTE S0 Candidator -> Candidator at term: T508
+1309060 T0508 VOTE S0 Candidator -> Candidator at term: T509
+1311711 T0509 VOTE S0 Candidator -> Candidator at term: T510
+1312946 T0510 VOTE S0 Candidator -> Candidator at term: T511
+1316532 T0511 VOTE S0 Candidator -> Candidator at term: T512
+1317308 T0512 VOTE S0 Candidator -> Candidator at term: T513
+1319634 T0513 VOTE S0 Candidator -> Candidator at term: T514
+1321819 T0514 VOTE S0 Candidator -> Candidator at term: T515
+1325239 T0515 VOTE S0 Candidator -> Candidator at term: T516
+1327253 T0516 VOTE S0 Candidator -> Candidator at term: T517
+1328504 T0517 VOTE S0 Candidator -> Candidator at term: T518
+1329586 T0518 VOTE S0 Candidator -> Candidator at term: T519
+1331922 T0519 VOTE S0 Candidator -> Candidator at term: T520
+1332704 T0520 VOTE S0 Candidator -> Candidator at term: T521
+1334567 T0521 VOTE S0 Candidator -> Candidator at term: T522
+1335960 T0522 VOTE S0 Candidator -> Candidator at term: T523
+1339261 T0523 VOTE S0 Candidator -> Candidator at term: T524
+1341742 T0524 VOTE S0 Candidator -> Candidator at term: T525
+1344372 T0525 VOTE S0 Candidator -> Candidator at term: T526
+1346259 T0526 VOTE S0 Candidator -> Candidator at term: T527
+1347192 T0527 VOTE S0 Candidator -> Candidator at term: T528
+1349824 T0528 VOTE S0 Candidator -> Candidator at term: T529
+1353403 T0529 VOTE S0 Candidator -> Candidator at term: T530
+1354780 T0530 VOTE S0 Candidator -> Candidator at term: T531
+1356181 T0531 VOTE S0 Candidator -> Candidator at term: T532
+1356802 T0532 VOTE S0 Candidator -> Candidator at term: T533
+1358050 T0533 VOTE S0 Candidator -> Candidator at term: T534
+1360067 T0534 VOTE S0 Candidator -> Candidator at term: T535
+1363173 T0535 VOTE S0 Candidator -> Candidator at term: T536
+1363799 T0536 VOTE S0 Candidator -> Candidator at term: T537
+1366129 T0537 VOTE S0 Candidator -> Candidator at term: T538
+1368459 T0538 VOTE S0 Candidator -> Candidator at term: T539
+1369393 T0539 VOTE S0 Candidator -> Candidator at term: T540
+1370483 T0540 VOTE S0 Candidator -> Candidator at term: T541
+1372668 T0541 VOTE S0 Candidator -> Candidator at term: T542
+1376089 T0542 VOTE S0 Candidator -> Candidator at term: T543
+1378577 T0543 VOTE S0 Candidator -> Candidator at term: T544
+1379669 T0544 VOTE S0 Candidator -> Candidator at term: T545
+1382612 T0545 VOTE S0 Candidator -> Candidator at term: T546
+1384626 T0546 VOTE S0 Candidator -> Candidator at term: T547
+1386014 T0547 VOTE S0 Candidator -> Candidator at term: T548
+1387714 T0548 VOTE S0 Candidator -> Candidator at term: T549
+1388497 T0549 VOTE S0 Candidator -> Candidator at term: T550
+1391162 T0550 VOTE S0 Candidator -> Candidator at term: T551
+1392407 T0551 VOTE S0 Candidator -> Candidator at term: T552
+1395522 T0552 VOTE S0 Candidator -> Candidator at term: T553
+1397088 T0553 VOTE S0 Candidator -> Candidator at term: T554
+1398019 T0554 VOTE S0 Candidator -> Candidator at term: T555
+1401624 T0555 VOTE S0 Candidator -> Candidator at term: T556
+1404729 T0556 VOTE S0 Candidator -> Candidator at term: T557
+1406143 T0557 VOTE S0 Candidator -> Candidator at term: T558
+1409574 T0558 VOTE S0 Candidator -> Candidator at term: T559
+1412988 T0559 VOTE S0 Candidator -> Candidator at term: T560
+1415636 T0560 VOTE S0 Candidator -> Candidator at term: T561
+1416874 T0561 VOTE S0 Candidator -> Candidator at term: T562
+1419226 T0562 VOTE S0 Candidator -> Candidator at term: T563
+1420162 T0563 VOTE S0 Candidator -> Candidator at term: T564
+1422480 T0564 VOTE S0 Candidator -> Candidator at term: T565
+1423739 T0565 VOTE S0 Candidator -> Candidator at term: T566
+1427146 T0566 VOTE S0 Candidator -> Candidator at term: T567
+1428223 T0567 VOTE S0 Candidator -> Candidator at term: T568
+1429944 T0568 VOTE S0 Candidator -> Candidator at term: T569
+1432759 T0569 VOTE S0 Candidator -> Candidator at term: T570
+1435402 T0570 VOTE S0 Candidator -> Candidator at term: T571
+1436020 T0571 VOTE S0 Candidator -> Candidator at term: T572
+1439277 T0572 VOTE S0 Candidator -> Candidator at term: T573
+1441628 T0573 VOTE S0 Candidator -> Candidator at term: T574
+1442401 T0574 VOTE S0 Candidator -> Candidator at term: T575
+1443495 T0575 VOTE S0 Candidator -> Candidator at term: T576
+1445513 T0576 VOTE S0 Candidator -> Candidator at term: T577
+1447683 T0577 VOTE S0 Candidator -> Candidator at term: T578
+1449097 T0578 VOTE S0 Candidator -> Candidator at term: T579
+1449723 T0579 VOTE S0 Candidator -> Candidator at term: T580
+1452215 T0580 VOTE S0 Candidator -> Candidator at term: T581
+1455187 T0581 VOTE S0 Candidator -> Candidator at term: T582
+1457520 T0582 VOTE S0 Candidator -> Candidator at term: T583
+1460937 T0583 VOTE S0 Candidator -> Candidator at term: T584
+1462178 T0584 VOTE S0 Candidator -> Candidator at term: T585
+1464679 T0585 VOTE S0 Candidator -> Candidator at term: T586
+1466859 T0586 VOTE S0 Candidator -> Candidator at term: T587
+1468572 T0587 VOTE S0 Candidator -> Candidator at term: T588
+1469835 T0588 VOTE S0 Candidator -> Candidator at term: T589
+1471865 T0589 VOTE S0 Candidator -> Candidator at term: T590
+1473893 T0590 VOTE S0 Candidator -> Candidator at term: T591
+1476233 T0591 VOTE S0 Candidator -> Candidator at term: T592
+1479645 T0592 VOTE S0 Candidator -> Candidator at term: T593
+1480274 T0593 VOTE S0 Candidator -> Candidator at term: T594
+1481679 T0594 VOTE S0 Candidator -> Candidator at term: T595
+1482459 T0595 VOTE S0 Candidator -> Candidator at term: T596
+1483703 T0596 VOTE S0 Candidator -> Candidator at term: T597
+1485121 T0597 VOTE S0 Candidator -> Candidator at term: T598
+1487924 T0598 VOTE S0 Candidator -> Candidator at term: T599
+1491018 T0599 VOTE S0 Candidator -> Candidator at term: T600
+1493652 T0600 VOTE S0 Candidator -> Candidator at term: T601
+1494742 T0601 VOTE S0 Candidator -> Candidator at term: T602
+1495989 T0602 VOTE S0 Candidator -> Candidator at term: T603
+1496767 T0603 VOTE S0 Candidator -> Candidator at term: T604
+1499584 T0604 VOTE S0 Candidator -> Candidator at term: T605
+1501303 T0605 VOTE S0 Candidator -> Candidator at term: T606
+1502251 T0606 VOTE S0 Candidator -> Candidator at term: T607
+1503171 T0607 VOTE S0 Candidator -> Candidator at term: T608
+1504583 T0608 VOTE S0 Candidator -> Candidator at term: T609
+1505512 T0609 VOTE S0 Candidator -> Candidator at term: T610
+1506449 T0610 VOTE S0 Candidator -> Candidator at term: T611
+1508481 T0611 VOTE S0 Candidator -> Candidator at term: T612
+1510338 T0612 VOTE S0 Candidator -> Candidator at term: T613
+1512676 T0613 VOTE S0 Candidator -> Candidator at term: T614
+1514698 T0614 VOTE S0 Candidator -> Candidator at term: T615
+1517656 T0615 VOTE S0 Candidator -> Candidator at term: T616
+1519213 T0616 VOTE S0 Candidator -> Candidator at term: T617
+1521711 T0617 VOTE S0 Candidator -> Candidator at term: T618
+1523721 T0618 VOTE S0 Candidator -> Candidator at term: T619
+1527304 T0619 VOTE S0 Candidator -> Candidator at term: T620
+1529798 T0620 VOTE S0 Candidator -> Candidator at term: T621
+1532740 T0621 VOTE S0 Candidator -> Candidator at term: T622
+1534157 T0622 VOTE S0 Candidator -> Candidator at term: T623
+1535723 T0623 VOTE S0 Candidator -> Candidator at term: T624
+1537763 T0624 VOTE S0 Candidator -> Candidator at term: T625
+1539485 T0625 VOTE S0 Candidator -> Candidator at term: T626
+1541813 T0626 VOTE S0 Candidator -> Candidator at term: T627
+1545098 T0627 VOTE S0 Candidator -> Candidator at term: T628
+1546183 T0628 VOTE S0 Candidator -> Candidator at term: T629
+1548202 T0629 VOTE S0 Candidator -> Candidator at term: T630
+1551340 T0630 VOTE S0 Candidator -> Candidator at term: T631
+1553194 T0631 VOTE S0 Candidator -> Candidator at term: T632
+1556294 T0632 VOTE S0 Candidator -> Candidator at term: T633
+1558011 T0633 VOTE S0 Candidator -> Candidator at term: T634
+1560982 T0634 VOTE S0 Candidator -> Candidator at term: T635
+1562064 T0635 VOTE S0 Candidator -> Candidator at term: T636
+1562844 T0636 VOTE S0 Candidator -> Candidator at term: T637
+1564552 T0637 VOTE S0 Candidator -> Candidator at term: T638
+1565177 T0638 VOTE S0 Candidator -> Candidator at term: T639
+1566890 T0639 VOTE S0 Candidator -> Candidator at term: T640
+1569527 T0640 VOTE S0 Candidator -> Candidator at term: T641
+1571721 T0641 VOTE S0 Candidator -> Candidator at term: T642
+1574208 T0642 VOTE S0 Candidator -> Candidator at term: T643
+1576715 T0643 VOTE S0 Candidator -> Candidator at term: T644
+1578422 T0644 VOTE S0 Candidator -> Candidator at term: T645
+1579500 T0645 VOTE S0 Candidator -> Candidator at term: T646
+1582465 T0646 VOTE S0 Candidator -> Candidator at term: T647
+1585106 T0647 VOTE S0 Candidator -> Candidator at term: T648
+1587892 T0648 VOTE S0 Candidator -> Candidator at term: T649
+1588512 T0649 VOTE S0 Candidator -> Candidator at term: T650
+1591467 T0650 VOTE S0 Candidator -> Candidator at term: T651
+1592872 T0651 VOTE S0 Candidator -> Candidator at term: T652
+1595673 T0652 VOTE S0 Candidator -> Candidator at term: T653
+1597373 T0653 VOTE S0 Candidator -> Candidator at term: T654
+1598457 T0654 VOTE S0 Candidator -> Candidator at term: T655
+1600939 T0655 VOTE S0 Candidator -> Candidator at term: T656
+1602332 T0656 VOTE S0 Candidator -> Candidator at term: T657
+1603752 T0657 VOTE S0 Candidator -> Candidator at term: T658
+1605928 T0658 VOTE S0 Candidator -> Candidator at term: T659
+1606868 T0659 VOTE S0 Candidator -> Candidator at term: T660
+1609516 T0660 VOTE S0 Candidator -> Candidator at term: T661
+1612789 T0661 VOTE S0 Candidator -> Candidator at term: T662
+1615127 T0662 VOTE S0 Candidator -> Candidator at term: T663
+1618373 T0663 VOTE S0 Candidator -> Candidator at term: T664
+1621953 T0664 VOTE S0 Candidator -> Candidator at term: T665
+1623820 T0665 VOTE S0 Candidator -> Candidator at term: T666
+1627250 T0666 VOTE S0 Candidator -> Candidator at term: T667
+1628817 T0667 VOTE S0 Candidator -> Candidator at term: T668
+1630213 T0668 VOTE S0 Candidator -> Candidator at term: T669
+1631769 T0669 VOTE S0 Candidator -> Candidator at term: T670
+1633333 T0670 VOTE S0 Candidator -> Candidator at term: T671
+1635515 T0671 VOTE S0 Candidator -> Candidator at term: T672
+1636588 T0672 VOTE S0 Candidator -> Candidator at term: T673
+1639549 T0673 VOTE S0 Candidator -> Candidator at term: T674
+1642497 T0674 VOTE S0 Candidator -> Candidator at term: T675
+1644838 T0675 VOTE S0 Candidator -> Candidator at term: T676
+1646390 T0676 VOTE S0 Candidator -> Candidator at term: T677
+1648727 T0677 VOTE S0 Candidator -> Candidator at term: T678
+1650284 T0678 VOTE S0 Candidator -> Candidator at term: T679
+1653566 T0679 VOTE S0 Candidator -> Candidator at term: T680
+1655579 T0680 VOTE S0 Candidator -> Candidator at term: T681
+1656973 T0681 VOTE S0 Candidator -> Candidator at term: T682
+1658047 T0682 VOTE S0 Candidator -> Candidator at term: T683
+1659305 T0683 VOTE S0 Candidator -> Candidator at term: T684
+1662270 T0684 VOTE S0 Candidator -> Candidator at term: T685
+1664605 T0685 VOTE S0 Candidator -> Candidator at term: T686
+1665535 T0686 VOTE S0 Candidator -> Candidator at term: T687
+1668508 T0687 VOTE S0 Candidator -> Candidator at term: T688
+1669739 T0688 VOTE S0 Candidator -> Candidator at term: T689
+1670826 T0689 VOTE S0 Candidator -> Candidator at term: T690
+1673496 T0690 VOTE S0 Candidator -> Candidator at term: T691
+1675218 T0691 VOTE S0 Candidator -> Candidator at term: T692
+1676769 T0692 VOTE S0 Candidator -> Candidator at term: T693
+1677546 T0693 VOTE S0 Candidator -> Candidator at term: T694
+1679550 T0694 VOTE S0 Candidator -> Candidator at term: T695
+1681584 T0695 VOTE S0 Candidator -> Candidator at term: T696
+1684692 T0696 VOTE S0 Candidator -> Candidator at term: T697
+1685472 T0697 VOTE S0 Candidator -> Candidator at term: T698
+1686103 T0698 VOTE S0 Candidator -> Candidator at term: T699
+1688611 T0699 VOTE S0 Candidator -> Candidator at term: T700
+1691571 T0700 VOTE S0 Candidator -> Candidator at term: T701
+1694830 T0701 VOTE S0 Candidator -> Candidator at term: T702
+1697813 T0702 VOTE S0 Candidator -> Candidator at term: T703
+1698753 T0703 VOTE S0 Candidator -> Candidator at term: T704
+1700616 T0704 VOTE S0 Candidator -> Candidator at term: T705
+1701697 T0705 VOTE S0 Candidator -> Candidator at term: T706
+1703092 T0706 VOTE S0 Candidator -> Candidator at term: T707
+1706216 T0707 VOTE S0 Candidator -> Candidator at term: T708
+1707760 T0708 VOTE S0 Candidator -> Candidator at term: T709
+1710566 T0709 VOTE S0 Candidator -> Candidator at term: T710
+1714170 T0710 VOTE S0 Candidator -> Candidator at term: T711
+1715884 T0711 VOTE S0 Candidator -> Candidator at term: T712
+1718215 T0712 VOTE S0 Candidator -> Candidator at term: T713
+1721647 T0713 VOTE S0 Candidator -> Candidator at term: T714
+1723524 T0714 VOTE S0 Candidator -> Candidator at term: T715
+1724464 T0715 VOTE S0 Candidator -> Candidator at term: T716
+1727586 T0716 VOTE S0 Candidator -> Candidator at term: T717
+1729447 T0717 VOTE S0 Candidator -> Candidator at term: T718
+1732883 T0718 VOTE S0 Candidator -> Candidator at term: T719
+1735071 T0719 VOTE S0 Candidator -> Candidator at term: T720
+1738208 T0720 VOTE S0 Candidator -> Candidator at term: T721
+1740841 T0721 VOTE S0 Candidator -> Candidator at term: T722
+1743323 T0722 VOTE S0 Candidator -> Candidator at term: T723
+1744882 T0723 VOTE S0 Candidator -> Candidator at term: T724
+1745508 T0724 VOTE S0 Candidator -> Candidator at term: T725
+1746598 T0725 VOTE S0 Candidator -> Candidator at term: T726
+1747991 T0726 VOTE S0 Candidator -> Candidator at term: T727
+1750626 T0727 VOTE S0 Candidator -> Candidator at term: T728
+1752023 T0728 VOTE S0 Candidator -> Candidator at term: T729
+1752813 T0729 VOTE S0 Candidator -> Candidator at term: T730
+1755775 T0730 VOTE S0 Candidator -> Candidator at term: T731
+1756561 T0731 VOTE S0 Candidator -> Candidator at term: T732
+1759684 T0732 VOTE S0 Candidator -> Candidator at term: T733
+1761100 T0733 VOTE S0 Candidator -> Candidator at term: T734
+1762672 T0734 VOTE S0 Candidator -> Candidator at term: T735
+1763594 T0735 VOTE S0 Candidator -> Candidator at term: T736
+1764527 T0736 VOTE S0 Candidator -> Candidator at term: T737
+1767778 T0737 VOTE S0 Candidator -> Candidator at term: T738
+1771213 T0738 VOTE S0 Candidator -> Candidator at term: T739
+1772462 T0739 VOTE S0 Candidator -> Candidator at term: T740
+1774025 T0740 VOTE S0 Candidator -> Candidator at term: T741
+1777098 T0741 VOTE S0 Candidator -> Candidator at term: T742
+1779587 T0742 VOTE S0 Candidator -> Candidator at term: T743
+1781321 T0743 VOTE S0 Candidator -> Candidator at term: T744
+1784426 T0744 VOTE S0 Candidator -> Candidator at term: T745
+1786128 T0745 VOTE S0 Candidator -> Candidator at term: T746
+1787217 T0746 VOTE S0 Candidator -> Candidator at term: T747
+1790647 T0747 VOTE S0 Candidator -> Candidator at term: T748
+1792351 T0748 VOTE S0 Candidator -> Candidator at term: T749
+1793444 T0749 VOTE S0 Candidator -> Candidator at term: T750
+1794066 T0750 VOTE S0 Candidator -> Candidator at term: T751
+1796248 T0751 VOTE S0 Candidator -> Candidator at term: T752
+1799051 T0752 VOTE S0 Candidator -> Candidator at term: T753
+1800447 T0753 VOTE S0 Candidator -> Candidator at term: T754
+1801844 T0754 VOTE S0 Candidator -> Candidator at term: T755
+1804175 T0755 VOTE S0 Candidator -> Candidator at term: T756
+1805737 T0756 VOTE S0 Candidator -> Candidator at term: T757
+1809339 T0757 VOTE S0 Candidator -> Candidator at term: T758
+1810113 T0758 VOTE S0 Candidator -> Candidator at term: T759
+1812129 T0759 VOTE S0 Candidator -> Candidator at term: T760
+1814458 T0760 VOTE S0 Candidator -> Candidator at term: T761
+1816008 T0761 VOTE S0 Candidator -> Candidator at term: T762
+1817719 T0762 VOTE S0 Candidator -> Candidator at term: T763
+1820505 T0763 VOTE S0 Candidator -> Candidator at term: T764
+1823614 T0764 VOTE S0 Candidator -> Candidator at term: T765
+1824703 T0765 VOTE S0 Candidator -> Candidator at term: T766
+1827646 T0766 VOTE S0 Candidator -> Candidator at term: T767
+1830612 T0767 VOTE S0 Candidator -> Candidator at term: T768
+1832329 T0768 VOTE S0 Candidator -> Candidator at term: T769
+1834981 T0769 VOTE S0 Candidator -> Candidator at term: T770
+1837184 T0770 VOTE S0 Candidator -> Candidator at term: T771
+1838128 T0771 VOTE S0 Candidator -> Candidator at term: T772
+1838910 T0772 VOTE S0 Candidator -> Candidator at term: T773
+1842467 T0773 VOTE S0 Candidator -> Candidator at term: T774
+1843083 T0774 VOTE S0 Candidator -> Candidator at term: T775
+1846197 T0775 VOTE S0 Candidator -> Candidator at term: T776
+1849534 T0776 VOTE S0 Candidator -> Candidator at term: T777
+1852579 T0777 VOTE S0 Candidator -> Candidator at term: T778
+1855224 T0778 VOTE S0 Candidator -> Candidator at term: T779
+1856176 T0779 VOTE S0 Candidator -> Candidator at term: T780
+1857578 T0780 VOTE S0 Candidator -> Candidator at term: T781
+1860389 T0781 VOTE S0 Candidator -> Candidator at term: T782
+1861160 T0782 VOTE S0 Candidator -> Candidator at term: T783
+1864128 T0783 VOTE S0 Candidator -> Candidator at term: T784
+1865208 T0784 VOTE S0 Candidator -> Candidator at term: T785
+1868178 T0785 VOTE S0 Candidator -> Candidator at term: T786
+1870344 T0786 VOTE S0 Candidator -> Candidator at term: T787
+1871452 T0787 VOTE S0 Candidator -> Candidator at term: T788
+1874381 T0788 VOTE S0 Candidator -> Candidator at term: T789
+1876418 T0789 VOTE S0 Candidator -> Candidator at term: T790
+1879356 T0790 VOTE S0 Candidator -> Candidator at term: T791
+1882483 T0791 VOTE S0 Candidator -> Candidator at term: T792
+1883421 T0792 VOTE S0 Candidator -> Candidator at term: T793
+1886682 T0793 VOTE S0 Candidator -> Candidator at term: T794
+1889325 T0794 VOTE S0 Candidator -> Candidator at term: T795
+1890401 T0795 VOTE S0 Candidator -> Candidator at term: T796
+1892270 T0796 VOTE S0 Candidator -> Candidator at term: T797
+1893831 T0797 VOTE S0 Candidator -> Candidator at term: T798
+1896310 T0798 VOTE S0 Candidator -> Candidator at term: T799
+1898024 T0799 VOTE S0 Candidator -> Candidator at term: T800
+1900364 T0800 VOTE S0 Candidator -> Candidator at term: T801
+1902382 T0801 VOTE S0 Candidator -> Candidator at term: T802
+1903945 T0802 VOTE S0 Candidator -> Candidator at term: T803
+1905029 T0803 VOTE S0 Candidator -> Candidator at term: T804
+1907054 T0804 VOTE S0 Candidator -> Candidator at term: T805
+1908298 T0805 VOTE S0 Candidator -> Candidator at term: T806
+1911860 T0806 VOTE S0 Candidator -> Candidator at term: T807
+1914356 T0807 VOTE S0 Candidator -> Candidator at term: T808
+1917151 T0808 VOTE S0 Candidator -> Candidator at term: T809
+1917934 T0809 VOTE S0 Candidator -> Candidator at term: T810
+1919028 T0810 VOTE S0 Candidator -> Candidator at term: T811
+1921211 T0811 VOTE S0 Candidator -> Candidator at term: T812
+1923867 T0812 VOTE S0 Candidator -> Candidator at term: T813
+1925728 T0813 VOTE S0 Candidator -> Candidator at term: T814
+1926663 T0814 VOTE S0 Candidator -> Candidator at term: T815
+1928376 T0815 VOTE S0 Candidator -> Candidator at term: T816
+1931350 T0816 VOTE S0 Candidator -> Candidator at term: T817
+1934920 T0817 VOTE S0 Candidator -> Candidator at term: T818
+1937557 T0818 VOTE S0 Candidator -> Candidator at term: T819
+1939902 T0819 VOTE S0 Candidator -> Candidator at term: T820
+1941448 T0820 VOTE S0 Candidator -> Candidator at term: T821
+1943170 T0821 VOTE S0 Candidator -> Candidator at term: T822
+1945803 T0822 VOTE S0 Candidator -> Candidator at term: T823
+1947671 T0823 VOTE S0 Candidator -> Candidator at term: T824
+1948608 T0824 VOTE S0 Candidator -> Candidator at term: T825
+1949699 T0825 VOTE S0 Candidator -> Candidator at term: T826
+1952033 T0826 VOTE S0 Candidator -> Candidator at term: T827
+1953123 T0827 VOTE S0 Candidator -> Candidator at term: T828
+1955163 T0828 VOTE S0 Candidator -> Candidator at term: T829
+1956875 T0829 VOTE S0 Candidator -> Candidator at term: T830
+1958576 T0830 VOTE S0 Candidator -> Candidator at term: T831
+1961535 T0831 VOTE S0 Candidator -> Candidator at term: T832
+1963722 T0832 VOTE S0 Candidator -> Candidator at term: T833
+1966694 T0833 VOTE S0 Candidator -> Candidator at term: T834
+1968894 T0834 VOTE S0 Candidator -> Candidator at term: T835
+1970295 T0835 VOTE S0 Candidator -> Candidator at term: T836
+1971997 T0836 VOTE S0 Candidator -> Candidator at term: T837
+1973414 T0837 VOTE S0 Candidator -> Candidator at term: T838
+1976523 T0838 VOTE S0 Candidator -> Candidator at term: T839
+1978701 T0839 VOTE S0 Candidator -> Candidator at term: T840
+1980265 T0840 VOTE S0 Candidator -> Candidator at term: T841
+1983211 T0841 VOTE S0 Candidator -> Candidator at term: T842
+1985859 T0842 VOTE S0 Candidator -> Candidator at term: T843
+1988209 T0843 VOTE S0 Candidator -> Candidator at term: T844
+1991654 T0844 VOTE S0 Candidator -> Candidator at term: T845
+1995076 T0845 VOTE S0 Candidator -> Candidator at term: T846
+1996609 T0846 VOTE S0 Candidator -> Candidator at term: T847
+1997233 T0847 VOTE S0 Candidator -> Candidator at term: T848
+2000197 T0848 VOTE S0 Candidator -> Candidator at term: T849
+2003337 T0849 VOTE S0 Candidator -> Candidator at term: T850
+2005511 T0850 VOTE S0 Candidator -> Candidator at term: T851
+2006923 T0851 VOTE S0 Candidator -> Candidator at term: T852
+2008629 T0852 VOTE S0 Candidator -> Candidator at term: T853
+2010503 T0853 VOTE S0 Candidator -> Candidator at term: T854
+2014091 T0854 VOTE S0 Candidator -> Candidator at term: T855
+2017349 T0855 VOTE S0 Candidator -> Candidator at term: T856
+2019686 T0856 VOTE S0 Candidator -> Candidator at term: T857
+2020767 T0857 VOTE S0 Candidator -> Candidator at term: T858
+2022470 T0858 VOTE S0 Candidator -> Candidator at term: T859
+2025409 T0859 VOTE S0 Candidator -> Candidator at term: T860
+2028060 T0860 VOTE S0 Candidator -> Candidator at term: T861
+2031339 T0861 VOTE S0 Candidator -> Candidator at term: T862
+2032892 T0862 VOTE S0 Candidator -> Candidator at term: T863
+2033826 T0863 VOTE S0 Candidator -> Candidator at term: T864
+2035698 T0864 VOTE S0 Candidator -> Candidator at term: T865
+2038799 T0865 VOTE S0 Candidator -> Candidator at term: T866
+2040056 T0866 VOTE S0 Candidator -> Candidator at term: T867
+2042700 T0867 VOTE S0 Candidator -> Candidator at term: T868
+2045826 T0868 VOTE S0 Candidator -> Candidator at term: T869
+2046762 T0869 VOTE S0 Candidator -> Candidator at term: T870
+2047396 T0870 VOTE S0 Candidator -> Candidator at term: T871
+2050171 T0871 VOTE S0 Candidator -> Candidator at term: T872
+2051273 T0872 VOTE S0 Candidator -> Candidator at term: T873
+2052058 T0873 VOTE S0 Candidator -> Candidator at term: T874
+2054081 T0874 VOTE S0 Candidator -> Candidator at term: T875
+2056411 T0875 VOTE S0 Candidator -> Candidator at term: T876
+2059053 T0876 VOTE S0 Candidator -> Candidator at term: T877
+2061525 T0877 VOTE S0 Candidator -> Candidator at term: T878
+2062626 T0878 VOTE S0 Candidator -> Candidator at term: T879
+2064817 T0879 VOTE S0 Candidator -> Candidator at term: T880
+2065902 T0880 VOTE S0 Candidator -> Candidator at term: T881
+2066982 T0881 VOTE S0 Candidator -> Candidator at term: T882
+2068222 T0882 VOTE S0 Candidator -> Candidator at term: T883
+2070542 T0883 VOTE S0 Candidator -> Candidator at term: T884
+2073041 T0884 VOTE S0 Candidator -> Candidator at term: T885
+2076309 T0885 VOTE S0 Candidator -> Candidator at term: T886
+2079266 T0886 VOTE S0 Candidator -> Candidator at term: T887
+2080037 T0887 VOTE S0 Candidator -> Candidator at term: T888
+2080815 T0888 VOTE S0 Candidator -> Candidator at term: T889
+2081891 T0889 VOTE S0 Candidator -> Candidator at term: T890
+2083608 T0890 VOTE S0 Candidator -> Candidator at term: T891
+2085343 T0891 VOTE S0 Candidator -> Candidator at term: T892
+2086451 T0892 VOTE S0 Candidator -> Candidator at term: T893
+2088780 T0893 VOTE S0 Candidator -> Candidator at term: T894
+2090960 T0894 VOTE S0 Candidator -> Candidator at term: T895
+2093307 T0895 VOTE S0 Candidator -> Candidator at term: T896
+2094703 T0896 VOTE S0 Candidator -> Candidator at term: T897
+2097191 T0897 VOTE S0 Candidator -> Candidator at term: T898
+2098581 T0898 VOTE S0 Candidator -> Candidator at term: T899
+2100455 T0899 VOTE S0 Candidator -> Candidator at term: T900
+2101701 T0900 VOTE S0 Candidator -> Candidator at term: T901
+2105012 T0901 VOTE S0 Candidator -> Candidator at term: T902
+2106889 T0902 VOTE S0 Candidator -> Candidator at term: T903
+2107669 T0903 VOTE S0 Candidator -> Candidator at term: T904
+2108441 T0904 VOTE S0 Candidator -> Candidator at term: T905
+2109536 T0905 VOTE S0 Candidator -> Candidator at term: T906
+2112246 T0906 VOTE S0 Candidator -> Candidator at term: T907
+2114055 T0907 VOTE S0 Candidator -> Candidator at term: T908
+2116710 T0908 VOTE S0 Candidator -> Candidator at term: T909
+2119047 T0909 VOTE S0 Candidator -> Candidator at term: T910
+2122477 T0910 VOTE S0 Candidator -> Candidator at term: T911
+2124647 T0911 VOTE S0 Candidator -> Candidator at term: T912
+2127306 T0912 VOTE S0 Candidator -> Candidator at term: T913
+2129184 T0913 VOTE S0 Candidator -> Candidator at term: T914
+2132305 T0914 VOTE S0 Candidator -> Candidator at term: T915
+2135091 T0915 VOTE S0 Candidator -> Candidator at term: T916
+2137731 T0916 VOTE S0 Candidator -> Candidator at term: T917
+2140366 T0917 VOTE S0 Candidator -> Candidator at term: T918
+2141762 T0918 VOTE S0 Candidator -> Candidator at term: T919
+2145183 T0919 VOTE S0 Candidator -> Candidator at term: T920
+2147522 T0920 VOTE S0 Candidator -> Candidator at term: T921
+2148307 T0921 VOTE S0 Candidator -> Candidator at term: T922
+2148919 T0922 VOTE S0 Candidator -> Candidator at term: T923
+2149855 T0923 VOTE S0 Candidator -> Candidator at term: T924
+2152965 T0924 VOTE S0 Candidator -> Candidator at term: T925
+2154061 T0925 VOTE S0 Candidator -> Candidator at term: T926
+2155305 T0926 VOTE S0 Candidator -> Candidator at term: T927
+2157333 T0927 VOTE S0 Candidator -> Candidator at term: T928
+2159049 T0928 VOTE S0 Candidator -> Candidator at term: T929
+2161383 T0929 VOTE S0 Candidator -> Candidator at term: T930
+2164473 T0930 VOTE S0 Candidator -> Candidator at term: T931
+2166631 T0931 VOTE S0 Candidator -> Candidator at term: T932
+2168974 T0932 VOTE S0 Candidator -> Candidator at term: T933
+2170066 T0933 VOTE S0 Candidator -> Candidator at term: T934
+2172237 T0934 VOTE S0 Candidator -> Candidator at term: T935
+2174566 T0935 VOTE S0 Candidator -> Candidator at term: T936
+2176120 T0936 VOTE S0 Candidator -> Candidator at term: T937
+2179232 T0937 VOTE S0 Candidator -> Candidator at term: T938
+2180473 T0938 VOTE S0 Candidator -> Candidator at term: T939
+2181409 T0939 VOTE S0 Candidator -> Candidator at term: T940
+2184817 T0940 VOTE S0 Candidator -> Candidator at term: T941
+2186369 T0941 VOTE S0 Candidator -> Candidator at term: T942
+2189628 T0942 VOTE S0 Candidator -> Candidator at term: T943
+2192732 T0943 VOTE S0 Candidator -> Candidator at term: T944
+2195692 T0944 VOTE S0 Candidator -> Candidator at term: T945
+2196318 T0945 VOTE S0 Candidator -> Candidator at term: T946
+2196940 T0946 VOTE S0 Candidator -> Candidator at term: T947
+2197728 T0947 VOTE S0 Candidator -> Candidator at term: T948
+2201152 T0948 VOTE S0 Candidator -> Candidator at term: T949
+2204286 T0949 VOTE S0 Candidator -> Candidator at term: T950
+2207077 T0950 VOTE S0 Candidator -> Candidator at term: T951
+2208624 T0951 VOTE S0 Candidator -> Candidator at term: T952
+2212184 T0952 VOTE S0 Candidator -> Candidator at term: T953
+2214994 T0953 VOTE S0 Candidator -> Candidator at term: T954
+2217935 T0954 VOTE S0 Candidator -> Candidator at term: T955
+2219801 T0955 VOTE S0 Candidator -> Candidator at term: T956
+2221365 T0956 VOTE S0 Candidator -> Candidator at term: T957
+2224621 T0957 VOTE S0 Candidator -> Candidator at term: T958
+2227132 T0958 VOTE S0 Candidator -> Candidator at term: T959
+2229764 T0959 VOTE S0 Candidator -> Candidator at term: T960
+2233032 T0960 VOTE S0 Candidator -> Candidator at term: T961
+2235681 T0961 VOTE S0 Candidator -> Candidator at term: T962
+2238319 T0962 VOTE S0 Candidator -> Candidator at term: T963
+2241260 T0963 VOTE S0 Candidator -> Candidator at term: T964
+2241881 T0964 VOTE S0 Candidator -> Candidator at term: T965
+2243574 T0965 VOTE S0 Candidator -> Candidator at term: T966
+2244657 T0966 VOTE S0 Candidator -> Candidator at term: T967
+2247926 T0967 VOTE S0 Candidator -> Candidator at term: T968
+2248541 T0968 VOTE S0 Candidator -> Candidator at term: T969
+2251479 T0969 VOTE S0 Candidator -> Candidator at term: T970
+2252252 T0970 VOTE S0 Candidator -> Candidator at term: T971
+2253955 T0971 VOTE S0 Candidator -> Candidator at term: T972
+2254574 T0972 VOTE S0 Candidator -> Candidator at term: T973
+2257552 T0973 VOTE S0 Candidator -> Candidator at term: T974
+2258488 T0974 VOTE S0 Candidator -> Candidator at term: T975
+2260354 T0975 VOTE S0 Candidator -> Candidator at term: T976
+2261914 T0976 VOTE S0 Candidator -> Candidator at term: T977
+2264082 T0977 VOTE S0 Candidator -> Candidator at term: T978
+2264852 T0978 VOTE S0 Candidator -> Candidator at term: T979
+2266246 T0979 VOTE S0 Candidator -> Candidator at term: T980
+2269507 T0980 VOTE S0 Candidator -> Candidator at term: T981
+2270743 T0981 VOTE S0 Candidator -> Candidator at term: T982
+2272306 T0982 VOTE S0 Candidator -> Candidator at term: T983
+2274493 T0983 VOTE S0 Candidator -> Candidator at term: T984
+2276825 T0984 VOTE S0 Candidator -> Candidator at term: T985
+2280090 T0985 VOTE S0 Candidator -> Candidator at term: T986
+2281805 T0986 VOTE S0 Candidator -> Candidator at term: T987
+2285227 T0987 VOTE S0 Candidator -> Candidator at term: T988
+2286626 T0988 VOTE S0 Candidator -> Candidator at term: T989
+2290205 T0989 VOTE S0 Candidator -> Candidator at term: T990
+2291447 T0990 VOTE S0 Candidator -> Candidator at term: T991
+2293150 T0991 VOTE S0 Candidator -> Candidator at term: T992
+2294866 T0992 VOTE S0 Candidator -> Candidator at term: T993
+2296281 T0993 VOTE S0 Candidator -> Candidator at term: T994
+2296904 T0994 VOTE S0 Candidator -> Candidator at term: T995
+2299697 T0995 VOTE S0 Candidator -> Candidator at term: T996
+2300487 T0996 VOTE S0 Candidator -> Candidator at term: T997
+2302664 T0997 VOTE S0 Candidator -> Candidator at term: T998
+2305299 T0998 VOTE S0 Candidator -> Candidator at term: T999
+2306232 T0999 VOTE S0 Candidator -> Candidator at term: T1000
+2308267 T1000 VOTE S0 Candidator -> Candidator at term: T1001
+2310602 T1001 VOTE S0 Candidator -> Candidator at term: T1002
+2314028 T1002 VOTE S0 Candidator -> Candidator at term: T1003
+2316703 T1003 VOTE S0 Candidator -> Candidator at term: T1004
+2319045 T1004 VOTE S0 Candidator -> Candidator at term: T1005
+2321526 T1005 VOTE S0 Candidator -> Candidator at term: T1006
+2323701 T1006 VOTE S0 Candidator -> Candidator at term: T1007
+2325272 T1007 VOTE S0 Candidator -> Candidator at term: T1008
+2328240 T1008 VOTE S0 Candidator -> Candidator at term: T1009
+2329953 T1009 VOTE S0 Candidator -> Candidator at term: T1010
+2330713 T1010 VOTE S0 Candidator -> Candidator at term: T1011
+2332743 T1011 VOTE S0 Candidator -> Candidator at term: T1012
+2334130 T1012 VOTE S0 Candidator -> Candidator at term: T1013
+2337265 T1013 VOTE S0 Candidator -> Candidator at term: T1014
+2338049 T1014 VOTE S0 Candidator -> Candidator at term: T1015
+2341138 T1015 VOTE S0 Candidator -> Candidator at term: T1016
+2342222 T1016 VOTE S0 Candidator -> Candidator at term: T1017
+2344872 T1017 VOTE S0 Candidator -> Candidator at term: T1018
+2348185 T1018 VOTE S0 Candidator -> Candidator at term: T1019
+2350207 T1019 VOTE S0 Candidator -> Candidator at term: T1020
+2353322 T1020 VOTE S0 Candidator -> Candidator at term: T1021
+2354089 T1021 VOTE S0 Candidator -> Candidator at term: T1022
+2355962 T1022 VOTE S0 Candidator -> Candidator at term: T1023
+2357978 T1023 VOTE S0 Candidator -> Candidator at term: T1024
+2358905 T1024 VOTE S0 Candidator -> Candidator at term: T1025
+2359684 T1025 VOTE S0 Candidator -> Candidator at term: T1026
+2362191 T1026 VOTE S0 Candidator -> Candidator at term: T1027
+2364361 T1027 VOTE S0 Candidator -> Candidator at term: T1028
+2365450 T1028 VOTE S0 Candidator -> Candidator at term: T1029
+2367328 T1029 VOTE S0 Candidator -> Candidator at term: T1030
+2368890 T1030 VOTE S0 Candidator -> Candidator at term: T1031
+2371536 T1031 VOTE S0 Candidator -> Candidator at term: T1032
+2374187 T1032 VOTE S0 Candidator -> Candidator at term: T1033
+2376975 T1033 VOTE S0 Candidator -> Candidator at term: T1034
+2380100 T1034 VOTE S0 Candidator -> Candidator at term: T1035
+2380873 T1035 VOTE S0 Candidator -> Candidator at term: T1036
+2383365 T1036 VOTE S0 Candidator -> Candidator at term: T1037
+2386758 T1037 VOTE S0 Candidator -> Candidator at term: T1038
+2388322 T1038 VOTE S0 Candidator -> Candidator at term: T1039
+2391296 T1039 VOTE S0 Candidator -> Candidator at term: T1040
+2393929 T1040 VOTE S0 Candidator -> Candidator at term: T1041
+2396729 T1041 VOTE S0 Candidator -> Candidator at term: T1042
+2399853 T1042 VOTE S0 Candidator -> Candidator at term: T1043
+2402993 T1043 VOTE S0 Candidator -> Candidator at term: T1044
+2406097 T1044 VOTE S0 Candidator -> Candidator at term: T1045
+2407192 T1045 VOTE S0 Candidator -> Candidator at term: T1046
+2408752 T1046 VOTE S0 Candidator -> Candidator at term: T1047
+2409849 T1047 VOTE S0 Candidator -> Candidator at term: T1048
+2410469 T1048 VOTE S0 Candidator -> Candidator at term: T1049
+2413589 T1049 VOTE S0 Candidator -> Candidator at term: T1050
+2414354 T1050 VOTE S0 Candidator -> Candidator at term: T1051
+2417009 T1051 VOTE S0 Candidator -> Candidator at term: T1052
+2419203 T1052 VOTE S0 Candidator -> Candidator at term: T1053
+2420916 T1053 VOTE S0 Candidator -> Candidator at term: T1054
+2422159 T1054 VOTE S0 Candidator -> Candidator at term: T1055
+2423088 T1055 VOTE S0 Candidator -> Candidator at term: T1056
+2424493 T1056 VOTE S0 Candidator -> Candidator at term: T1057
+2425748 T1057 VOTE S0 Candidator -> Candidator at term: T1058
+2427633 T1058 VOTE S0 Candidator -> Candidator at term: T1059
+2429944 T1059 VOTE S0 Candidator -> Candidator at term: T1060
+2432137 T1060 VOTE S0 Candidator -> Candidator at term: T1061
+2433692 T1061 VOTE S0 Candidator -> Candidator at term: T1062
+2435888 T1062 VOTE S0 Candidator -> Candidator at term: T1063
+2438541 T1063 VOTE S0 Candidator -> Candidator at term: T1064
+2441337 T1064 VOTE S0 Candidator -> Candidator at term: T1065
+2444120 T1065 VOTE S0 Candidator -> Candidator at term: T1066
+2446155 T1066 VOTE S0 Candidator -> Candidator at term: T1067
+2448672 T1067 VOTE S0 Candidator -> Candidator at term: T1068
+2450994 T1068 VOTE S0 Candidator -> Candidator at term: T1069
+2453184 T1069 VOTE S0 Candidator -> Candidator at term: T1070
+2456593 T1070 VOTE S0 Candidator -> Candidator at term: T1071
+2459239 T1071 VOTE S0 Candidator -> Candidator at term: T1072
+2461260 T1072 VOTE S0 Candidator -> Candidator at term: T1073
+2462981 T1073 VOTE S0 Candidator -> Candidator at term: T1074
+2463757 T1074 VOTE S0 Candidator -> Candidator at term: T1075
+2467181 T1075 VOTE S0 Candidator -> Candidator at term: T1076
+2470144 T1076 VOTE S0 Candidator -> Candidator at term: T1077
+2471081 T1077 VOTE S0 Candidator -> Candidator at term: T1078
+2472474 T1078 VOTE S0 Candidator -> Candidator at term: T1079
+2473710 T1079 VOTE S0 Candidator -> Candidator at term: T1080
+2476982 T1080 VOTE S0 Candidator -> Candidator at term: T1081
+2479322 T1081 VOTE S0 Candidator -> Candidator at term: T1082
+2482439 T1082 VOTE S0 Candidator -> Candidator at term: T1083
+2486009 T1083 VOTE S0 Candidator -> Candidator at term: T1084
+2488961 T1084 VOTE S0 Candidator -> Candidator at term: T1085
+2490053 T1085 VOTE S0 Candidator -> Candidator at term: T1086
+2493167 T1086 VOTE S0 Candidator -> Candidator at term: T1087
+2494720 T1087 VOTE S0 Candidator -> Candidator at term: T1088
+2497689 T1088 VOTE S0 Candidator -> Candidator at term: T1089
+2499265 T1089 VOTE S0 Candidator -> Candidator at term: T1090
+2502669 T1090 VOTE S0 Candidator -> Candidator at term: T1091
+2504218 T1091 VOTE S0 Candidator -> Candidator at term: T1092
+2507471 T1092 VOTE S0 Candidator -> Candidator at term: T1093
+2509813 T1093 VOTE S0 Candidator -> Candidator at term: T1094
+2511986 T1094 VOTE S0 Candidator -> Candidator at term: T1095
+2514173 T1095 VOTE S0 Candidator -> Candidator at term: T1096
+2516182 T1096 VOTE S0 Candidator -> Candidator at term: T1097
+2518041 T1097 VOTE S0 Candidator -> Candidator at term: T1098
+2519133 T1098 VOTE S0 Candidator -> Candidator at term: T1099
+2522398 T1099 VOTE S0 Candidator -> Candidator at term: T1100
+2524882 T1100 VOTE S0 Candidator -> Candidator at term: T1101
+2527836 T1101 VOTE S0 Candidator -> Candidator at term: T1102
+2530322 T1102 VOTE S0 Candidator -> Candidator at term: T1103
+2531434 T1103 VOTE S0 Candidator -> Candidator at term: T1104
+2533318 T1104 VOTE S0 Candidator -> Candidator at term: T1105
+2534403 T1105 VOTE S0 Candidator -> Candidator at term: T1106
+2535185 T1106 VOTE S0 Candidator -> Candidator at term: T1107
+2537045 T1107 VOTE S0 Candidator -> Candidator at term: T1108
+2537982 T1108 VOTE S0 Candidator -> Candidator at term: T1109
+2540016 T1109 VOTE S0 Candidator -> Candidator at term: T1110
+2541708 T1110 VOTE S0 Candidator -> Candidator at term: T1111
+2544356 T1111 VOTE S0 Candidator -> Candidator at term: T1112
+2547912 T1112 VOTE S0 Candidator -> Candidator at term: T1113
+2548696 T1113 VOTE S0 Candidator -> Candidator at term: T1114
+2551340 T1114 VOTE S0 Candidator -> Candidator at term: T1115
+2554313 T1115 VOTE S0 Candidator -> Candidator at term: T1116
+2555556 T1116 VOTE S0 Candidator -> Candidator at term: T1117
+2556482 T1117 VOTE S0 Candidator -> Candidator at term: T1118
+2559932 T1118 VOTE S0 Candidator -> Candidator at term: T1119
+2561649 T1119 VOTE S0 Candidator -> Candidator at term: T1120
+2563972 T1120 VOTE S0 Candidator -> Candidator at term: T1121
+2565514 T1121 VOTE S0 Candidator -> Candidator at term: T1122
+2568313 T1122 VOTE S0 Candidator -> Candidator at term: T1123
+2568938 T1123 VOTE S0 Candidator -> Candidator at term: T1124
+2571122 T1124 VOTE S0 Candidator -> Candidator at term: T1125
+2573291 T1125 VOTE S0 Candidator -> Candidator at term: T1126
+2573918 T1126 VOTE S0 Candidator -> Candidator at term: T1127
+2574701 T1127 VOTE S0 Candidator -> Candidator at term: T1128
+2576095 T1128 VOTE S0 Candidator -> Candidator at term: T1129
+2579044 T1129 VOTE S0 Candidator -> Candidator at term: T1130
+2579820 T1130 VOTE S0 Candidator -> Candidator at term: T1131
+2583395 T1131 VOTE S0 Candidator -> Candidator at term: T1132
+2585412 T1132 VOTE S0 Candidator -> Candidator at term: T1133
+2586344 T1133 VOTE S0 Candidator -> Candidator at term: T1134
+2586962 T1134 VOTE S0 Candidator -> Candidator at term: T1135
+2587587 T1135 VOTE S0 Candidator -> Candidator at term: T1136
+2588368 T1136 VOTE S0 Candidator -> Candidator at term: T1137
+2591032 T1137 VOTE S0 Candidator -> Candidator at term: T1138
+2591962 T1138 VOTE S0 Candidator -> Candidator at term: T1139
+2593205 T1139 VOTE S0 Candidator -> Candidator at term: T1140
+2596480 T1140 VOTE S0 Candidator -> Candidator at term: T1141
+2598039 T1141 VOTE S0 Candidator -> Candidator at term: T1142
+2601470 T1142 VOTE S0 Candidator -> Candidator at term: T1143
+2602087 T1143 VOTE S0 Candidator -> Candidator at term: T1144
+2603488 T1144 VOTE S0 Candidator -> Candidator at term: T1145
+2606138 T1145 VOTE S0 Candidator -> Candidator at term: T1146
+2607227 T1146 VOTE S0 Candidator -> Candidator at term: T1147
+2609703 T1147 VOTE S0 Candidator -> Candidator at term: T1148
+2610634 T1148 VOTE S0 Candidator -> Candidator at term: T1149
+2613117 T1149 VOTE S0 Candidator -> Candidator at term: T1150
+2614527 T1150 VOTE S0 Candidator -> Candidator at term: T1151
+2615936 T1151 VOTE S0 Candidator -> Candidator at term: T1152
+2617655 T1152 VOTE S0 Candidator -> Candidator at term: T1153
+2620142 T1153 VOTE S0 Candidator -> Candidator at term: T1154
+2621871 T1154 VOTE S0 Candidator -> Candidator at term: T1155
+2624052 T1155 VOTE S0 Candidator -> Candidator at term: T1156
+2626396 T1156 VOTE S0 Candidator -> Candidator at term: T1157
+2627792 T1157 VOTE S0 Candidator -> Candidator at term: T1158
+2628573 T1158 VOTE S0 Candidator -> Candidator at term: T1159
+2631058 T1159 VOTE S0 Candidator -> Candidator at term: T1160
+2632794 T1160 VOTE S0 Candidator -> Candidator at term: T1161
+2633883 T1161 VOTE S0 Candidator -> Candidator at term: T1162
+2634826 T1162 VOTE S0 Candidator -> Candidator at term: T1163
+2636083 T1163 VOTE S0 Candidator -> Candidator at term: T1164
+2638748 T1164 VOTE S0 Candidator -> Candidator at term: T1165
+2639688 T1165 VOTE S0 Candidator -> Candidator at term: T1166
+2641737 T1166 VOTE S0 Candidator -> Candidator at term: T1167
+2642997 T1167 VOTE S0 Candidator -> Candidator at term: T1168
+2645942 T1168 VOTE S0 Candidator -> Candidator at term: T1169
+2649225 T1169 VOTE S0 Candidator -> Candidator at term: T1170
+2652186 T1170 VOTE S0 Candidator -> Candidator at term: T1171
+2655283 T1171 VOTE S0 Candidator -> Candidator at term: T1172
+2657787 T1172 VOTE S0 Candidator -> Candidator at term: T1173
+2658887 T1173 VOTE S0 Candidator -> Candidator at term: T1174
+2659818 T1174 VOTE S0 Candidator -> Candidator at term: T1175
+2662626 T1175 VOTE S0 Candidator -> Candidator at term: T1176
+2665600 T1176 VOTE S0 Candidator -> Candidator at term: T1177
+2668561 T1177 VOTE S0 Candidator -> Candidator at term: T1178
+2669654 T1178 VOTE S0 Candidator -> Candidator at term: T1179
+2672147 T1179 VOTE S0 Candidator -> Candidator at term: T1180
+2675700 T1180 VOTE S0 Candidator -> Candidator at term: T1181
+2678343 T1181 VOTE S0 Candidator -> Candidator at term: T1182
+2680996 T1182 VOTE S0 Candidator -> Candidator at term: T1183
+2682891 T1183 VOTE S0 Candidator -> Candidator at term: T1184
+2683660 T1184 VOTE S0 Candidator -> Candidator at term: T1185
+2687090 T1185 VOTE S0 Candidator -> Candidator at term: T1186
+2688962 T1186 VOTE S0 Candidator -> Candidator at term: T1187
+2690818 T1187 VOTE S0 Candidator -> Candidator at term: T1188
+2692808 T1188 VOTE S0 Candidator -> Candidator at term: T1189
+2694193 T1189 VOTE S0 Candidator -> Candidator at term: T1190
+2696700 T1190 VOTE S0 Candidator -> Candidator at term: T1191
+2698729 T1191 VOTE S0 Candidator -> Candidator at term: T1192
+2701222 T1192 VOTE S0 Candidator -> Candidator at term: T1193
+2702001 T1193 VOTE S0 Candidator -> Candidator at term: T1194
+2703712 T1194 VOTE S0 Candidator -> Candidator at term: T1195
+2704959 T1195 VOTE S0 Candidator -> Candidator at term: T1196
+2707304 T1196 VOTE S0 Candidator -> Candidator at term: T1197
+2708691 T1197 VOTE S0 Candidator -> Candidator at term: T1198
+2711339 T1198 VOTE S0 Candidator -> Candidator at term: T1199
+2712432 T1199 VOTE S0 Candidator -> Candidator at term: T1200
+2714587 T1200 VOTE S0 Candidator -> Candidator at term: T1201
+2717062 T1201 VOTE S0 Candidator -> Candidator at term: T1202
+2719571 T1202 VOTE S0 Candidator -> Candidator at term: T1203
+2720184 T1203 VOTE S0 Candidator -> Candidator at term: T1204
+2723149 T1204 VOTE S0 Candidator -> Candidator at term: T1205
+2724680 T1205 VOTE S0 Candidator -> Candidator at term: T1206
+2728252 T1206 VOTE S0 Candidator -> Candidator at term: T1207
+2729509 T1207 VOTE S0 Candidator -> Candidator at term: T1208
+2732328 T1208 VOTE S0 Candidator -> Candidator at term: T1209
+2734515 T1209 VOTE S0 Candidator -> Candidator at term: T1210
+2737772 T1210 VOTE S0 Candidator -> Candidator at term: T1211
+2741170 T1211 VOTE S0 Candidator -> Candidator at term: T1212
+2743195 T1212 VOTE S0 Candidator -> Candidator at term: T1213
+2743829 T1213 VOTE S0 Candidator -> Candidator at term: T1214
+2745540 T1214 VOTE S0 Candidator -> Candidator at term: T1215
+2746468 T1215 VOTE S0 Candidator -> Candidator at term: T1216
+2749907 T1216 VOTE S0 Candidator -> Candidator at term: T1217
+2753175 T1217 VOTE S0 Candidator -> Candidator at term: T1218
+2755203 T1218 VOTE S0 Candidator -> Candidator at term: T1219
+2757071 T1219 VOTE S0 Candidator -> Candidator at term: T1220
+2759569 T1220 VOTE S0 Candidator -> Candidator at term: T1221
+2761283 T1221 VOTE S0 Candidator -> Candidator at term: T1222
+2763771 T1222 VOTE S0 Candidator -> Candidator at term: T1223
+2764548 T1223 VOTE S0 Candidator -> Candidator at term: T1224
+2767960 T1224 VOTE S0 Candidator -> Candidator at term: T1225
+2769824 T1225 VOTE S0 Candidator -> Candidator at term: T1226
+2772498 T1226 VOTE S0 Candidator -> Candidator at term: T1227
+2774210 T1227 VOTE S0 Candidator -> Candidator at term: T1228
+2775457 T1228 VOTE S0 Candidator -> Candidator at term: T1229
+2777788 T1229 VOTE S0 Candidator -> Candidator at term: T1230
+2779038 T1230 VOTE S0 Candidator -> Candidator at term: T1231
+2780148 T1231 VOTE S0 Candidator -> Candidator at term: T1232
+2780780 T1232 VOTE S0 Candidator -> Candidator at term: T1233
+2782640 T1233 VOTE S0 Candidator -> Candidator at term: T1234
+2784962 T1234 VOTE S0 Candidator -> Candidator at term: T1235
+2788246 T1235 VOTE S0 Candidator -> Candidator at term: T1236
+2789626 T1236 VOTE S0 Candidator -> Candidator at term: T1237
+2792757 T1237 VOTE S0 Candidator -> Candidator at term: T1238
+2795704 T1238 VOTE S0 Candidator -> Candidator at term: T1239

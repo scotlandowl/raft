@@ -1,0 +1,2 @@
+part-C/src/raft.test: C:\Program Files\Go\pkg\tool\windows_amd64\link.exe: exit status 0xc000013a
+FAIL	part-C/src/raft [build failed]
